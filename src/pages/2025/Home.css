@@ -79,32 +79,9 @@
 }
 
 .typewriter {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  place-items: center;
+  display: inline-block;
   text-align: center;
-  width: 100%;
-  overflow: visible;
-}
-
-.placeholder-text {
-  grid-column: 1;
-  grid-row: 1;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.typed-text {
-  grid-column: 1;
-  grid-row: 1;
-  color: var(--color-white);
-  white-space: nowrap;
-  text-align: center;
-  width: max-content;
-  min-width: 100%;
-  overflow: visible;
+  min-height: 1.2em;
 }
 
 .typewriter-cursor {

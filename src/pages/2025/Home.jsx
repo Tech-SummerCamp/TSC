@@ -33,11 +33,8 @@ const Home = () => {
           <div className="hero-content">
             <div className="hero-tagline">
               <h1 className="main-tagline typewriter">
-                <span className="placeholder-text" aria-hidden="true">学生エンジニアが得られる体験の最高峰</span>
-                <span className="typed-text">
-                  {typedText}
-                  {showCursor && <span className="typewriter-cursor">|</span>}
-                </span>
+                {typedText}
+                {showCursor && <span className="typewriter-cursor">|</span>}
               </h1>
             </div>
             
