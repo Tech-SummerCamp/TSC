@@ -11,52 +11,138 @@ const Schedule = () => {
           </h1>
           
           
-          <div className="schedule-details">
+          <div className="schedule-timeline">
             
-            <div className="day-schedule">
-              <h3>9月20日（土）開発Day1 - 対面</h3>
-              <div className="terminal-box">
-                <p>{'> '} 10:00 受付開始</p>
-                <p>{'> '} 10:30 オープニング</p>
-                <p>{'> '} 11:00〜21:00 開発作業</p>
-                <p>{'> '} 21:00 会場クローズ</p>
+            <div className="timeline-item day-1">
+              <div className="timeline-marker">
+                <span className="day-number">1</span>
               </div>
-            </div>
-            
-            <div className="day-schedule">
-              <h3>9月21日（日）開発Day2 - 対面</h3>
-              <div className="terminal-box">
-                <p>{'> '} 09:00〜21:00 開発作業</p>
-                <p>{'> '} メンター相談可能</p>
-                <p>{'> '} 21:00 会場クローズ</p>
-              </div>
-            </div>
-            
-            <div className="day-schedule">
-              <h3>9月22日（月）開発Day3 - オンライン</h3>
-              <div className="terminal-box">
-                <p>{'> '} 09:00〜18:00 最終調整（リモート）</p>
-                <p>{'> '} 18:00 🚫 コードフリーズ</p>
-                <p>{'> '} 18:00〜 審査開始</p>
-              </div>
-            </div>
-            
-            <div className="day-schedule">
-              <h3>9月23日（火・祝）最終発表会 - 対面</h3>
-              <div className="schedule-section">
-                <h4>午前</h4>
-                <div className="terminal-box">
-                  <p>{'> '} 10:45 開場・受付</p>
-                  <p>{'> '} 11:30〜13:00 昼食・準備時間</p>
+              <div className="timeline-content">
+                <div className="day-header">
+                  <h3 className="day-title">9月20日（土）</h3>
+                  <span className="day-subtitle">開発Day1 - 対面</span>
+                  <span className="day-badge development">開発開始</span>
+                </div>
+                <div className="schedule-items">
+                  <div className="schedule-item reception">
+                    <span className="time">10:00</span>
+                    <span className="event">受付開始</span>
+                  </div>
+                  <div className="schedule-item opening">
+                    <span className="time">10:30</span>
+                    <span className="event">オープニング</span>
+                  </div>
+                  <div className="schedule-item development">
+                    <span className="time">11:00〜21:00</span>
+                    <span className="event">開発作業</span>
+                  </div>
+                  <div className="schedule-item close">
+                    <span className="time">21:00</span>
+                    <span className="event">会場クローズ</span>
+                  </div>
                 </div>
               </div>
-              <div className="schedule-section">
-                <h4>午後</h4>
-                <div className="terminal-box">
-                  <p>{'> '} 13:15〜14:30 開会式・スポンサーLT</p>
-                  <p>{'> '} 14:30〜15:50 成果発表</p>
-                  <p>{'> '} 15:50〜17:30 表彰式・懇親会</p>
-                  <p>{'> '} 18:00 完全終了</p>
+            </div>
+            
+            <div className="timeline-item day-2">
+              <div className="timeline-marker">
+                <span className="day-number">2</span>
+              </div>
+              <div className="timeline-content">
+                <div className="day-header">
+                  <h3 className="day-title">9月21日（日）</h3>
+                  <span className="day-subtitle">開発Day2 - 対面</span>
+                  <span className="day-badge development">開発継続</span>
+                </div>
+                <div className="schedule-items">
+                  <div className="schedule-item development">
+                    <span className="time">09:00〜21:00</span>
+                    <span className="event">開発作業</span>
+                  </div>
+                  <div className="schedule-item support">
+                    <span className="time">終日</span>
+                    <span className="event">メンター相談可能</span>
+                  </div>
+                  <div className="schedule-item close">
+                    <span className="time">21:00</span>
+                    <span className="event">会場クローズ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="timeline-item day-3">
+              <div className="timeline-marker">
+                <span className="day-number">3</span>
+              </div>
+              <div className="timeline-content">
+                <div className="day-header">
+                  <h3 className="day-title">9月22日（月）</h3>
+                  <span className="day-subtitle">開発Day3 - オンライン</span>
+                  <span className="day-badge final">最終調整</span>
+                </div>
+                <div className="schedule-items">
+                  <div className="schedule-item development">
+                    <span className="time">09:00〜18:00</span>
+                    <span className="event">最終調整（リモート）</span>
+                  </div>
+                  <div className="schedule-item freeze">
+                    <span className="time">18:00</span>
+                    <span className="event">🚫 コードフリーズ</span>
+                  </div>
+                  <div className="schedule-item review">
+                    <span className="time">18:00〜</span>
+                    <span className="event">審査開始</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="timeline-item day-4">
+              <div className="timeline-marker">
+                <span className="day-number">4</span>
+              </div>
+              <div className="timeline-content">
+                <div className="day-header">
+                  <h3 className="day-title">9月23日（火・祝）</h3>
+                  <span className="day-subtitle">最終発表会 - 対面</span>
+                  <span className="day-badge presentation">発表</span>
+                </div>
+                <div className="schedule-sessions">
+                  <div className="session morning">
+                    <h4 className="session-title">午前</h4>
+                    <div className="schedule-items">
+                      <div className="schedule-item reception">
+                        <span className="time">10:45</span>
+                        <span className="event">開場・受付</span>
+                      </div>
+                      <div className="schedule-item break">
+                        <span className="time">11:30〜13:00</span>
+                        <span className="event">昼食・準備時間</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="session afternoon">
+                    <h4 className="session-title">午後</h4>
+                    <div className="schedule-items">
+                      <div className="schedule-item opening">
+                        <span className="time">13:15〜14:30</span>
+                        <span className="event">開会式・スポンサーLT</span>
+                      </div>
+                      <div className="schedule-item presentation">
+                        <span className="time">14:30〜15:50</span>
+                        <span className="event">成果発表</span>
+                      </div>
+                      <div className="schedule-item award">
+                        <span className="time">15:50〜17:30</span>
+                        <span className="event">表彰式・懇親会</span>
+                      </div>
+                      <div className="schedule-item close">
+                        <span className="time">18:00</span>
+                        <span className="event">完全終了</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,16 +166,6 @@ const Schedule = () => {
             </div>
           </div>
           
-          <div className="schedule-notes">
-            <h2>// NOTES</h2>
-            <ul>
-              <li>開発は48時間連続で行われます（休憩・仮眠は自由）</li>
-              <li>オンライン参加者も同じスケジュールで開発します</li>
-              <li>食事は会場参加者に提供されます</li>
-              <li>最終発表会はハイブリッド形式で実施</li>
-              <li>スケジュールは変更になる可能性があります</li>
-            </ul>
-          </div>
         </div>
       </section>
     </div>
