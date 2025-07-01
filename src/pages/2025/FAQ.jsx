@@ -62,9 +62,11 @@ const FAQ = () => {
             <span className="glitch" data-text="FAQ">FAQ</span>
           </h1>
           
-          <div className="faq-intro terminal-box">
-            <p>{'> '} Frequently Asked Questions</p>
-            <p>{'> '} よくある質問と回答</p>
+          <div className="faq-intro">
+            <p className="faq-subtitle">
+              Tech.SummerCamp 2025に関するよくある質問をまとめました。
+              気になることがあればお気軽にご確認ください。
+            </p>
           </div>
           
           <div className="faq-container">
@@ -92,11 +94,33 @@ const FAQ = () => {
           </div>
           
           <div className="faq-contact">
-            <h2>// OTHER QUESTIONS</h2>
-            <p>その他ご質問がございましたら、以下のメールアドレスまでお気軽にお問い合わせください。</p>
-            <div className="contact-info terminal-box">
-              <p>{'> '} Email: info@tech-summercamp.jp</p>
-              <p>{'> '} Response Time: 2-3 business days</p>
+            <h2 className="section-title">
+              <span className="glitch" data-text="// OTHER QUESTIONS">// OTHER QUESTIONS</span>
+            </h2>
+            
+            <div className="contact-grid">
+              <div className="contact-card">
+                <div className="contact-header">
+                  <time className="contact-date">Always Available</time>
+                  <span className="contact-tag">SUPPORT</span>
+                </div>
+                <h3 className="contact-title">メールでのお問い合わせ</h3>
+                <p className="contact-excerpt">
+                  その他ご質問がございましたら、以下のメールアドレスまでお気軽にお問い合わせください。
+                </p>
+                <div className="contact-info">
+                  <div className="contact-detail">
+                    <span className="detail-label">Email</span>
+                    <a href="mailto:info@tech-summercamp.jp" className="detail-value">
+                      info@tech-summercamp.jp
+                    </a>
+                  </div>
+                  <div className="contact-detail">
+                    <span className="detail-label">回答時間</span>
+                    <span className="detail-value">2-3営業日</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -721,13 +721,106 @@
   color: var(--color-black);
 }
 
+@media (max-width: 1024px) {
+  .hero-content {
+    gap: 3rem;
+  }
+  
+  .about-content {
+    max-width: 90%;
+  }
+  
+  .target-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: 60vh;
+    padding: 2rem 0 3rem;
+  }
+  
+  .hero-content {
+    gap: 2.5rem;
   }
   
   .main-tagline {
-    font-size: clamp(1.2rem, 5vw, 2rem);
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    line-height: 1.2;
+  }
+  
+  .hero-tagline {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content {
+    max-width: 95%;
+    margin: 0 auto 2rem;
+  }
+  
+  .about-section {
+    margin-bottom: 3rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-section h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .target-grid,
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .target-item,
+  .detail-item {
+    text-align: center;
+  }
+  
+  .target-item:hover,
+  .detail-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .prizes {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .prize-item {
+    padding: 2rem;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .winners {
+    gap: 1.5rem;
+  }
+  
+  .winner-item {
+    padding: 1.5rem;
+    text-align: center;
   }
   
   .info-grid {
@@ -746,11 +839,19 @@
   .hero-actions {
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 2rem;
   }
   
   .btn {
     width: 100%;
+    max-width: 280px;
     justify-content: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero-code {
+    margin: 2rem 0;
   }
   
   .hero-code .logo-component {
@@ -763,48 +864,117 @@
   }
   
   .hero-code .terminal-body {
-    padding: 0.8rem;
-    min-height: 120px;
+    padding: 1rem;
+    min-height: 140px;
   }
   
   .hero-code .code-block {
-    font-size: 0.75rem;
-  }
-  
-  .about-section {
-    margin-bottom: 3rem;
-  }
-  
-  .target-grid,
-  .details-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .prizes {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .prize-item {
-    padding: 2rem;
-  }
-  
-  .features-grid {
-    gap: 2rem;
+    font-size: 0.8rem;
   }
   
   .news-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .news-card {
     padding: 1.5rem;
   }
+  
+  .news-title {
+    font-size: 1.1rem;
+  }
+  
+  .news-excerpt {
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 0 2rem;
+  }
+  
+  .hero-content {
+    gap: 2rem;
+  }
+  
+  .main-tagline {
+    font-size: clamp(1.3rem, 7vw, 1.8rem);
+  }
+  
+  .about-section {
+    margin-bottom: 2rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .about-section h3 {
+    font-size: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 0.95rem;
+  }
+  
+  .target-item,
+  .detail-item {
+    padding: 1rem;
+  }
+  
+  .target-item h3 {
+    font-size: 1rem;
+  }
+  
+  .target-item p {
+    font-size: 0.9rem;
+  }
+  
+  .detail-item h3 {
+    font-size: 0.8rem;
+  }
+  
+  .detail-item p {
+    font-size: 1rem;
+  }
+  
+  .prize-item {
+    padding: 1.5rem;
+    max-width: 250px;
+  }
+  
+  .prize-rank {
+    font-size: 1.2rem;
+  }
+  
+  .prize-amount {
+    font-size: 2rem;
+  }
+  
+  .winner-item {
+    padding: 1rem;
+  }
+  
+  .winner-item h3 {
+    font-size: 0.9rem;
+  }
+  
+  .winner-item h4 {
+    font-size: 1.2rem;
+  }
+  
+  .winner-item p {
+    font-size: 0.9rem;
+  }
+  
   .info-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -812,5 +982,51 @@
   
   .info-item {
     padding: 1rem 0.75rem;
+  }
+  
+  .hero-code .terminal-body {
+    padding: 0.8rem;
+    min-height: 120px;
+  }
+  
+  .hero-code .code-block {
+    font-size: 0.7rem;
+  }
+  
+  .btn {
+    max-width: 240px;
+    padding: 0.875rem;
+    font-size: 0.85rem;
+  }
+  
+  .news-card {
+    padding: 1rem;
+  }
+  
+  .news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .news-date {
+    font-size: 0.8rem;
+  }
+  
+  .news-tag {
+    font-size: 0.65rem;
+  }
+  
+  .news-title {
+    font-size: 1rem;
+  }
+  
+  .news-excerpt {
+    font-size: 0.85rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
   }
 }

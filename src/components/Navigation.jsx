@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = ({ year }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navItems = year === '2025' 
     ? [
         { path: '', label: 'HOME' },
@@ -14,9 +17,27 @@ const Navigation = ({ year }) => {
         { path: 'gallery', label: 'GALLERY' },
       ];
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="navigation">
-      <ul className="nav-list">
+      <button 
+        className="mobile-menu-toggle"
+        onClick={toggleMobileMenu}
+        aria-label="Toggle navigation menu"
+      >
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+      </button>
+
+      <ul className={`nav-list ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
         {navItems.map((item) => (
           <li key={item.path} className="nav-item">
             <NavLink 
@@ -25,6 +46,7 @@ const Navigation = ({ year }) => {
                 `nav-link ${isActive ? 'active' : ''}`
               }
               end={item.path === ''}
+              onClick={closeMobileMenu}
             >
               <span className="nav-prefix">{'>'}</span>
               {item.label}

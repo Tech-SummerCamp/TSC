@@ -15,14 +15,14 @@ const News = () => {
       date: '2025.01.15',
       title: '公式サイトオープン',
       content: 'Tech.SummerCamp 2025の公式サイトがオープンしました。今後、イベントに関する最新情報はこちらでお知らせします。',
-      category: 'info'
+      category: 'website'
     }
   ];
 
   const getCategoryClass = (category) => {
     const classes = {
       announcement: 'category-announcement',
-      info: 'category-info',
+      website: 'category-website',
       update: 'category-update',
       important: 'category-important'
     };
@@ -37,17 +37,17 @@ const News = () => {
             <span className="glitch" data-text="NEWS">NEWS</span>
           </h1>
           
-          <div className="news-container">
+          <div className="news-grid">
             {newsItems.map(item => (
-              <article key={item.id} className="news-article">
-                <header className="news-header">
+              <article key={item.id} className="news-card">
+                <div className="news-header">
                   <time className="news-date">{item.date}</time>
-                  <span className={`news-category ${getCategoryClass(item.category)}`}>
-                    [{item.category}]
+                  <span className={`news-tag ${getCategoryClass(item.category)}`}>
+                    {item.category.toUpperCase()}
                   </span>
-                </header>
+                </div>
                 <h2 className="news-title">{item.title}</h2>
-                <p className="news-content">{item.content}</p>
+                <p className="news-excerpt">{item.content}</p>
               </article>
             ))}
           </div>
