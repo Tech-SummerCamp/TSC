@@ -1,8 +1,30 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../components/Logo';
 import './Home.css';
 
 const Home = () => {
+  const [typedText, setTypedText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+  const fullText = '学生エンジニアが得られる体験の最高峰';
+
+  useEffect(() => {
+    let currentIndex = 0;
+    
+    const typeWriter = () => {
+      if (currentIndex < fullText.length) {
+        setTypedText(fullText.slice(0, currentIndex + 1));
+        currentIndex++;
+        setTimeout(typeWriter, 120 + Math.random() * 80); // Variable speed for realism
+      } else {
+        // Typing complete, hide cursor after a delay
+        setTimeout(() => setShowCursor(false), 2000);
+      }
+    };
+
+    const timer = setTimeout(typeWriter, 1000); // Initial delay
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="home">
@@ -10,11 +32,12 @@ const Home = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-tagline">
-              <h2 className="main-tagline">
-                <span className="glitch" data-text="学生エンジニアが得られる体験の最高峰">
-                  学生エンジニアが得られる体験の最高峰
+              <h1 className="main-tagline typewriter">
+                <span className="typed-text">
+                  {typedText}
                 </span>
-              </h2>
+                {showCursor && <span className="typewriter-cursor">|</span>}
+              </h1>
             </div>
             
             
