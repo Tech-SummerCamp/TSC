@@ -1,7 +1,6 @@
 import './Schedule.css';
 
 const Schedule = () => {
-  const scheduleData = [];
 
   return (
     <div className="schedule">

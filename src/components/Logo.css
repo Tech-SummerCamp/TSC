@@ -9,8 +9,8 @@
   background-color: var(--color-gray-dark);
   border: 1px solid var(--color-gray-light);
   border-radius: 8px;
-  width: 800px;
-  max-width: 90vw;
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -148,6 +148,7 @@
   51%, 100% { opacity: 0; }
 }
 
+
 .logo-component.large:hover .logo-tech,
 .logo-component.large:hover .logo-summer,
 .logo-component.large:hover .logo-camp {
@@ -177,4 +178,5 @@
   .logo-header-text {
     flex-wrap: wrap;
   }
+  
 }

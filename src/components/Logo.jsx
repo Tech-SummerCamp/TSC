@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Logo.css';
 
-const Logo = ({ size = 'large', showYear = true }) => {
+const Logo = ({ size = 'large' }) => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
 
