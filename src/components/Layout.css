@@ -10,9 +10,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.98);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-gray-light);
   z-index: 9999;
   padding: 1rem 0;
 }
@@ -25,11 +24,14 @@
 
 .header-logo-link {
   display: block;
-  transition: all var(--transition-fast);
+  transition: opacity var(--transition-fast);
+  position: relative;
+  z-index: 0;
+  flex-shrink: 0;
 }
 
 .header-logo-link:hover {
-  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .main {
@@ -41,16 +43,19 @@
 @media (max-width: 768px) {
   .header {
     padding: 0.75rem 0;
+    min-height: 120px;
   }
   
   .header-content {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
     align-items: center;
+    min-height: 80px;
+    justify-content: center;
   }
   
   .main {
-    margin-top: 150px;
+    margin-top: 140px;
   }
 }
 

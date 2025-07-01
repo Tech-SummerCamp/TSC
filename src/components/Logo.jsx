@@ -20,7 +20,9 @@ const Logo = ({ size = 'large', showYear = true }) => {
       '  status: "loading...",',
       '  participants: 80,',
       '  prize: "¥400,000"',
-      '};'
+      '};',
+      '',
+      '> Status: Ready for deployment'
     ];
 
     let lineIndex = 0;
@@ -87,13 +89,6 @@ const Logo = ({ size = 'large', showYear = true }) => {
           </pre>
         </div>
       </div>
-      {showYear && !showCursor && (
-        <div className="logo-status">
-          <span className="status-text">
-            {'> '} Status: Ready for deployment
-          </span>
-        </div>
-      )}
     </div>
   );
 };

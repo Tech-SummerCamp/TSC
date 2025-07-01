@@ -1,5 +1,8 @@
 .navigation {
   font-family: var(--font-mono);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
 }
 
 .nav-list {
@@ -12,11 +15,13 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   transition: all var(--transition-fast);
   position: relative;
+  color: var(--color-white);
+  font-weight: 500;
 }
 
 .nav-prefix {
@@ -36,21 +41,6 @@
   color: var(--color-terminal-green);
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--color-terminal-green);
-  transition: width var(--transition-fast);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 100%;
-}
 
 @media (max-width: 768px) {
   .nav-list {
@@ -62,7 +52,7 @@
   
   .nav-link {
     font-size: 0.85rem;
-    padding: 0.25rem 0;
+    padding: 0.25rem 0.5rem;
   }
 }
 

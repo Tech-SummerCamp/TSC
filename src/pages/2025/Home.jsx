@@ -9,20 +9,39 @@ const Home = () => {
       <section className="hero section">
         <div className="container">
           <div className="hero-content">
-            <div className="hero-logo">
-              <Logo size="large" showYear={true} />
+            <div className="hero-tagline">
+              <h2 className="main-tagline">
+                <span className="glitch" data-text="学生エンジニアが得られる体験の最高峰">
+                  学生エンジニアが得られる体験の最高峰
+                </span>
+              </h2>
             </div>
             
-            <p className="hero-subtitle glitch" data-text="学生エンジニアが得られる体験の最高峰">
-              学生エンジニアが得られる体験の最高峰
-            </p>
-            
             <div className="hero-info">
-              <div className="terminal-box">
-                <p>{'> '} Date: 2025.09.20(Sat) - 23(Tue)</p>
-                <p>{'> '} Location: Osaka + Online</p>
-                <p>{'> '} Participants: 60-80 students</p>
-                <p>{'> '} Prize: ¥300,000 (1st), ¥100,000 (2nd)</p>
+              <div className="info-grid">
+                <div className="info-item date">
+                  <div className="info-label">DATE</div>
+                  <div className="info-value">2025.09.20(Sat) - 23(Tue)</div>
+                  <div className="info-detail">4日間の集中開発期間</div>
+                </div>
+                
+                <div className="info-item location">
+                  <div className="info-label">LOCATION</div>
+                  <div className="info-value">Osaka + Online</div>
+                  <div className="info-detail">ハイブリッド開催</div>
+                </div>
+                
+                <div className="info-item participants">
+                  <div className="info-label">PARTICIPANTS</div>
+                  <div className="info-value">60-80 Students</div>
+                  <div className="info-detail">選ばれた中・上級者のみ</div>
+                </div>
+                
+                <div className="info-item prize">
+                  <div className="info-label">PRIZE</div>
+                  <div className="info-value">¥400,000 Total</div>
+                  <div className="info-detail">1st: ¥300,000 / 2nd: ¥100,000</div>
+                </div>
               </div>
             </div>
             
@@ -37,6 +56,10 @@ const Home = () => {
                 LEARN MORE
                 <span className="btn-suffix">]</span>
               </Link>
+            </div>
+            
+            <div className="hero-code">
+              <Logo size="large" showYear={false} />
             </div>
           </div>
         </div>

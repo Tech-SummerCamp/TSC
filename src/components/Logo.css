@@ -9,7 +9,7 @@
   background-color: var(--color-gray-dark);
   border: 1px solid var(--color-gray-light);
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -55,8 +55,8 @@
 }
 
 .terminal-body {
-  padding: 1.5rem;
-  min-height: 200px;
+  padding: 2rem;
+  min-height: 300px;
 }
 
 .terminal-prompt {
@@ -80,7 +80,7 @@
   line-height: 1.6;
   margin: 0;
   white-space: pre-wrap;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .terminal-cursor {
@@ -89,16 +89,6 @@
   animation: blink 1s infinite;
 }
 
-.logo-status {
-  margin-top: 1rem;
-  opacity: 0.8;
-}
-
-.status-text {
-  font-size: 0.9rem;
-  color: var(--color-terminal-green);
-  letter-spacing: 0.05em;
-}
 
 /* Header Logo */
 .logo-header-text {
@@ -137,7 +127,7 @@
 
 /* Size variants */
 .logo-component.large {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 .logo-component.header {
@@ -155,9 +145,9 @@
   51%, 100% { opacity: 0; }
 }
 
-.logo-component:hover .logo-tech,
-.logo-component:hover .logo-summer,
-.logo-component:hover .logo-camp {
+.logo-component.large:hover .logo-tech,
+.logo-component.large:hover .logo-summer,
+.logo-component.large:hover .logo-camp {
   animation: glow 0.5s ease-in-out;
 }
 
