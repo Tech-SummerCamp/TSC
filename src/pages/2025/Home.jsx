@@ -17,32 +17,115 @@ const Home = () => {
               </h2>
             </div>
             
-            <div className="hero-info">
-              <div className="info-grid">
-                <div className="info-item date">
-                  <div className="info-label">DATE</div>
-                  <div className="info-value">2025.09.20(Sat) - 23(Tue)</div>
-                  <div className="info-detail">4日間の集中開発期間</div>
+            
+            <div className="about-content">
+              <section className="about-section">
+                <h3>Tech.SummerCampは、全国から選ばれた中・上級者の学生エンジニアが集まる、
+                日本最高峰の学生ハッカソンです。</h3>
+                <p>
+                  48時間という限られた時間の中で、技術力の限界に挑戦し、
+                  イノベーティブなプロダクトを生み出す。
+                  それがTech.SummerCampです。
+                </p>
+              </section>
+              
+              <section className="about-section">
+                <h2>// TARGET</h2>
+                <div className="target-grid">
+                  <div className="target-item">
+                    <h3>エンジニア歴2年以上</h3>
+                    <p>実務レベルの開発経験を持つ学生</p>
+                  </div>
+                  <div className="target-item">
+                    <h3>ハッカソン経験者</h3>
+                    <p>複数回参加または受賞経験がある学生</p>
+                  </div>
+                  <div className="target-item">
+                    <h3>インターン経験者</h3>
+                    <p>企業での実務経験を持つ学生</p>
+                  </div>
+                  <div className="target-item">
+                    <h3>プロダクトリリース経験</h3>
+                    <p>実際にユーザーが使うサービスを作った学生</p>
+                  </div>
+                  <div className="target-item">
+                    <h3>技術カンファレンス登壇</h3>
+                    <p>勉強会やカンファレンスで発表経験がある学生</p>
+                  </div>
+                  <div className="target-item">
+                    <h3>チームリーダー経験</h3>
+                    <p>技術力でチームを牽引できる学生</p>
+                  </div>
                 </div>
-                
-                <div className="info-item location">
-                  <div className="info-label">LOCATION</div>
-                  <div className="info-value">Osaka + Online</div>
-                  <div className="info-detail">ハイブリッド開催</div>
+              </section>
+              
+              <section className="about-section">
+                <h2>// EVENT DETAILS</h2>
+                <div className="details-grid">
+                  <div className="detail-item">
+                    <h3>開催日程</h3>
+                    <p>2025年9月20日(土) - 23日(火・祝)</p>
+                  </div>
+                  <div className="detail-item">
+                    <h3>開催形式</h3>
+                    <p>大阪会場 + オンライン（ハイブリッド）</p>
+                  </div>
+                  <div className="detail-item">
+                    <h3>参加人数</h3>
+                    <p>60-80名（選考あり）</p>
+                  </div>
+                  <div className="detail-item">
+                    <h3>チーム編成</h3>
+                    <p>4-5名 / チーム</p>
+                  </div>
+                  <div className="detail-item">
+                    <h3>開発時間</h3>
+                    <p>48時間（2日間×24時間）</p>
+                  </div>
+                  <div className="detail-item">
+                    <h3>賞金総額</h3>
+                    <p>40万円</p>
+                  </div>
                 </div>
-                
-                <div className="info-item participants">
-                  <div className="info-label">PARTICIPANTS</div>
-                  <div className="info-value">60-80 Students</div>
-                  <div className="info-detail">選ばれた中・上級者のみ</div>
+              </section>
+              
+              <section className="about-section">
+                <h2>// PRIZES</h2>
+                <div className="prizes">
+                  <div className="prize-item">
+                    <h3 className="prize-rank">1st PLACE</h3>
+                    <p className="prize-amount">¥300,000</p>
+                  </div>
+                  <div className="prize-item">
+                    <h3 className="prize-rank">2nd PLACE</h3>
+                    <p className="prize-amount">¥100,000</p>
+                  </div>
                 </div>
-                
-                <div className="info-item prize">
-                  <div className="info-label">PRIZE</div>
-                  <div className="info-value">¥400,000 Total</div>
-                  <div className="info-detail">1st: ¥300,000 / 2nd: ¥100,000</div>
+              </section>
+              
+              <section className="about-section">
+                <h2>// PAST WINNERS</h2>
+                <div className="winners">
+                  <div className="winner-item">
+                    <h3>2024年度 最優秀賞</h3>
+                    <h4>「ALL IN」</h4>
+                    <p>全てのチャットアプリの通知を統合するサービス。
+                    Slack、Discord、Teams等の通知を一元管理し、
+                    AIが重要度を判定して最適なタイミングで通知。</p>
+                  </div>
+                  <div className="winner-item">
+                    <h3>2024年度 優秀賞</h3>
+                    <h4>「CallJourney」</h4>
+                    <p>飲食店の電話予約を完全自動化するサービス。
+                    音声認識と自然言語処理により、人間と遜色ない
+                    自然な会話で予約対応を実現。</p>
+                  </div>
                 </div>
-              </div>
+              </section>
+            </div>
+            
+            <div className="hero-code">
+              <Logo size="large" showYear={false} />
             </div>
             
             <div className="hero-actions">
@@ -51,45 +134,6 @@ const Home = () => {
                 ENTRY
                 <span className="btn-suffix">]</span>
               </Link>
-              <Link to="/2025/about" className="btn btn-secondary">
-                <span className="btn-prefix">[</span>
-                LEARN MORE
-                <span className="btn-suffix">]</span>
-              </Link>
-            </div>
-            
-            <div className="hero-code">
-              <Logo size="large" showYear={false} />
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section className="features section">
-        <div className="container">
-          <h2 className="section-title">
-            <span className="glitch" data-text="// FEATURES">// FEATURES</span>
-          </h2>
-          
-          <div className="features-grid">
-            <div className="feature-card">
-              <h3>48 Hours Development</h3>
-              <p>2日間×24時間の集中開発期間。限界まで技術に没頭する体験。</p>
-            </div>
-            
-            <div className="feature-card">
-              <h3>Top Engineers Only</h3>
-              <p>全国から集まる中・上級者のみ。ハイレベルな環境での切磋琢磨。</p>
-            </div>
-            
-            <div className="feature-card">
-              <h3>¥400,000 Total Prize</h3>
-              <p>最優秀賞30万円、優秀賞10万円。実力に見合った評価を。</p>
-            </div>
-            
-            <div className="feature-card">
-              <h3>Hybrid Event</h3>
-              <p>大阪会場＋オンライン参加。全国どこからでも参加可能。</p>
             </div>
           </div>
         </div>
