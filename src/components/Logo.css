@@ -1,0 +1,187 @@
+.logo-component {
+  font-family: var(--font-mono);
+  text-align: center;
+  position: relative;
+}
+
+/* Terminal Window for Large Logo */
+.terminal-window {
+  background-color: var(--color-gray-dark);
+  border: 1px solid var(--color-gray-light);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px 7px 0 0;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.btn-close {
+  background-color: #ff5f57;
+}
+
+.btn-minimize {
+  background-color: #ffbd2e;
+}
+
+.btn-maximize {
+  background-color: #28ca42;
+}
+
+.terminal-title {
+  font-size: 0.9rem;
+  color: var(--color-white);
+  opacity: 0.8;
+}
+
+.terminal-body {
+  padding: 1.5rem;
+  min-height: 200px;
+}
+
+.terminal-prompt {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.prompt-symbol {
+  color: var(--color-terminal-green);
+  margin-right: 0.5rem;
+}
+
+.prompt-command {
+  color: var(--color-white);
+  opacity: 0.9;
+}
+
+.code-block {
+  font-family: var(--font-mono);
+  color: var(--color-white);
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 1rem;
+}
+
+.terminal-cursor {
+  background-color: var(--color-terminal-green);
+  color: var(--color-terminal-green);
+  animation: blink 1s infinite;
+}
+
+.logo-status {
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.status-text {
+  font-size: 0.9rem;
+  color: var(--color-terminal-green);
+  letter-spacing: 0.05em;
+}
+
+/* Header Logo */
+.logo-header-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+
+.logo-tech {
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.logo-dot {
+  color: var(--color-terminal-green);
+  font-weight: 900;
+  animation: pulse 2s infinite;
+}
+
+.logo-summer {
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.logo-camp {
+  color: var(--color-terminal-green);
+  font-weight: 700;
+}
+
+.logo-year-inline {
+  color: var(--color-white);
+  font-weight: 400;
+  margin-left: 0.5rem;
+  opacity: 0.8;
+}
+
+/* Size variants */
+.logo-component.large {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.logo-component.header {
+  font-size: 1.3rem;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.3; }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.logo-component:hover .logo-tech,
+.logo-component:hover .logo-summer,
+.logo-component:hover .logo-camp {
+  animation: glow 0.5s ease-in-out;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: none; }
+  50% { text-shadow: 0 0 10px currentColor; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terminal-window {
+    max-width: 100%;
+    margin: 0 1rem;
+  }
+  
+  .terminal-body {
+    padding: 1rem;
+  }
+  
+  .code-block {
+    font-size: 0.85rem;
+  }
+  
+  .logo-header-text {
+    flex-wrap: wrap;
+  }
+}
