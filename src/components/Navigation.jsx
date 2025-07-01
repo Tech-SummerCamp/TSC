@@ -5,9 +5,7 @@ const Navigation = ({ year }) => {
   const navItems = year === '2025' 
     ? [
         { path: '', label: 'HOME' },
-        { path: 'about', label: 'ABOUT' },
         { path: 'schedule', label: 'SCHEDULE' },
-        { path: 'entry', label: 'ENTRY' },
         { path: 'news', label: 'NEWS' },
         { path: 'faq', label: 'FAQ' },
       ]

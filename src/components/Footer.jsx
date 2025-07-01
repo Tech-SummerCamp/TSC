@@ -15,7 +15,6 @@ const Footer = () => {
             <h4 className="footer-title">Archive</h4>
             <ul className="footer-links">
               <li><Link to="/2025">2025</Link></li>
-              <li><Link to="/2024">2024</Link></li>
             </ul>
           </div>
           

@@ -145,25 +145,41 @@ const Home = () => {
             <span className="glitch" data-text="// LATEST NEWS">// LATEST NEWS</span>
           </h2>
           
-          <div className="news-list">
-            <article className="news-item">
-              <time className="news-date">2025.01.15</time>
+          <div className="news-grid">
+            <article className="news-card">
+              <div className="news-header">
+                <time className="news-date">2025.01.15</time>
+                <span className="news-tag">ANNOUNCEMENT</span>
+              </div>
               <h3 className="news-title">
                 <Link to="/2025/news">Tech.SummerCamp 2025 開催決定</Link>
               </h3>
+              <p className="news-excerpt">
+                2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。
+              </p>
             </article>
             
-            <article className="news-item">
-              <time className="news-date">2025.01.15</time>
+            <article className="news-card">
+              <div className="news-header">
+                <time className="news-date">2025.01.15</time>
+                <span className="news-tag">WEBSITE</span>
+              </div>
               <h3 className="news-title">
                 <Link to="/2025/news">公式サイトオープン</Link>
               </h3>
+              <p className="news-excerpt">
+                Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。
+              </p>
             </article>
           </div>
           
-          <Link to="/2025/news" className="more-link">
-            {'> '} View all news
-          </Link>
+          <div className="news-more">
+            <Link to="/2025/news" className="news-more-btn">
+              <span className="btn-prefix">[</span>
+              VIEW ALL NEWS
+              <span className="btn-suffix">]</span>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

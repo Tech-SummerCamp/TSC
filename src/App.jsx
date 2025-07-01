@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Layout from './components/Layout';
 import Home2025 from './pages/2025/Home';
 import Schedule from './pages/2025/Schedule';
-import Entry from './pages/2025/Entry';
 import News from './pages/2025/News';
 import FAQ from './pages/2025/FAQ';
 import Results2024 from './pages/2024/Results';
@@ -19,7 +18,6 @@ function App() {
           <Route index element={<Home2025 />} />
           <Route path="about" element={<Navigate to="/2025" replace />} />
           <Route path="schedule" element={<Schedule />} />
-          <Route path="entry" element={<Entry />} />
           <Route path="news" element={<News />} />
           <Route path="faq" element={<FAQ />} />
         </Route>

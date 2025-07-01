@@ -52,13 +52,6 @@ const News = () => {
             ))}
           </div>
           
-          <div className="news-archive">
-            <h2>// ARCHIVE</h2>
-            <p>過去のイベント情報は以下からご覧いただけます。</p>
-            <Link to="/2024" className="archive-link">
-              {'> '} Tech.SummerCamp 2024
-            </Link>
-          </div>
         </div>
       </section>
     </div>
