@@ -139,10 +139,12 @@ const Home = () => {
                 <h2>// PRIZES</h2>
                 <div className="prizes">
                   <div className="prize-item first-place">
+                    <img src="/kin.svg" alt="1st Place" className="prize-icon" />
                     <h3 className="prize-rank">1st PLACE</h3>
                     <p className="prize-amount">¥300,000</p>
                   </div>
                   <div className="prize-item second-place">
+                    <img src="/gin.svg" alt="2nd Place" className="prize-icon" />
                     <h3 className="prize-rank">2nd PLACE</h3>
                     <p className="prize-amount">¥100,000</p>
                   </div>
