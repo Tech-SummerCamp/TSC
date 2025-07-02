@@ -148,24 +148,6 @@ const Schedule = () => {
             </div>
           </div>
           
-          <div className="schedule-points">
-            <h2>⚡ ポイント</h2>
-            <div className="points-list">
-              <div className="point-item">
-                <span className="point-label">開発期間</span>
-                <span className="point-value">実質48時間＋オンライン調整</span>
-              </div>
-              <div className="point-item">
-                <span className="point-label">発表</span>
-                <span className="point-value">1チーム5分（質疑なし）</span>
-              </div>
-              <div className="point-item">
-                <span className="point-label">コードフリーズ</span>
-                <span className="point-value">9/22 18:00厳守</span>
-              </div>
-            </div>
-          </div>
-          
         </div>
       </section>
     </div>

@@ -7,7 +7,7 @@ const News = () => {
       id: 1,
       date: '2025.01.15',
       title: 'Tech.SummerCamp 2025 開催決定',
-      content: 'Tech.SummerCamp 2025の開催が正式に決定しました。今年も全国から選ばれた学生エンジニアが集まり、48時間の開発に挑戦します。',
+      content: 'Tech.SummerCamp 2025の開催が正式に決定しました。今年も全国から選ばれた学生エンジニアが集まります。',
       category: 'announcement'
     },
     {
