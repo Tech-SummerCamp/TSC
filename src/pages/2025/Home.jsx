@@ -114,19 +114,19 @@ const Home = () => {
                   </div>
                   <div className="detail-item">
                     <h3>開催形式</h3>
-                    <p>大阪会場 + オンライン（ハイブリッド）</p>
+                    <p>大阪会場</p>
                   </div>
                   <div className="detail-item">
                     <h3>参加人数</h3>
-                    <p>60-80名（選考あり）</p>
+                    <p>60-80名</p>
                   </div>
                   <div className="detail-item">
                     <h3>チーム編成</h3>
-                    <p>4-5名 / チーム</p>
+                    <p>最大10名 / チーム</p>
                   </div>
                   <div className="detail-item">
-                    <h3>開発時間</h3>
-                    <p>48時間（2日間×24時間）</p>
+                    <h3>コードフリーズ</h3>
+                    <p>9月22日(月) 18:00</p>
                   </div>
                   <div className="detail-item">
                     <h3>賞金総額</h3>
@@ -138,11 +138,11 @@ const Home = () => {
               <section className="about-section">
                 <h2>// PRIZES</h2>
                 <div className="prizes">
-                  <div className="prize-item">
+                  <div className="prize-item first-place">
                     <h3 className="prize-rank">1st PLACE</h3>
                     <p className="prize-amount">¥300,000</p>
                   </div>
-                  <div className="prize-item">
+                  <div className="prize-item second-place">
                     <h3 className="prize-rank">2nd PLACE</h3>
                     <p className="prize-amount">¥100,000</p>
                   </div>
