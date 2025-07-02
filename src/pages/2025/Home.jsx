@@ -27,27 +27,38 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home">
+    <div className="home" style={{ width: '100%', overflowX: 'hidden' }}>
       <section className="hero section">
         <div className="container">
           <div className="hero-content">
             <div className="hero-tagline">
               <h1 className="main-tagline typewriter">
-                {typedText}
-                {showCursor && <span className="typewriter-cursor">|</span>}
+                <span className="typewriter-text">{typedText || '\u00A0'}</span>
+                <span className="typewriter-cursor" style={{ visibility: showCursor ? 'visible' : 'hidden' }}>|</span>
               </h1>
             </div>
             
             
             <div className="about-content">
-              <section className="about-section">
-                <h3>Tech.SummerCampは、全国から選ばれた中・上級者の学生エンジニアが集まる、
-                日本最高峰の学生ハッカソンです。</h3>
-                <p>
-                  48時間という限られた時間の中で、技術力の限界に挑戦し、
-                  イノベーティブなプロダクトを生み出す。
+              <section className="about-section hero-description">
+                <p className="description-main">
+                  Tech.SummerCampは、全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
+                  日本最高峰の学生ハッカソンです。
+                </p>
+                <p className="description-sub">
+                  48時間という限られた時間の中で、技術力の限界に挑戦し、<br />
+                  イノベーティブなプロダクトを生み出す。<br />
                   それがTech.SummerCampです。
                 </p>
+                <div className="hero-actions prominent-entry">
+                  <Link to="/2025/entry" className="mega-entry-btn">
+                    <span className="btn-glow"></span>
+                    <span className="btn-content">
+                      <span className="btn-text">ENTRY NOW</span>
+                      <span className="btn-arrow">→</span>
+                    </span>
+                  </Link>
+                </div>
               </section>
               
               <section className="about-section">
@@ -149,13 +160,6 @@ const Home = () => {
               <Logo size="large" showYear={false} />
             </div>
             
-            <div className="hero-actions">
-              <Link to="/2025/entry" className="btn btn-primary">
-                <span className="btn-prefix">[</span>
-                ENTRY
-                <span className="btn-suffix">]</span>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
