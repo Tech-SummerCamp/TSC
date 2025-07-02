@@ -7,6 +7,15 @@ const Home = () => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const fullText = '学生エンジニアが得られる体験の最高峰';
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -33,7 +42,9 @@ const Home = () => {
           <div className="hero-content">
             <div className="hero-tagline">
               <h1 className="main-tagline typewriter">
-                <span className="typewriter-text">{typedText || '\u00A0'}</span>
+                <span className="typewriter-text">
+                  {typedText || '\u00A0'}
+                </span>
                 <span className="typewriter-cursor" style={{ visibility: showCursor ? 'visible' : 'hidden' }}>|</span>
               </h1>
             </div>
