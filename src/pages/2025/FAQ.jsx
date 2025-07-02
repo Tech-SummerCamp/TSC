@@ -20,22 +20,22 @@ const FAQ = () => {
     {
       id: 2,
       question: 'オンライン参加は可能ですか？',
-      answer: 'はい、可能です。Tech.SummerCamp 2025はハイブリッド開催のため、全国どこからでもオンラインで参加いただけます。オンライン参加者も会場参加者と同じ条件で開発・発表を行います。'
+      answer: '原則オフライン参加のみです。'
     },
     {
       id: 3,
       question: '参加費用はかかりますか？',
-      answer: '参加費は無料です。会場参加者には食事も提供されます。ただし、会場までの交通費・宿泊費は自己負担となります。'
+      answer: '参加費は無料です。ただし、会場までの交通費・宿泊費は自己負担となります。'
     },
     {
       id: 4,
       question: 'チーム編成はどのように行われますか？',
-      answer: 'チーム編成は事前のオンラインイベントで行います。参加者の技術スタック、興味のある分野、作りたいものなどを考慮して、4-5名のチームを編成します。'
+      answer: '個人で申し込みされた方は運営でチーム編成をランダムで行います。また、チームで申し込まれた方は最大10名まで参加できます。'
     },
     {
       id: 5,
       question: '開発環境の制約はありますか？',
-      answer: '特定の技術スタックの制約はありません。Web、モバイル、AI、IoT、ゲームなど、あらゆる分野での開発が可能です。ただし、48時間で動作するプロダクトを作成していただく必要があります。'
+      answer: '特定の技術スタックの制約はありません。Web、モバイル、AI、IoT、ゲームなど、あらゆる分野での開発が可能です。'
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ const FAQ = () => {
     {
       id: 7,
       question: '宿泊場所は提供されますか？',
-      answer: '会場では48時間開発が可能ですが、宿泊施設の提供はありません。近隣のホテル情報については参加者決定後にご案内いたします。'
+      answer: '宿泊施設の提供はありません。'
     },
     {
       id: 8,
@@ -91,37 +91,6 @@ const FAQ = () => {
                 </div>
               </div>
             ))}
-          </div>
-          
-          <div className="faq-contact">
-            <h2 className="section-title">
-              <span className="glitch" data-text="// OTHER QUESTIONS">// OTHER QUESTIONS</span>
-            </h2>
-            
-            <div className="contact-grid">
-              <div className="contact-card">
-                <div className="contact-header">
-                  <time className="contact-date">Always Available</time>
-                  <span className="contact-tag">SUPPORT</span>
-                </div>
-                <h3 className="contact-title">メールでのお問い合わせ</h3>
-                <p className="contact-excerpt">
-                  その他ご質問がございましたら、以下のメールアドレスまでお気軽にお問い合わせください。
-                </p>
-                <div className="contact-info">
-                  <div className="contact-detail">
-                    <span className="detail-label">Email</span>
-                    <a href="mailto:info@tech-summercamp.jp" className="detail-value">
-                      info@tech-summercamp.jp
-                    </a>
-                  </div>
-                  <div className="contact-detail">
-                    <span className="detail-label">回答時間</span>
-                    <span className="detail-value">2-3営業日</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
