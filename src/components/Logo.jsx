@@ -56,13 +56,11 @@ const Logo = ({ size = 'large' }) => {
   if (size === 'header') {
     return (
       <div className={`logo-component ${size}`}>
-        <div className="logo-header-text">
-          <span className="logo-tech">Tech</span>
-          <span className="logo-dot">.</span>
-          <span className="logo-summer">Summer</span>
-          <span className="logo-camp">Camp</span>
-          <span className="logo-year-inline">2025</span>
-        </div>
+        <img 
+          src="/tsc-horizontal.svg" 
+          alt="Tech Summer Camp" 
+          className="tsc-logo"
+        />
       </div>
     );
   }

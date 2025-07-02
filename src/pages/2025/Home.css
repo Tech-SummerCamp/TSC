@@ -835,10 +835,16 @@
     padding: 0 0.5rem;
     box-sizing: border-box;
     min-height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+  
+  .typewriter {
+    display: block;
+    text-align: center;
+  }
+  
+  .typewriter-cursor {
+    margin-left: 1px;
+    vertical-align: baseline;
   }
   
   .typed-text {
@@ -1401,5 +1407,6 @@
   .typewriter-text {
     word-break: break-word;
     overflow-wrap: anywhere;
+    display: inline;
   }
 }
