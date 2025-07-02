@@ -211,9 +211,7 @@ const Home = () => {
           
           <div className="news-more">
             <Link to="/2025/news" className="news-more-btn">
-              <span className="btn-prefix">[</span>
               VIEW ALL NEWS
-              <span className="btn-suffix">]</span>
             </Link>
           </div>
         </div>
