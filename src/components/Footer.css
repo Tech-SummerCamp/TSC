@@ -56,9 +56,24 @@
   font-size: 0.9rem;
   opacity: 0.8;
   transition: all var(--transition-fast);
+  text-decoration: underline;
 }
 
 .footer-links a:hover {
+  opacity: 1;
+  padding-left: 10px;
+}
+
+.footer-link-disabled {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  color: var(--color-white);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all var(--transition-fast);
+}
+
+.footer-link-disabled:hover {
   opacity: 1;
   padding-left: 10px;
 }

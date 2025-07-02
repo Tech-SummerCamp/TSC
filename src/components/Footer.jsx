@@ -26,8 +26,12 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4 className="footer-title">Contact</h4>
-            <p className="footer-contact">info@tech-summercamp.jp</p>
+            <h4 className="footer-title">Related Links</h4>
+            <ul className="footer-links">
+              <li><a href="https://x.com/tech_summercamp" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="mailto:tech-summercamp@nxtend.or.jp">Email</a></li>
+              <li><span className="footer-link-disabled">プライバシーポリシー</span></li>
+            </ul>
           </div>
         </div>
         
