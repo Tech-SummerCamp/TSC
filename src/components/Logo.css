@@ -168,12 +168,12 @@
   transition: all var(--transition-fast);
   filter: brightness(1);
   margin: 0.25rem 0.5rem;
-  transform: translateY(-4.5rem);
+  transform: translateY(-6rem);
 }
 
 .tsc-logo:hover {
   filter: brightness(1.2);
-  transform: translateY(-4.5rem) scale(1.05);
+  transform: translateY(-6rem) scale(1.05);
 }
 
 /* Animations */

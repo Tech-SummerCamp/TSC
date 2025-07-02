@@ -7,8 +7,15 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h4 className="footer-title">Tech.SummerCamp</h4>
-            <p className="footer-tagline">学生エンジニアが得られる体験の最高峰</p>
+            <div className="footer-logo">
+              <Link to="/2025">
+                <img 
+                  src="/tsc-horizontal.svg" 
+                  alt="Tech Summer Camp - 学生エンジニアが得られる体験の最高峰" 
+                  className="footer-tsc-logo"
+                />
+              </Link>
+            </div>
           </div>
           
           <div className="footer-section">

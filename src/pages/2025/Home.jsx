@@ -40,6 +40,9 @@ const Home = () => {
       <section className="hero section">
         <div className="container">
           <div className="hero-content">
+            <div className="hero-logo">
+              <img src="/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="main-logo" />
+            </div>
             <div className="hero-tagline">
               <h1 className="main-tagline typewriter">
                 <span className="typewriter-text">

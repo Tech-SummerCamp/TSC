@@ -13,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.98);
   backdrop-filter: blur(10px);
   z-index: 9999;
-  padding: clamp(0.75rem, 2vw, 1rem) 0 0.25rem 0;
+  padding: clamp(0.75rem, 2vw, 1rem) 0 0 0;
   height: auto;
   overflow: visible;
 }
@@ -40,13 +40,13 @@
 
 .main {
   flex: 1;
-  margin-top: clamp(70px, 15vw, 120px);
+  margin-top: clamp(50px, 10vw, 80px);
   position: relative;
 }
 
 @media (max-width: 1024px) {
   .main {
-    margin-top: clamp(80px, 12vw, 100px);
+    margin-top: clamp(60px, 10vw, 80px);
   }
 }
 
@@ -62,7 +62,7 @@
   }
   
   .main {
-    margin-top: clamp(70px, 12vw, 85px);
+    margin-top: clamp(50px, 10vw, 70px);
   }
 }
 
@@ -76,6 +76,6 @@
   }
   
   .main {
-    margin-top: 65px;
+    margin-top: 50px;
   }
 }

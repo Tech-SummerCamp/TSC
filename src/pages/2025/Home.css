@@ -22,6 +22,22 @@
   z-index: 2;
 }
 
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.main-logo {
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
 .hero-tagline {
   margin-bottom: 3rem;
   text-align: center;
@@ -661,6 +677,7 @@
 
 .news-preview {
   background-color: var(--color-gray-dark);
+  padding-bottom: 0;
 }
 
 .news-grid {
@@ -858,6 +875,16 @@
     padding: 0 0.25rem;
   }
   
+  .hero-logo {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding: 1.5rem 0;
+  }
+  
+  .main-logo {
+    max-width: 400px;
+  }
+
   .hero-tagline {
     margin-bottom: 1rem;
     padding: 0;
@@ -1173,6 +1200,16 @@
     display: block;
   }
   
+  .hero-logo {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .main-logo {
+    max-width: 320px;
+  }
+
   .hero-tagline {
     margin-bottom: 2.5rem;
     padding: 0 0.5rem;
