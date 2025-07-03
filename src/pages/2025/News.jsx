@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import NewsCard from '../../components/common/NewsCard';
 import './News.css';
 
 const News = () => {
@@ -19,15 +19,6 @@ const News = () => {
     }
   ];
 
-  const getCategoryClass = (category) => {
-    const classes = {
-      announcement: 'category-announcement',
-      website: 'category-website',
-      update: 'category-update',
-      important: 'category-important'
-    };
-    return classes[category] || '';
-  };
 
   return (
     <div className="news">
@@ -39,16 +30,14 @@ const News = () => {
           
           <div className="news-grid">
             {newsItems.map(item => (
-              <article key={item.id} className="news-card">
-                <div className="news-header">
-                  <time className="news-date">{item.date}</time>
-                  <span className={`news-tag ${getCategoryClass(item.category)}`}>
-                    {item.category.toUpperCase()}
-                  </span>
-                </div>
-                <h2 className="news-title">{item.title}</h2>
-                <p className="news-excerpt">{item.content}</p>
-              </article>
+              <NewsCard
+                key={item.id}
+                date={item.date}
+                tag={item.category.toUpperCase()}
+                title={item.title}
+                excerpt={item.content}
+                tagType={item.category}
+              />
             ))}
           </div>
           

@@ -1,21 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../components/Logo';
+import Logo from '../../components/common/Logo';
+import NewsCard from '../../components/common/NewsCard';
+import SectionTitle from '../../components/common/SectionTitle';
+import GridItem from '../../components/home/GridItem';
+import PrizeItem from '../../components/home/PrizeItem';
+import WinnerItem from '../../components/home/WinnerItem';
 import './Home.css';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const fullText = '学生エンジニアが得られる体験の最高峰';
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -78,96 +75,108 @@ const Home = () => {
               <section className="about-section">
                 <h2>// TARGET</h2>
                 <div className="target-grid">
-                  <div className="target-item">
-                    <h3>エンジニア歴2年以上</h3>
-                    <p>実務レベルの開発経験を持つ学生</p>
-                  </div>
-                  <div className="target-item">
-                    <h3>ハッカソン経験者</h3>
-                    <p>複数回参加または受賞経験がある学生</p>
-                  </div>
-                  <div className="target-item">
-                    <h3>インターン経験者</h3>
-                    <p>企業での実務経験を持つ学生</p>
-                  </div>
-                  <div className="target-item">
-                    <h3>プロダクトリリース経験</h3>
-                    <p>実際にユーザーが使うサービスを作った学生</p>
-                  </div>
-                  <div className="target-item">
-                    <h3>技術カンファレンス登壇</h3>
-                    <p>勉強会やカンファレンスで発表経験がある学生</p>
-                  </div>
-                  <div className="target-item">
-                    <h3>チームリーダー経験</h3>
-                    <p>技術力でチームを牽引できる学生</p>
-                  </div>
+                  <GridItem
+                    title="エンジニア歴2年以上"
+                    description="実務レベルの開発経験を持つ学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="ハッカソン経験者"
+                    description="複数回参加または受賞経験がある学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="インターン経験者"
+                    description="企業での実務経験を持つ学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="プロダクトリリース経験"
+                    description="実際にユーザーが使うサービスを作った学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="技術カンファレンス登壇"
+                    description="勉強会やカンファレンスで発表経験がある学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="チームリーダー経験"
+                    description="技術力でチームを牽引できる学生"
+                    type="target"
+                  />
                 </div>
               </section>
               
               <section className="about-section">
                 <h2>// EVENT DETAILS</h2>
                 <div className="details-grid">
-                  <div className="detail-item">
-                    <h3>開催日程</h3>
-                    <p>2025年9月20日(土) - 23日(火・祝)</p>
-                  </div>
-                  <div className="detail-item">
-                    <h3>開催形式</h3>
-                    <p>大阪会場</p>
-                  </div>
-                  <div className="detail-item">
-                    <h3>参加人数</h3>
-                    <p>60-80名</p>
-                  </div>
-                  <div className="detail-item">
-                    <h3>チーム編成</h3>
-                    <p>最大10名 / チーム</p>
-                  </div>
-                  <div className="detail-item">
-                    <h3>コードフリーズ</h3>
-                    <p>9月22日(月) 18:00</p>
-                  </div>
-                  <div className="detail-item">
-                    <h3>賞金総額</h3>
-                    <p>40万円</p>
-                  </div>
+                  <GridItem
+                    title="開催日程"
+                    description="2025年9月20日(土) - 23日(火・祝)"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="開催形式"
+                    description="大阪会場"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="参加人数"
+                    description="60-80名"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="チーム編成"
+                    description="最大10名 / チーム"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="コードフリーズ"
+                    description="9月22日(月) 18:00"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="賞金総額"
+                    description="40万円"
+                    type="detail"
+                  />
                 </div>
               </section>
               
               <section className="about-section">
                 <h2>// PRIZES</h2>
                 <div className="prizes">
-                  <div className="prize-item first-place">
-                    <img src="/kin.svg" alt="1st Place" className="prize-icon" />
-                    <h3 className="prize-rank">1st PLACE</h3>
-                    <p className="prize-amount">¥300,000</p>
-                  </div>
-                  <div className="prize-item second-place">
-                    <img src="/gin.svg" alt="2nd Place" className="prize-icon" />
-                    <h3 className="prize-rank">2nd PLACE</h3>
-                    <p className="prize-amount">¥100,000</p>
-                  </div>
+                  <PrizeItem
+                    rank="1st"
+                    amount={300000}
+                    iconSrc="/kin.svg"
+                    type="first"
+                  />
+                  <PrizeItem
+                    rank="2nd"
+                    amount={100000}
+                    iconSrc="/gin.svg"
+                    type="second"
+                  />
                 </div>
               </section>
               
               <section className="about-section">
                 <h2>// PAST WINNERS</h2>
                 <div className="winners">
-                  <div className="winner-item">
-                    <h3>2024年度 最優秀賞</h3>
-                    <h4>「ALL IN」</h4>
-                    <p>全てのチャットアプリの通知を統合するサービス。
-                    Slack、Discord、Teams等の通知を一元管理し、
-                    AIが重要度を判定して最適なタイミングで通知。</p>
-                  </div>
-                  <div className="winner-item">
-                    <h3>2024年度 優秀賞</h3>
-                    <h4>「CallJourney」</h4>
-                    <p>飲食店の電話予約を完全自動化するサービス。
-                    音声認識と自然言語処理により、人間と遜色ない
-                    自然な会話で予約対応を実現。</p>
-                  </div>
+                  <WinnerItem
+                    year="2024"
+                    award="最優秀賞"
+                    title="ALL IN"
+                    description="全てのチャットアプリの通知を統合するサービス。Slack、Discord、Teams等の通知を一元管理し、AIが重要度を判定して最適なタイミングで通知。"
+                  />
+                  <WinnerItem
+                    year="2024"
+                    award="優秀賞"
+                    title="CallJourney"
+                    description="飲食店の電話予約を完全自動化するサービス。音声認識と自然言語処理により、人間と遜色ない自然な会話で予約対応を実現。"
+                  />
                 </div>
               </section>
             </div>
@@ -182,36 +191,24 @@ const Home = () => {
       
       <section className="news-preview section">
         <div className="container">
-          <h2 className="section-title">
-            <span className="glitch" data-text="// LATEST NEWS">// LATEST NEWS</span>
-          </h2>
+          <SectionTitle>// LATEST NEWS</SectionTitle>
           
           <div className="news-grid">
-            <article className="news-card">
-              <div className="news-header">
-                <time className="news-date">2025.01.15</time>
-                <span className="news-tag">ANNOUNCEMENT</span>
-              </div>
-              <h3 className="news-title">
-                Tech.SummerCamp 2025 開催決定
-              </h3>
-              <p className="news-excerpt">
-                2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。
-              </p>
-            </article>
+            <NewsCard
+              date="2025.01.15"
+              tag="ANNOUNCEMENT"
+              title="Tech.SummerCamp 2025 開催決定"
+              excerpt="2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。"
+              tagType="announcement"
+            />
             
-            <article className="news-card">
-              <div className="news-header">
-                <time className="news-date">2025.01.15</time>
-                <span className="news-tag">WEBSITE</span>
-              </div>
-              <h3 className="news-title">
-                公式サイトオープン
-              </h3>
-              <p className="news-excerpt">
-                Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。
-              </p>
-            </article>
+            <NewsCard
+              date="2025.01.15"
+              tag="WEBSITE"
+              title="公式サイトオープン"
+              excerpt="Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。"
+              tagType="website"
+            />
           </div>
           
           <div className="news-more">

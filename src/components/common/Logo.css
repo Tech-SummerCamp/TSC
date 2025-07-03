@@ -221,6 +221,10 @@
   .logo-header-text {
     flex-wrap: wrap;
   }
+  
+  .tsc-logo {
+    height: clamp(2rem, 3vw, 2.5rem);
+  }
 }
 
 @media (max-width: 480px) {
@@ -245,5 +249,9 @@
   
   .terminal-title {
     font-size: 0.8rem;
+  }
+  
+  .tsc-logo {
+    height: 2rem;
   }
 }

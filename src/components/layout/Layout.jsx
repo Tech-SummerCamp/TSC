@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
-import Logo from './Logo';
+import Logo from '../common/Logo';
 import './Layout.css';
 
 const Layout = ({ year }) => {

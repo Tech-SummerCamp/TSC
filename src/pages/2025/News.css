@@ -9,94 +9,6 @@
   margin-bottom: 4rem;
 }
 
-.news-card {
-  background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  transition: all var(--transition-normal);
-  position: relative;
-  overflow: hidden;
-}
-
-.news-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-terminal-green);
-  transform: scaleX(0);
-  transition: transform var(--transition-normal);
-}
-
-.news-card:hover {
-  border-color: var(--color-terminal-green);
-  transform: translateY(-5px);
-  background-color: rgba(0, 255, 65, 0.05);
-}
-
-.news-card:hover::before {
-  transform: scaleX(1);
-}
-
-.news-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.news-date {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--color-terminal-green);
-}
-
-.news-tag {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--color-black);
-  background-color: var(--color-terminal-green);
-  padding: 0.2rem 0.5rem;
-  border-radius: 2px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
-
-.category-announcement {
-  background-color: var(--color-terminal-green);
-  color: var(--color-black);
-}
-
-.category-website {
-  background-color: #0080ff;
-  color: var(--color-white);
-}
-
-.category-update {
-  background-color: #ff8000;
-  color: var(--color-white);
-}
-
-.category-important {
-  background-color: #ff0040;
-  color: var(--color-white);
-}
-
-.news-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-.news-excerpt {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-}
 
 .news-archive {
   max-width: 800px;
@@ -138,15 +50,5 @@
   .news-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-  
-  .news-card {
-    padding: 1.5rem;
-  }
-  
-  .news-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
   }
 }
