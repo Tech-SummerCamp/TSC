@@ -193,7 +193,7 @@ const Home = () => {
                 <span className="news-tag">ANNOUNCEMENT</span>
               </div>
               <h3 className="news-title">
-                <Link to="/2025/news">Tech.SummerCamp 2025 開催決定</Link>
+                Tech.SummerCamp 2025 開催決定
               </h3>
               <p className="news-excerpt">
                 2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。
@@ -206,7 +206,7 @@ const Home = () => {
                 <span className="news-tag">WEBSITE</span>
               </div>
               <h3 className="news-title">
-                <Link to="/2025/news">公式サイトオープン</Link>
+                公式サイトオープン
               </h3>
               <p className="news-excerpt">
                 Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。
