@@ -19,13 +19,6 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4 className="footer-title">Archive</h4>
-            <ul className="footer-links">
-              <li><Link to="/2025">2025</Link></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
             <h4 className="footer-title">Related Links</h4>
             <ul className="footer-links">
               <li><a href="https://x.com/tech_summercamp" target="_blank" rel="noopener noreferrer">Twitter</a></li>
