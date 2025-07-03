@@ -539,17 +539,15 @@
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  background: #ff0000;
+  background: transparent;
   color: var(--color-white);
-  border: none;
+  border: 3px solid var(--color-white);
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
   min-width: 400px;
   text-decoration: none;
-  box-shadow: 
-    0 5px 20px rgba(255, 0, 0, 0.3),
-    0 10px 40px rgba(255, 0, 0, 0.2);
+  box-shadow: none;
 }
 
 .mega-entry-btn::before {
@@ -559,12 +557,13 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  transition: left 0.6s;
+  background: var(--color-white);
+  transition: left 0.4s;
+  z-index: -1;
 }
 
 .mega-entry-btn:hover::before {
-  left: 100%;
+  left: 0;
 }
 
 .btn-glow {
@@ -573,10 +572,10 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: #ff0000;
+  background: transparent;
   z-index: -1;
-  filter: blur(10px);
-  opacity: 0.3;
+  filter: none;
+  opacity: 0;
 }
 
 .btn-content {
@@ -597,11 +596,10 @@
 }
 
 .mega-entry-btn:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 
-    0 10px 30px rgba(255, 0, 0, 0.4),
-    0 20px 60px rgba(255, 0, 0, 0.3);
-  background: #cc0000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  color: var(--color-black);
+  border-color: var(--color-white);
 }
 
 .mega-entry-btn:hover .btn-arrow {
@@ -827,17 +825,19 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   color: var(--color-white);
-  border: 1px solid #ff0000;
+  border: 2px solid var(--color-white);
   text-decoration: none;
   transition: all var(--transition-normal);
-  background-color: #ff0000;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .news-more-btn:hover {
-  background-color: #cc0000;
-  border-color: #cc0000;
-  color: var(--color-white);
-  transform: translateY(-1px);
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-black);
+  transform: translateY(-2px);
 }
 
 .news-more-btn .btn-prefix,
