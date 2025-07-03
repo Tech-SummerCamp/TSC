@@ -48,7 +48,6 @@ const Navigation = ({ year }) => {
               end={item.path === ''}
               onClick={closeMobileMenu}
             >
-              <span className="nav-prefix">{'>'}</span>
               {item.label}
             </NavLink>
           </li>
