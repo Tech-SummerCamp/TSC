@@ -46,16 +46,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
-        <div className="text-center pt-8 border-t border-white/10">
-          <div className="font-mono text-[0.5rem] md:text-[0.7rem] text-gray-300 whitespace-pre leading-[1.2] opacity-50">
-            {`
-╔═══════════════════════════════════════════════════════════════════╗
-║ © 2025 Tech.SummerCamp | All rights reserved | Build with <3      ║
-╚═══════════════════════════════════════════════════════════════════╝
-            `.trim()}
-          </div>
-        </div>
       </div>
     </footer>
   );
