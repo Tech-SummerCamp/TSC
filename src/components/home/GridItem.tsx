@@ -5,14 +5,14 @@ interface GridItemProps {
 }
 
 const GridItem = ({ title, description, type = 'target' }: GridItemProps) => {
-  const targetStyles = "p-6 border border-gray-300 bg-white/[0.02] transition-all duration-300 hover:border-terminal-green hover:translate-x-2.5";
-  const detailStyles = "text-center py-8 px-4 border border-white/40 relative overflow-hidden transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:bg-terminal-green before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100";
+  const targetStyles = "p-6 border-2 border-gray-300 bg-gradient-to-br from-white/5 to-white/2 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,255,65,0.3)] hover:bg-terminal-green/10";
+  const detailStyles = "flex flex-col items-center justify-center text-center py-8 px-4 border-2 border-white/40 bg-gradient-to-br from-white/5 to-white/2 transition-all duration-300 hover:border-terminal-green hover:shadow-[0_10px_40px_rgba(0,255,65,0.3)] hover:bg-terminal-green/10 hover:-translate-y-1";
   
   const targetTitleStyles = "font-mono text-[1.1rem] mb-2 text-terminal-green";
   const targetTextStyles = "text-[0.95rem] mb-0 opacity-90";
   
-  const detailTitleStyles = "font-mono text-[0.9rem] uppercase tracking-[0.1em] mb-4 text-terminal-green";
-  const detailTextStyles = "text-[1.2rem] font-bold mb-0";
+  const detailTitleStyles = "font-mono text-[0.8rem] uppercase tracking-[0.15em] mb-3 text-white/60 font-medium";
+  const detailTextStyles = "text-[1.1rem] font-bold mb-0 text-terminal-green";
   
   const isTarget = type === 'target';
   

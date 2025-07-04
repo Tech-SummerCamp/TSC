@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../components/common/Logo';
 import NewsCard from '../../components/common/NewsCard';
-import SectionTitle from '../../components/common/SectionTitle';
 import GridItem from '../../components/home/GridItem';
 import PrizeItem from '../../components/home/PrizeItem';
 import WinnerItem from '../../components/home/WinnerItem';
@@ -33,13 +32,13 @@ const Home = () => {
 
   return (
     <div className="w-full overflow-x-hidden">
-      <section className="min-h-[75vh] md:min-h-[80vh] flex items-center relative overflow-hidden py-6 md:py-8 w-full max-w-[100vw]">
+      <section className="min-h-[75vh] md:min-h-[80vh] flex items-center relative overflow-hidden w-full max-w-[100vw]">
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border">
           <div className="relative z-[2]">
-            <div className="flex justify-center items-center mb-8 md:mb-12 lg:mb-16 mt-4 md:mt-8 text-center py-4 md:py-6 lg:py-8">
+            <div className="flex justify-center items-center text-center">
               <img src="/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
             </div>
-            <div className="mb-6 md:mb-8 lg:mb-12 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
+            <div className="mb-6 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
               <h1 className="text-[clamp(0.9rem,4.5vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[800] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
                 <span className="inline max-w-full box-border text-center">
                   {typedText || '\u00A0'}
@@ -50,7 +49,7 @@ const Home = () => {
             
             
             <div className="max-w-[1000px] mx-auto mb-12">
-              <section className="mb-16 text-center py-12 max-w-[800px] mx-auto">
+              <section className="mb-24 md:mb-32 text-center max-w-[800px] mx-auto">
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-semibold tracking-[0.08em] text-center text-white">
                   Tech.SummerCampは、全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
                   日本最高峰の学生ハッカソンです。
@@ -71,8 +70,14 @@ const Home = () => {
                 </div>
               </section>
               
-              <section className="mb-16">
-                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// TARGET</h2>
+              <section className="mb-20 md:mb-24">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
+                  <span className="relative z-10 px-8 bg-black inline-block">
+                    <span className="opacity-60 mr-2">//</span>
+                    <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>TARGET</span>
+                  </span>
+                  <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 md:gap-6 lg:gap-8">
                   <GridItem
                     title="エンジニア歴2年以上"
@@ -107,12 +112,18 @@ const Home = () => {
                 </div>
               </section>
               
-              <section className="mb-16">
-                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// EVENT DETAILS</h2>
+              <section className="mb-20 md:mb-24">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
+                  <span className="relative z-10 px-8 bg-black inline-block">
+                    <span className="opacity-60 mr-2">//</span>
+                    <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>EVENT DETAILS</span>
+                  </span>
+                  <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-3 md:gap-6 lg:gap-8">
                   <GridItem
                     title="開催日程"
-                    description="2025年9月20日(土) - 23日(火・祝)"
+                    description="9月20日(土) - 23日(火・祝)"
                     type="detail"
                   />
                   <GridItem
@@ -143,8 +154,14 @@ const Home = () => {
                 </div>
               </section>
               
-              <section className="mb-16">
-                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// PRIZES</h2>
+              <section className="mb-20 md:mb-24">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
+                  <span className="relative z-10 px-8 bg-black inline-block">
+                    <span className="opacity-60 mr-2">//</span>
+                    <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>PRIZES</span>
+                  </span>
+                  <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
+                </h2>
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12 justify-center items-center md:items-start flex-wrap px-2 md:px-0">
                   <PrizeItem
                     rank="1st"
@@ -161,8 +178,14 @@ const Home = () => {
                 </div>
               </section>
               
-              <section className="mb-16">
-                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// PAST WINNERS</h2>
+              <section className="mb-20 md:mb-24">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
+                  <span className="relative z-10 px-8 bg-black inline-block">
+                    <span className="opacity-60 mr-2">//</span>
+                    <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>PAST WINNERS</span>
+                  </span>
+                  <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
+                </h2>
                 <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 px-2 md:px-0">
                   <WinnerItem
                     year="2024"
@@ -190,7 +213,13 @@ const Home = () => {
       
       <section className="bg-[#1a1a1a] pb-0">
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border py-10 md:py-12 lg:py-16">
-          <SectionTitle>// LATEST NEWS</SectionTitle>
+          <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
+            <span className="relative z-10 px-8 bg-[#1a1a1a] inline-block">
+              <span className="opacity-60 mr-2">//</span>
+              <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>LATEST NEWS</span>
+            </span>
+            <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
+          </h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-4 md:gap-6 lg:gap-8 mb-6 md:mb-8 lg:mb-12 px-2 md:px-0">
             <NewsCard
