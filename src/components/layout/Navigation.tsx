@@ -1,6 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+/**
+ * Navigation – ヘッダー内の PC / Mobile 共用ナビゲーション
+ * -----------------------------------------------------------
+ * - PC: 横並びメニュー
+ * - Mobile: ハンバーガー → スライドイン・ドロワー
+ *
+ * Tailwind CSS で完結。外部 CSS / JS 依存なし。
+ */
 interface NavigationProps {
   year: string;
 }
@@ -11,79 +19,118 @@ interface NavItem {
 }
 
 const Navigation = ({ year }: NavigationProps) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const navItems: NavItem[] = year === '2025' 
-    ? [
-        { path: '', label: 'HOME' },
-        { path: 'schedule', label: 'SCHEDULE' },
-        { path: 'news', label: 'NEWS' },
-        { path: 'faq', label: 'FAQ' },
-      ]
-    : [
-        { path: '', label: 'RESULTS' },
-        { path: 'gallery', label: 'GALLERY' },
-      ];
+  // 年度ごとにナビ項目を切り替え
+  const navItems: NavItem[] =
+    year === '2025'
+      ? [
+          { path: '', label: 'HOME' },
+          { path: 'schedule', label: 'SCHEDULE' },
+          { path: 'news', label: 'NEWS' },
+          { path: 'faq', label: 'FAQ' },
+        ]
+      : [
+          { path: '', label: 'RESULTS' },
+          { path: 'gallery', label: 'GALLERY' },
+        ];
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // Body スクロールロック
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  const toggle = () => setIsOpen((prev) => !prev);
+  const close = () => setIsOpen(false);
 
   return (
-    <nav className="font-mono relative z-[100] flex-shrink-0 ml-auto">
-      <button 
-        className="hidden md:hidden flex-col gap-1 bg-transparent border-none cursor-pointer p-2 relative z-[101] 
-                   max-[768px]:flex"
-        onClick={toggleMobileMenu}
+    <nav className="font-mono relative z-[10000]">
+      {/* ─────────── ハンバーガー ─────────── */}
+      <button
+        type="button"
         aria-label="Toggle navigation menu"
+        onClick={toggle}
+        className="flex md:hidden flex-col justify-center items-center w-10 h-10 gap-1.5 relative z-[10001]"
       >
-        <span className="w-6 h-0.5 bg-white transition-all duration-300 origin-center hover:bg-terminal-green"></span>
-        <span className="w-6 h-0.5 bg-white transition-all duration-300 origin-center hover:bg-terminal-green"></span>
-        <span className="w-6 h-0.5 bg-white transition-all duration-300 origin-center hover:bg-terminal-green"></span>
+        {/* 3 本線 → × 変形 */}
+        <span
+          className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            isOpen ? 'rotate-45 translate-y-2' : ''
+          }`}
+        />
+        <span
+          className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            isOpen ? 'opacity-0' : ''
+          }`}
+        />
+        <span
+          className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            isOpen ? '-rotate-45 -translate-y-2' : ''
+          }`}
+        />
       </button>
 
-      <ul className={`flex gap-2 lg:gap-4 list-none justify-end
-                      max-[768px]:fixed max-[768px]:top-0 max-[768px]:h-screen max-[768px]:w-[70vw] max-[768px]:max-w-[300px]
-                      max-[768px]:bg-gradient-to-br max-[768px]:from-black max-[768px]:to-gray-900
-                      max-[768px]:flex-col max-[768px]:justify-center max-[768px]:items-center
-                      max-[768px]:gap-6 lg:max-[768px]:gap-10 max-[768px]:transition-all max-[768px]:duration-300
-                      max-[768px]:border-l max-[768px]:border-terminal-green/20 max-[768px]:backdrop-blur-[10px]
-                      max-[480px]:w-screen max-[480px]:gap-8
-                      ${isMobileMenuOpen 
-                        ? 'max-[768px]:right-0' 
-                        : 'max-[768px]:-right-full max-[480px]:-right-[100vw]'
-                      }`}>
+      {/* ─────────── PC メニュー ─────────── */}
+      <ul className="hidden md:flex items-center gap-6 lg:gap-8">
         {navItems.map((item) => (
-          <li key={item.path} className="list-none">
-            <NavLink 
+          <li key={item.path}>
+            <NavLink
               to={`/${year}/${item.path}`}
-              className={({ isActive }) => 
-                `flex items-center gap-2 px-2 py-1 lg:px-3 lg:py-1.5 
-                 text-[0.75rem] lg:text-[0.85rem] tracking-wider
-                 transition-all duration-200 relative text-white font-medium
-                 hover:text-terminal-green
-                 max-[768px]:text-base lg:max-[768px]:text-xl max-[768px]:px-6 lg:max-[768px]:px-10
-                 max-[768px]:py-3 lg:max-[768px]:py-5 max-[768px]:w-[90%] max-[768px]:justify-center
-                 max-[768px]:border-b max-[768px]:border-white/10 max-[768px]:transition-all
-                 max-[768px]:duration-300 max-[768px]:rounded max-[768px]:mx-1
-                 max-[768px]:hover:bg-terminal-green/15 max-[768px]:hover:translate-x-1
-                 max-[768px]:hover:border-terminal-green/30
-                 max-[480px]:text-[1.1rem] max-[480px]:px-8 max-[480px]:py-4 max-[480px]:w-[85%]
-                 max-[480px]:rounded-md
-                 ${isActive ? 'text-terminal-green' : ''}`
-              }
               end={item.path === ''}
-              onClick={closeMobileMenu}
+              className={({ isActive }) =>
+                `relative text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors duration-200
+                 ${isActive ? 'text-white' : 'text-white/60 hover:text-white'}
+                 after:content-[''] after:absolute after:left-0 after:bottom-[-4px]
+                 after:w-full after:h-px after:bg-white after:origin-left after:scale-x-0 after:transition-transform after:duration-300
+                 ${isActive ? 'after:scale-x-100' : 'hover:after:scale-x-100'}`
+              }
             >
               {item.label}
             </NavLink>
           </li>
         ))}
       </ul>
+
+      {/* ─────────── Overlay ─────────── */}
+      <div
+        className={`fixed inset-0 bg-black/60 transition-opacity duration-300 md:hidden ${
+          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={close}
+      />
+
+      {/* ─────────── Mobile ドロワー ─────────── */}
+      <aside
+        role="dialog"
+        aria-modal="true"
+        className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-black pt-20 px-6 transition-transform duration-300 md:hidden z-[10000]
+          ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <ul className="flex flex-col gap-6">
+          {navItems.map((item) => (
+            <li key={item.path}>
+              <NavLink
+                to={`/${year}/${item.path}`}
+                end={item.path === ''}
+                onClick={close}
+                className={({ isActive }) =>
+                  `block text-base font-medium tracking-wider uppercase transition-colors duration-200
+                   ${isActive ? 'text-white' : 'text-white/90 hover:text-white'}`
+                }
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </aside>
     </nav>
   );
 };

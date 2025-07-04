@@ -59,11 +59,11 @@ const Logo = ({ size = 'large' }: LogoProps) => {
 
   if (size === 'header') {
     return (
-      <div className="font-mono text-center relative text-[1.3rem] flex justify-start items-start w-full h-0 overflow-visible">
+      <div className="font-mono text-center relative flex justify-start items-center">
         <img 
           src="/tsc-horizontal.svg" 
           alt="Tech Summer Camp" 
-          className="h-[clamp(12rem,20vw,16rem)] md:h-[clamp(2rem,3vw,2.5rem)] max-[480px]:h-8 w-auto transition-all duration-200 brightness-100 hover:brightness-[1.2] my-1 mx-2 -translate-y-24 hover:scale-105"
+          className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-200 brightness-100 hover:brightness-[1.2] hover:scale-105"
         />
       </div>
     );
