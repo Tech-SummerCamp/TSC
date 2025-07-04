@@ -11,10 +11,6 @@
     src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
   }
 
-  * {
-    @apply box-border;
-  }
-
   body {
     background-color: #000000;
     color: #FFFFFF;

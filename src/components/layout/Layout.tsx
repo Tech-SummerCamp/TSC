@@ -4,7 +4,11 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import Logo from '../common/Logo';
 
-const Layout = ({ year }) => {
+interface LayoutProps {
+  year: string;
+}
+
+const Layout = ({ year }: LayoutProps) => {
   const [showNoise, setShowNoise] = useState(true);
 
   useEffect(() => {

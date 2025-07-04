@@ -1,7 +1,15 @@
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const NewsCard = ({ date, tag, title, excerpt, link, tagType = 'default' }) => {
+interface NewsCardProps {
+  date: string;
+  tag: string;
+  title: string;
+  excerpt: string;
+  link?: string;
+  tagType?: 'announcement' | 'website' | 'update' | 'important' | 'default';
+}
+
+const NewsCard = ({ date, tag, title, excerpt, link, tagType = 'default' }: NewsCardProps) => {
   const getTagClasses = () => {
     const baseClasses = "font-mono text-[0.7rem] text-black px-2 py-1 rounded-sm font-bold tracking-wider uppercase";
     
@@ -38,15 +46,6 @@ const NewsCard = ({ date, tag, title, excerpt, link, tagType = 'default' }) => {
       <p className="text-[0.95rem] md:text-[0.85rem] max-[480px]:text-[0.85rem] leading-[1.6] md:leading-[1.5] text-white/80 m-0">{excerpt}</p>
     </article>
   );
-};
-
-NewsCard.propTypes = {
-  date: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
-  link: PropTypes.string,
-  tagType: PropTypes.string
 };
 
 export default NewsCard;

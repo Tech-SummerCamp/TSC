@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 
+interface GalleryImage {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+}
+
 const Gallery = () => {
-  const galleryImages = [
+  const galleryImages: GalleryImage[] = [
     {
       id: 1,
       title: 'オープニングセレモニー',
@@ -40,7 +47,7 @@ const Gallery = () => {
     }
   ];
 
-  const highlights = [
+  const highlights: string[] = [
     '48時間連続開発',
     '11チームが参加',
     '革新的なアイデア',
@@ -115,7 +122,7 @@ const Gallery = () => {
             <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// TESTIMONIALS</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 bg-gray-900 border-l-4 border-l-green-400 relative">
-                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">“</span>
+                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">"</span>
                 <blockquote className="text-base leading-relaxed mb-4 pl-8 italic opacity-90">
                   「48時間という短い時間でここまでのものが作れるとは思いませんでした。
                   全国から集まった仲間と一緒に開発できて、本当に貴重な経験でした。」
@@ -124,7 +131,7 @@ const Gallery = () => {
               </div>
               
               <div className="p-8 bg-gray-900 border-l-4 border-l-green-400 relative">
-                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">“</span>
+                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">"</span>
                 <blockquote className="text-base leading-relaxed mb-4 pl-8 italic opacity-90">
                   「技術的なレベルの高さに驚きました。他のチームの作品を見て、
                   もっと頑張らなければと強く感じました。来年も絶対参加したいです。」
@@ -133,7 +140,7 @@ const Gallery = () => {
               </div>
               
               <div className="p-8 bg-gray-900 border-l-4 border-l-green-400 relative">
-                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">“</span>
+                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">"</span>
                 <blockquote className="text-base leading-relaxed mb-4 pl-8 italic opacity-90">
                   「チームメンバーとの協力の大切さを学びました。
                   一人では絶対に作れなかったものを、みんなで作り上げることができました。」

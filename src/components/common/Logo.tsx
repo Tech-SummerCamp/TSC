@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 
-const Logo = ({ size = 'large' }) => {
+interface LogoProps {
+  size?: 'large' | 'header';
+  showYear?: boolean;
+}
+
+const Logo = ({ size = 'large' }: LogoProps) => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
 

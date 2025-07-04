@@ -1,7 +1,15 @@
 import NewsCard from '../../components/common/NewsCard';
 
+interface NewsItem {
+  id: number;
+  date: string;
+  title: string;
+  content: string;
+  category: 'announcement' | 'website' | 'update' | 'important' | 'default';
+}
+
 const News = () => {
-  const newsItems = [
+  const newsItems: NewsItem[] = [
     {
       id: 1,
       date: '2025.01.15',

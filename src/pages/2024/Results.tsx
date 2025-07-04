@@ -1,7 +1,28 @@
 import { Link } from 'react-router-dom';
 
+interface Winner {
+  rank: number;
+  title: string;
+  team: string;
+  description: string;
+  tech: string[];
+  prize: string;
+}
+
+interface Project {
+  team: string;
+  title: string;
+  description: string;
+  tech: string[];
+}
+
+interface Stat {
+  label: string;
+  value: string;
+}
+
 const Results = () => {
-  const winners = [
+  const winners: Winner[] = [
     {
       rank: 1,
       title: 'ALL IN',
@@ -20,7 +41,7 @@ const Results = () => {
     }
   ];
 
-  const allProjects = [
+  const allProjects: Project[] = [
     {
       team: 'Team Gamma',
       title: 'EcoTracker',
@@ -41,7 +62,7 @@ const Results = () => {
     }
   ];
 
-  const stats = [
+  const stats: Stat[] = [
     { label: '参加者数', value: '48名' },
     { label: 'チーム数', value: '11チーム' },
     { label: '開発時間', value: '48時間' },

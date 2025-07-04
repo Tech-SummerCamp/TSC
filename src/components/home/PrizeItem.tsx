@@ -1,6 +1,11 @@
-import PropTypes from 'prop-types';
+interface PrizeItemProps {
+  rank: string;
+  amount: number;
+  iconSrc: string;
+  type?: 'first' | 'second';
+}
 
-const PrizeItem = ({ rank, amount, iconSrc, type = 'first' }) => {
+const PrizeItem = ({ rank, amount, iconSrc, type = 'first' }: PrizeItemProps) => {
   const baseStyles = "text-center py-12 px-16 border-2 relative overflow-hidden transition-all duration-300 hover:scale-105";
   const firstStyles = "border-[#FFD700] hover:border-[#FFA500] hover:shadow-[0_10px_30px_rgba(255,215,0,0.3)]";
   const secondStyles = "border-[#C0C0C0] hover:border-[#A8A8A8] hover:shadow-[0_10px_30px_rgba(192,192,192,0.3)]";
@@ -27,13 +32,6 @@ const PrizeItem = ({ rank, amount, iconSrc, type = 'first' }) => {
       </p>
     </div>
   );
-};
-
-PrizeItem.propTypes = {
-  rank: PropTypes.string.isRequired,
-  amount: PropTypes.number.isRequired,
-  iconSrc: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['first', 'second'])
 };
 
 export default PrizeItem;

@@ -1,10 +1,19 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navigation = ({ year }) => {
+interface NavigationProps {
+  year: string;
+}
+
+interface NavItem {
+  path: string;
+  label: string;
+}
+
+const Navigation = ({ year }: NavigationProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const navItems = year === '2025' 
+  const navItems: NavItem[] = year === '2025' 
     ? [
         { path: '', label: 'HOME' },
         { path: 'schedule', label: 'SCHEDULE' },

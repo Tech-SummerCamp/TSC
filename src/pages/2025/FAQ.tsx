@@ -1,16 +1,22 @@
 import { useState } from 'react';
 
-const FAQ = () => {
-  const [openItems, setOpenItems] = useState({});
+interface FAQItem {
+  id: number;
+  question: string;
+  answer: string;
+}
 
-  const toggleItem = (id) => {
+const FAQ = () => {
+  const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
+
+  const toggleItem = (id: number) => {
     setOpenItems(prev => ({
       ...prev,
       [id]: !prev[id]
     }));
   };
 
-  const faqData = [
+  const faqData: FAQItem[] = [
     {
       id: 1,
       question: 'エントリーに必要な条件は何ですか？',

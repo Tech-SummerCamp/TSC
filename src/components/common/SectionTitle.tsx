@@ -1,6 +1,11 @@
-import PropTypes from 'prop-types';
+import { ReactNode } from 'react';
 
-const SectionTitle = ({ children, glitch = true }) => {
+interface SectionTitleProps {
+  children: ReactNode;
+  glitch?: boolean;
+}
+
+const SectionTitle = ({ children, glitch = true }: SectionTitleProps) => {
   return (
     <h2 className="text-center mb-16 md:mb-8 text-[clamp(2rem,4vw,3rem)] md:text-[clamp(1.6rem,5vw,2.2rem)] max-[480px]:text-[clamp(1.6rem,6.5vw,2.2rem)] text-terminal-green font-mono shadow-[0_0_15px_rgba(0,255,65,0.3)] md:px-4 max-[480px]:px-2">
       {glitch ? (
@@ -12,11 +17,6 @@ const SectionTitle = ({ children, glitch = true }) => {
       )}
     </h2>
   );
-};
-
-SectionTitle.propTypes = {
-  children: PropTypes.node.isRequired,
-  glitch: PropTypes.bool
 };
 
 export default SectionTitle;

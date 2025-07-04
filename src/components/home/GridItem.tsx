@@ -1,6 +1,10 @@
-import PropTypes from 'prop-types';
+interface GridItemProps {
+  title: string;
+  description: string;
+  type?: 'target' | 'detail';
+}
 
-const GridItem = ({ title, description, type = 'target' }) => {
+const GridItem = ({ title, description, type = 'target' }: GridItemProps) => {
   const targetStyles = "p-6 border border-gray-300 bg-white/[0.02] transition-all duration-300 hover:border-terminal-green hover:translate-x-2.5";
   const detailStyles = "text-center py-8 px-4 border border-white/20 relative overflow-hidden transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:bg-terminal-green before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100";
   
@@ -33,12 +37,6 @@ const GridItem = ({ title, description, type = 'target' }) => {
       </p>
     </div>
   );
-};
-
-GridItem.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['target', 'detail'])
 };
 
 export default GridItem;

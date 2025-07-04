@@ -181,7 +181,7 @@ const Home = () => {
             </div>
             
             <div className="my-4 md:my-8 lg:my-12 flex justify-center px-2 md:px-4">
-              <Logo size="large" showYear={false} />
+              <Logo size="large" />
             </div>
             
           </div>
