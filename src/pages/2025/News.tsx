@@ -29,7 +29,7 @@ const News = () => {
 
   return (
     <div className="pt-8">
-      <section className="py-16 md:py-20">
+      <section className="">
         <div className="container mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
             <span className="glitch" data-text="NEWS">NEWS</span>
