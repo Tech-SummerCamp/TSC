@@ -6,7 +6,7 @@ import News from './pages/2025/News';
 import FAQ from './pages/2025/FAQ';
 import Results2024 from './pages/2024/Results';
 import Gallery2024 from './pages/2024/Gallery';
-import './styles/global.css';
+import './styles/tailwind.css';
 
 function App() {
   return (

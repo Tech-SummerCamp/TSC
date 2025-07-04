@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './Results.css';
 
 const Results = () => {
   const winners = [
@@ -50,50 +49,50 @@ const Results = () => {
   ];
 
   return (
-    <div className="results">
-      <section className="section">
-        <div className="container">
-          <h1 className="page-title">
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
             <span className="glitch" data-text="RESULTS 2024">RESULTS 2024</span>
           </h1>
           
-          <div className="results-intro terminal-box">
-            <p>{'> '} Tech.SummerCamp 2024 Results</p>
-            <p>{'> '} 2024年9月21日-24日開催</p>
+          <div className="max-w-2xl mx-auto mb-16 text-center text-lg terminal-box">
+            <p className="text-green-400 mb-2">{'> '} Tech.SummerCamp 2024 Results</p>
+            <p className="text-green-400">{'> '} 2024年9月21日-24日開催</p>
           </div>
           
-          <div className="stats-grid">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-20">
             {stats.map((stat, index) => (
-              <div key={index} className="stat-item">
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
+              <div key={index} className="text-center p-8 border border-gray-600 bg-white/2 transition-all duration-300 hover:border-green-400 hover:-translate-y-1 hover:bg-green-400/5">
+                <div className="font-mono text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">{stat.value}</div>
+                <div className="text-base opacity-90">{stat.label}</div>
               </div>
             ))}
           </div>
           
-          <div className="winners-section">
-            <h2>// WINNERS</h2>
+          <div className="mb-20">
+            <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// WINNERS</h2>
             
             {winners.map((winner, index) => (
-              <div key={index} className={`winner-card rank-${winner.rank}`}>
-                <div className="winner-header">
-                  <div className="winner-rank">
+              <div key={index} className="mb-12 p-12 bg-gray-900 border-2 border-gray-700 relative overflow-hidden transition-all duration-300 hover:border-green-400 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,255,65,0.2)] before:absolute before:top-0 before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-green-400 before:to-white before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
+                  <div className="font-mono text-lg font-bold text-green-400">
                     {winner.rank === 1 ? '🥇' : '🥈'} 
                     {winner.rank === 1 ? 'WINNER' : '2ND PLACE'}
                   </div>
-                  <div className="winner-prize">{winner.prize}</div>
+                  <div className="font-mono text-2xl font-bold text-white">{winner.prize}</div>
                 </div>
                 
-                <h3 className="winner-title">「{winner.title}」</h3>
-                <div className="winner-team">by {winner.team}</div>
+                <h3 className="text-3xl md:text-4xl mb-2">「{winner.title}」</h3>
+                <div className="font-mono text-green-400 mb-8 text-lg">by {winner.team}</div>
                 
-                <p className="winner-description">{winner.description}</p>
+                <p className="text-lg leading-relaxed mb-8 opacity-90">{winner.description}</p>
                 
-                <div className="winner-tech">
-                  <span className="tech-label">Tech Stack:</span>
-                  <div className="tech-tags">
+                <div className="flex items-center gap-4 flex-wrap">
+                  <span className="font-mono text-green-400 text-sm">Tech Stack:</span>
+                  <div className="flex gap-2 flex-wrap">
                     {winner.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-tag">{tech}</span>
+                      <span key={techIndex} className="font-mono text-xs px-3 py-1 bg-white/10 border border-gray-600 rounded transition-all duration-200 hover:border-green-400 hover:bg-green-400/10">{tech}</span>
                     ))}
                   </div>
                 </div>
@@ -101,18 +100,18 @@ const Results = () => {
             ))}
           </div>
           
-          <div className="all-projects-section">
-            <h2>// ALL PROJECTS</h2>
+          <div className="mb-20">
+            <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// ALL PROJECTS</h2>
             
-            <div className="projects-grid">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allProjects.map((project, index) => (
-                <div key={index} className="project-card">
-                  <h3 className="project-title">{project.title}</h3>
-                  <div className="project-team">{project.team}</div>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-tech">
+                <div key={index} className="p-8 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:-translate-y-1">
+                  <h3 className="text-xl mb-2">{project.title}</h3>
+                  <div className="font-mono text-green-400 text-sm mb-4">{project.team}</div>
+                  <p className="text-sm leading-relaxed mb-6 opacity-90">{project.description}</p>
+                  <div className="flex gap-2 flex-wrap">
                     {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-tag small">{tech}</span>
+                      <span key={techIndex} className="font-mono text-xs px-2 py-1 bg-white/10 border border-gray-600 rounded transition-all duration-200 hover:border-green-400 hover:bg-green-400/10">{tech}</span>
                     ))}
                   </div>
                 </div>
@@ -120,11 +119,11 @@ const Results = () => {
             </div>
           </div>
           
-          <div className="navigation-section">
-            <Link to="/2024/gallery" className="nav-link">
+          <div className="text-center flex justify-center gap-12 flex-wrap">
+            <Link to="/2024/gallery" className="font-mono text-lg px-8 py-4 border border-gray-600 transition-all duration-300 inline-block hover:border-green-400 hover:bg-green-400/10 hover:-translate-y-0.5">
               {'> '} View Gallery
             </Link>
-            <Link to="/2025" className="nav-link primary">
+            <Link to="/2025" className="font-mono text-lg px-8 py-4 bg-green-400 text-black border border-green-400 transition-all duration-300 inline-block hover:bg-white hover:text-black">
               {'> '} Tech.SummerCamp 2025
             </Link>
           </div>

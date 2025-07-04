@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './FAQ.css';
 
 const FAQ = () => {
   const [openItems, setOpenItems] = useState({});
@@ -55,38 +54,38 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="faq">
-      <section className="section">
-        <div className="container">
-          <h1 className="page-title">
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
             <span className="glitch" data-text="FAQ">FAQ</span>
           </h1>
           
-          <div className="faq-intro">
-            <p className="faq-subtitle">
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <p className="text-lg leading-relaxed text-white/80">
               Tech.SummerCamp 2025に関するよくある質問をまとめました。
               気になることがあればお気軽にご確認ください。
             </p>
           </div>
           
-          <div className="faq-container">
+          <div className="max-w-4xl mx-auto mb-16 grid gap-6">
             {faqData.map(item => (
-              <div key={item.id} className="faq-item">
+              <div key={item.id} className="border border-white/10 rounded-lg bg-white/2 overflow-hidden transition-all duration-300 hover:border-green-400 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,255,65,0.15)] relative before:absolute before:top-0 before:left-0 before:w-full before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
                 <button 
-                  className={`faq-question ${openItems[item.id] ? 'active' : ''}`}
+                  className={`w-full flex items-center gap-4 p-8 bg-transparent border-0 text-white font-sans text-lg text-left cursor-pointer transition-all duration-200 font-medium ${openItems[item.id] ? 'bg-green-400/5' : 'hover:bg-green-400/5'}`}
                   onClick={() => toggleItem(item.id)}
                 >
-                  <span className="question-prefix">Q{item.id}.</span>
-                  <span className="question-text">{item.question}</span>
-                  <span className="question-icon">
+                  <span className="font-mono text-green-400 font-bold min-w-[45px] text-base bg-green-400/10 px-2 py-1 rounded border border-green-400/30">Q{item.id}.</span>
+                  <span className="flex-1 leading-relaxed">{item.question}</span>
+                  <span className={`font-mono text-xl text-green-400 font-bold min-w-[35px] text-center transition-all duration-200 bg-green-400/10 rounded-full w-9 h-9 flex items-center justify-center border border-green-400/30 ${openItems[item.id] ? 'rotate-180 bg-green-400 text-black' : ''}`}>
                     {openItems[item.id] ? '−' : '+'}
                   </span>
                 </button>
                 
-                <div className={`faq-answer ${openItems[item.id] ? 'open' : ''}`}>
-                  <div className="answer-content">
-                    <span className="answer-prefix">A.</span>
-                    <p>{item.answer}</p>
+                <div className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${openItems[item.id] ? 'max-h-[500px]' : 'max-h-0'}`}>
+                  <div className="px-8 pb-8 flex gap-4 items-start bg-green-400/2 border-t border-green-400/10">
+                    <span className="font-mono text-green-400 font-bold min-w-[45px] pt-1 text-base bg-green-400/10 px-2 py-1 rounded border border-green-400/30 mt-2">A.</span>
+                    <p className="text-base leading-relaxed text-white/90 m-0 pt-2">{item.answer}</p>
                   </div>
                 </div>
               </div>

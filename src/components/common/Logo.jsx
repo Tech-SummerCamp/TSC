@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './Logo.css';
 
 const Logo = ({ size = 'large' }) => {
   const [typedText, setTypedText] = useState('');
@@ -55,35 +54,35 @@ const Logo = ({ size = 'large' }) => {
 
   if (size === 'header') {
     return (
-      <div className={`logo-component ${size}`}>
+      <div className="font-mono text-center relative text-[1.3rem] flex justify-start items-start w-full h-0 overflow-visible">
         <img 
           src="/tsc-horizontal.svg" 
           alt="Tech Summer Camp" 
-          className="tsc-logo"
+          className="h-[clamp(12rem,20vw,16rem)] md:h-[clamp(2rem,3vw,2.5rem)] max-[480px]:h-8 w-auto transition-all duration-200 brightness-100 hover:brightness-[1.2] my-1 mx-2 -translate-y-24 hover:scale-105"
         />
       </div>
     );
   }
 
   return (
-    <div className={`logo-component ${size}`}>
-      <div className="terminal-window">
-        <div className="terminal-header">
-          <div className="terminal-buttons">
-            <span className="btn-close"></span>
-            <span className="btn-minimize"></span>
-            <span className="btn-maximize"></span>
+    <div className={`font-mono text-center relative ${size === 'large' ? 'text-[clamp(1.2rem,2.5vw,1.5rem)]' : ''}`}>
+      <div className="bg-gray-900 border border-gray-700 rounded-lg w-full max-w-[700px] mx-auto shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+        <div className="bg-white/10 px-4 py-3 flex items-center justify-between border-b border-white/20 rounded-t-[7px]">
+          <div className="flex gap-2">
+            <span className="w-3 h-3 rounded-full block bg-[#ff5f57]"></span>
+            <span className="w-3 h-3 rounded-full block bg-[#ffbd2e]"></span>
+            <span className="w-3 h-3 rounded-full block bg-[#28ca42]"></span>
           </div>
-          <div className="terminal-title">tech-summer-camp.js</div>
+          <div className="text-sm text-white/80">tech-summer-camp.js</div>
         </div>
-        <div className="terminal-body">
-          <div className="terminal-prompt">
-            <span className="prompt-symbol">$</span>
-            <span className="prompt-command">node tech-summer-camp.js</span>
+        <div className="p-8 md:p-4 h-[350px] md:h-auto md:min-h-[200px] max-[480px]:p-3 max-[480px]:min-h-[180px] overflow-hidden">
+          <div className="mb-4 text-sm">
+            <span className="text-[#00FF41] mr-2">$</span>
+            <span className="text-white/90">node tech-summer-camp.js</span>
           </div>
-          <pre className="code-block">
+          <pre className="font-mono text-white leading-[1.6] m-0 whitespace-pre text-[clamp(0.9rem,2vw,1.1rem)] md:text-[0.8rem] md:leading-[1.4] max-[480px]:text-[0.7rem] max-[480px]:leading-[1.3] overflow-hidden">
             {typedText}
-            {showCursor && <span className="terminal-cursor">|</span>}
+            {showCursor && <span className="bg-[#00FF41] text-[#00FF41] animate-blink">|</span>}
           </pre>
         </div>
       </div>

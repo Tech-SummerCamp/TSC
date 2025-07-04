@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans JP';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 300ms;
+  }
+
+  a:hover {
+    color: #00FF41;
+  }
+}
+
+@layer utilities {
+  .terminal-border {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .terminal-text {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    color: #00FF41;
+  }
+  
+  .glitch-effect {
+    text-shadow: 
+      2px 2px 0 rgba(0, 255, 65, 0.7),
+      -2px -2px 0 rgba(255, 255, 255, 0.7);
+  }
+  
+  .glitch-effect:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+}
