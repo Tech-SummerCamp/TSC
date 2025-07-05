@@ -1,53 +1,55 @@
+import { useNews } from '../../hooks/useNews';
 import NewsCard from '../../components/common/NewsCard';
 
-interface NewsItem {
-  id: number;
-  date: string;
-  title: string;
-  content: string;
-  category: 'announcement' | 'website' | 'update' | 'important' | 'default';
-}
-
 const News = () => {
-  const newsItems: NewsItem[] = [
-    {
-      id: 1,
-      date: '2025.01.15',
-      title: 'Tech.SummerCamp 2025 開催決定',
-      content: 'Tech.SummerCamp 2025の開催が正式に決定しました。今年も全国から選ばれた学生エンジニアが集まります。',
-      category: 'announcement'
-    },
-    {
-      id: 2,
-      date: '2025.01.15',
-      title: '公式サイトオープン',
-      content: 'Tech.SummerCamp 2025の公式サイトがオープンしました。今後、イベントに関する最新情報はこちらでお知らせします。',
-      category: 'website'
-    }
-  ];
+  const { articles, loading } = useNews();
 
+  if (loading) {
+    return (
+      <div className="pt-8">
+        <section className="">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+                <span className="glitch" data-text="NEWS">NEWS</span>
+              </h1>
+              <div className="flex justify-center items-center min-h-[300px]">
+                <div className="text-white font-mono">Loading...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="pt-8">
       <section className="">
         <div className="container mx-auto px-6">
-          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
-            <span className="glitch" data-text="NEWS">NEWS</span>
-          </h1>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
-            {newsItems.map(item => (
-              <NewsCard
-                key={item.id}
-                date={item.date}
-                tag={item.category.toUpperCase()}
-                title={item.title}
-                excerpt={item.content}
-                tagType={item.category}
-              />
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+              <span className="glitch" data-text="NEWS">NEWS</span>
+            </h1>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              {articles.map(article => (
+                <NewsCard
+                  key={article.slug}
+                  date={new Date(article.date).toLocaleDateString('ja-JP', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit'
+                  }).replace(/\//g, '.')}
+                  tag={article.category.toUpperCase()}
+                  title={article.title}
+                  excerpt={article.excerpt || ''}
+                  tagType={article.category as any}
+                  href={`/2025/news/${article.slug}`}
+                />
+              ))}
+            </div>
           </div>
-          
         </div>
       </section>
     </div>

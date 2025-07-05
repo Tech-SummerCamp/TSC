@@ -1,0 +1,259 @@
+/* News Article Styles */
+.news-content {
+  color: #e5e7eb;
+  line-height: 1.8;
+}
+
+/* Headings */
+.news-content h1 {
+  font-size: 2.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid #1f2937;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.news-content h1:first-child {
+  margin-top: 0;
+}
+
+.news-content h2 {
+  font-size: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.news-content h3 {
+  font-size: 1.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* Paragraphs */
+.news-content p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+/* Links */
+.news-content a {
+  color: #00FF41;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.news-content a::after {
+  content: ' ↗';
+  font-size: 0.75rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.news-content a:hover::after {
+  transform: translate(2px, -2px);
+}
+
+/* Lists */
+.news-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.news-content ul li {
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+  position: relative;
+  list-style: none;
+}
+
+.news-content ul li::before {
+  content: '▸ ';
+  color: #00FF41;
+  position: absolute;
+  left: -1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.news-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  counter-reset: item;
+}
+
+.news-content ol li {
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+  position: relative;
+  list-style: none;
+  counter-increment: item;
+}
+
+.news-content ol li::before {
+  content: counter(item) '. ';
+  color: #00FF41;
+  position: absolute;
+  left: -1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Code */
+.news-content code {
+  color: #00FF41;
+  background-color: #111827;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid #374151;
+}
+
+.news-content pre {
+  background-color: #111827;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border: 1px solid #374151;
+}
+
+.news-content pre code {
+  color: #d1d5db;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+}
+
+/* Blockquotes */
+.news-content blockquote {
+  border-left: 4px solid #00FF41;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(17, 24, 39, 0.5);
+  font-style: italic;
+}
+
+.news-content blockquote p {
+  color: #9ca3af;
+}
+
+/* Strong */
+.news-content strong {
+  color: white;
+  font-weight: 700;
+}
+
+.news-content strong::before {
+  content: '[';
+  color: #00FF41;
+}
+
+.news-content strong::after {
+  content: ']';
+  color: #00FF41;
+}
+
+/* Horizontal Rule */
+.news-content hr {
+  border-top: 1px solid #1f2937;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.news-content hr::after {
+  content: '* * *';
+  color: #00FF41;
+  background-color: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Tables */
+.news-content table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+.news-content th {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid #00FF41;
+}
+
+.news-content td {
+  color: #d1d5db;
+  padding: 0.75rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.news-content tr:hover td {
+  background-color: rgba(17, 24, 39, 0.5);
+}
+
+/* Images */
+.news-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #374151;
+}
+
+/* Emphasis */
+.news-content em {
+  color: #e5e7eb;
+  font-style: italic;
+}
+
+/* Definition Lists */
+.news-content dl {
+  margin-bottom: 1.5rem;
+}
+
+.news-content dt {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.news-content dt::before {
+  content: '◆ ';
+  color: #00FF41;
+}
+
+.news-content dd {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}

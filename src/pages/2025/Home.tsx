@@ -228,6 +228,7 @@ const Home = () => {
               title="Tech.SummerCamp 2025 開催決定"
               excerpt="2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。"
               tagType="announcement"
+              href="/2025/news/2025-01-01-site-open"
             />
             
             <NewsCard
@@ -236,6 +237,7 @@ const Home = () => {
               title="公式サイトオープン"
               excerpt="Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。"
               tagType="website"
+              href="/2025/news/2025-01-01-site-open"
             />
           </div>
           

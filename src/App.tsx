@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout';
 import Home2025 from './pages/2025/Home';
 import Schedule from './pages/2025/Schedule';
 import News from './pages/2025/News';
+import NewsDetail from './pages/2025/NewsDetail';
 import FAQ from './pages/2025/FAQ';
 import Results2024 from './pages/2024/Results';
 import Gallery2024 from './pages/2024/Gallery';
@@ -19,6 +20,7 @@ function App() {
           <Route path="about" element={<Navigate to="/2025" replace />} />
           <Route path="schedule" element={<Schedule />} />
           <Route path="news" element={<News />} />
+          <Route path="news/:slug" element={<NewsDetail />} />
           <Route path="faq" element={<FAQ />} />
         </Route>
         
