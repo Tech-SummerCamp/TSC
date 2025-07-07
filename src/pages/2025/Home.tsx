@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../components/common/Logo';
+import Sponsors from '../../components/common/Sponsors';
 import NewsCard from '../../components/common/NewsCard';
 import GridItem from '../../components/home/GridItem';
 import PrizeItem from '../../components/home/PrizeItem';
@@ -202,14 +202,26 @@ const Home = () => {
                 </div>
               </section>
             </div>
-            
-            <div className="my-4 md:my-8 lg:my-12 flex justify-center px-2 md:px-4">
-              <Logo size="large" />
-            </div>
-            
           </div>
         </div>
       </section>
+      
+      <Sponsors 
+        sponsors={[
+          { name: "Sample Platinum 1", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+1" },
+          { name: "Sample Platinum 2", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+2" },
+          { name: "Sample Gold 1", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+1" },
+          { name: "Sample Gold 2", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+2" },
+          { name: "Sample Gold 3", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+3" },
+          { name: "Sample Silver 1", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+1" },
+          { name: "Sample Silver 2", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+2" },
+          { name: "Sample Silver 3", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+3" },
+          { name: "Sample Silver 4", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+4" },
+          { name: "Sample Bronze 1", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+1" },
+          { name: "Sample Bronze 2", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+2" },
+          { name: "Sample Bronze 3", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+3" }
+        ]}
+      />
       
       <section className="bg-[#1a1a1a] pb-0">
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border py-10 md:py-12 lg:py-16">

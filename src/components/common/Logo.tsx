@@ -1,11 +1,18 @@
 import { useState, useEffect } from 'react';
 
+interface SponsorInfo {
+  name: string;
+  tier: 'platinum' | 'gold' | 'silver' | 'bronze';
+  logo?: string;
+}
+
 interface LogoProps {
   size?: 'large' | 'header';
   showYear?: boolean;
+  sponsors?: SponsorInfo[];
 }
 
-const Logo = ({ size = 'large' }: LogoProps) => {
+const Logo = ({ size = 'large', sponsors = [] }: LogoProps) => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
 
@@ -25,9 +32,31 @@ const Logo = ({ size = 'large' }: LogoProps) => {
       '  participants: 80,',
       '  prize: "¥400,000"',
       '};',
-      '',
-      '> Status: Ready for deployment'
+      ''
     ];
+
+    // Add sponsor information if available
+    if (sponsors.length > 0) {
+      lines.push('// Powered by:');
+      const sponsorsByTier = {
+        platinum: sponsors.filter(s => s.tier === 'platinum'),
+        gold: sponsors.filter(s => s.tier === 'gold'),
+        silver: sponsors.filter(s => s.tier === 'silver'),
+        bronze: sponsors.filter(s => s.tier === 'bronze')
+      };
+      
+      Object.entries(sponsorsByTier).forEach(([tier, tierSponsors]) => {
+        if (tierSponsors.length > 0) {
+          lines.push(`// ${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors:`);
+          tierSponsors.forEach(sponsor => {
+            lines.push(`//   - ${sponsor.name}`);
+          });
+        }
+      });
+      lines.push('');
+    }
+    
+    lines.push('> Status: Ready for deployment');
 
     let lineIndex = 0;
     let charIndex = 0;
@@ -80,7 +109,7 @@ const Logo = ({ size = 'large' }: LogoProps) => {
           </div>
           <div className="text-sm text-white/80">tech-summer-camp.js</div>
         </div>
-        <div className="p-8 md:p-4 h-[350px] md:h-auto md:min-h-[200px] max-[480px]:p-3 max-[480px]:min-h-[180px] overflow-hidden">
+        <div className={`p-8 md:p-4 ${sponsors.length > 0 ? 'h-[450px]' : 'h-[350px]'} md:h-auto md:min-h-[200px] max-[480px]:p-3 max-[480px]:min-h-[180px] overflow-hidden`}>
           <div className="mb-4 text-sm">
             <span className="text-[#00FF41] mr-2">$</span>
             <span className="text-white/90">node tech-summer-camp.js</span>
