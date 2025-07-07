@@ -1,0 +1,2737 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+4. Repository files, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+<additional_info>
+
+</additional_info>
+
+</file_summary>
+
+<directory_structure>
+.claude/
+  settings.local.json
+public/
+  gin.svg
+  kin.svg
+  tsc-horizontal.svg
+  vite.svg
+src/
+  assets/
+    react.svg
+  components/
+    common/
+      Logo.tsx
+      NewsCard.tsx
+      SectionTitle.tsx
+    home/
+      GridItem.tsx
+      PrizeItem.tsx
+      WinnerItem.tsx
+    layout/
+      Footer.tsx
+      Layout.tsx
+      Navigation.tsx
+    index.js
+  data/
+    siteContent.js
+  pages/
+    2024/
+      Gallery.tsx
+      Results.tsx
+    2025/
+      FAQ.tsx
+      Home.tsx
+      News.tsx
+      Schedule.tsx
+  styles/
+    tailwind.css
+  App.tsx
+  main.tsx
+.gitignore
+CLAUDE.md
+eslint.config.js
+index.html
+MAINTENANCE_GUIDE.md
+OPERATION_PROPOSAL.md
+package.json
+README.md
+tailwind.config.js
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/gin.svg">
+<svg id="SvgjsSvg1708" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1709"></defs><g id="SvgjsG1710"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 173.456" width="288" height="288"><path d="M4843.032,1680.193l-51.9-94.872-51.9,94.878-48.1-72.563v151.142h200V1607.636Zm-27.5,61.662h-49.2v-44.4H4799.6v-14.274h-33.668v-15.8h49.472v45.887h-33.273v12.8h33.415Z" transform="translate(-4691.135 -1585.321)" fill="#dcdbdb" class="svgShape color000000-0 selectable"></path></svg></g></svg>
+</file>
+
+<file path="public/kin.svg">
+<svg id="SvgjsSvg1698" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1699"></defs><g id="SvgjsG1700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 173.451" width="288" height="288"><path d="M3392.782,1720.335l-51.9-94.869-51.9,94.875L3240.9,1647.78v151.137h200V1647.78Zm-36.151,61.727h-22.124V1729.57h-10.215v-22.124h32.339Z" transform="translate(-3240.899 -1625.466)" fill="#e6e42f" class="svgShape color000000-0 selectable"></path></svg></g></svg>
+</file>
+
+<file path="public/tsc-horizontal.svg">
+<svg id="SvgjsSvg1001" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3259.843 1133.858" width="288" height="288"><polygon fill="#181818" points="955.158 567.919 954.512 568.564 954.512 567.919 955.158 567.919" class="svgShape color181818-0 selectable"></polygon><polygon fill="#181818" points="954.512 961.74 955.158 966.233 954.512 964.309 954.512 961.74" class="svgShape color181818-1 selectable"></polygon><polygon fill="#181818" points="954.512 964.309 955.158 966.233 954.512 965.17 954.512 964.309" class="svgShape color181818-2 selectable"></polygon><polygon fill="#181818" points="954.512 965.17 955.158 966.233 954.512 965.601 954.512 965.17" class="svgShape color181818-3 selectable"></polygon><polygon fill="#181818" points="955.158 567.919 954.512 567.919 954.512 567.273 955.158 567.919" class="svgShape color181818-4 selectable"></polygon><polygon fill="#181818" points="955.158 966.233 954.512 966.233 954.512 966.153 955.158 966.233" class="svgShape color181818-5 selectable"></polygon><polygon fill="#181818" points="955.158 966.233 954.512 966.153 954.512 966.018 955.158 966.233" class="svgShape color181818-6 selectable"></polygon><polygon fill="#181818" points="955.158 966.233 954.512 966.018 954.512 965.857 955.158 966.233" class="svgShape color181818-7 selectable"></polygon><polygon fill="#181818" points="955.158 966.233 954.512 965.857 954.512 965.601 955.158 966.233" class="svgShape color181818-8 selectable"></polygon><polygon fill="#181818" points="954.512 966.153 954.512 966.233 555.525 966.233 605.573 916.346 954.512 966.153" class="svgShape color181818-9 selectable"></polygon><polygon fill="#303030" points="954.512 966.018 954.512 966.153 605.573 916.346 655.608 866.5 954.512 966.018" class="svgShape color303030-10 selectable"></polygon><polygon fill="#474747" points="954.512 965.857 954.512 966.018 655.608 866.5 705.535 816.721 954.512 965.857" class="svgShape color474747-11 selectable"></polygon><polygon fill="#5f5f5f" points="954.512 965.601 954.512 965.857 705.535 816.721 755.516 766.915 954.512 965.601" class="svgShape color5f5f5f-12 selectable"></polygon><polygon fill="#777777" points="954.512 965.17 954.512 965.601 755.516 766.915 805.161 717.431 954.512 965.17" class="svgShape color777777-13 selectable"></polygon><polygon fill="#8f8f8f" points="954.512 964.309 954.512 965.17 805.161 717.431 855.169 667.571 954.512 964.309" class="svgShape color8f8f8f-14 selectable"></polygon><polygon fill="#a7a7a7" points="954.512 961.74 954.512 964.309 855.169 667.571 905.298 617.617 954.512 961.74" class="svgShape colora7a7a7-15 selectable"></polygon><polygon fill="#bebebe" points="954.512 568.564 954.512 961.74 905.298 617.617 954.512 568.564" class="svgShape colorbebebe-16 selectable"></polygon><polygon fill="#e4e4e4" points="954.512 567.919 954.512 568.564 905.298 617.617 898.181 567.865 954.512 567.919" class="svgShape colore4e4e4-17 selectable"></polygon><polygon fill="#d6d6d6" points="954.512 567.273 954.512 567.919 898.181 567.865 888.682 501.43 954.512 567.273" class="svgShape colord6d6d6-18 selectable"></polygon><polygon fill="#bebebe" points="954.512 167.626 954.512 567.273 888.682 501.43 855.142 266.983 954.512 167.626" class="svgShape colorbebebe-19 selectable"></polygon><polygon fill="#181818" points="954.512 167.626 855.142 266.983 621.22 233.967 555.525 168.259 555.525 167.936 954.512 167.626" class="svgShape color181818-20 selectable"></polygon><polygon fill="#e0e0e0" points="898.181 567.865 905.298 617.617 855.169 667.571 831.921 598.109 854.644 567.838 898.181 567.865" class="svgShape colore0e0e0-21 selectable"></polygon><polygon fill="#cbcaca" points="888.682 501.43 898.181 567.865 854.644 567.838 795.205 488.433 754.695 367.443 888.682 501.43" class="svgShape colorcbcaca-22 selectable"></polygon><polygon fill="#a7a7a7" points="855.142 266.983 888.682 501.43 754.695 367.443 855.142 266.983" class="svgShape colora7a7a7-23 selectable"></polygon><polygon fill="#dbdbdb" points="831.921 598.109 855.169 667.571 805.161 717.431 777.177 671.015 831.921 598.109" class="svgShape colordbdbdb-24 selectable"></polygon><polygon fill="#303030" points="855.142 266.983 754.695 367.443 621.22 233.967 855.142 266.983" class="svgShape color303030-25 selectable"></polygon><polygon fill="#c3c3c3" points="795.205 488.433 854.644 567.838 821.776 567.811 795.205 488.433" class="svgShape colorc3c3c3-26 selectable"></polygon><polygon fill="#d9d9d9" points="854.644 567.838 831.921 598.109 821.776 567.811 854.644 567.838" class="svgShape colord9d9d9-27 selectable"></polygon><polygon fill="#d2d1d1" points="821.776 567.811 831.921 598.109 777.177 671.015 736.748 603.962 754.776 567.919 754.695 567.757 821.776 567.811" class="svgShape colord2d1d1-28 selectable"></polygon><polygon fill="#b5b5b5" points="795.205 488.433 821.776 567.811 754.695 567.757 688.058 434.08 726.066 396.073 795.205 488.433" class="svgShape colorb5b5b5-29 selectable"></polygon><polygon fill="#d6d6d6" points="777.177 671.015 805.161 717.431 755.516 766.915 726.738 738.191 777.177 671.015" class="svgShape colord6d6d6-30 selectable"></polygon><polygon fill="#bfbebe" points="754.695 367.443 795.205 488.433 726.066 396.073 754.695 367.443" class="svgShape colorbfbebe-31 selectable"></polygon><polygon fill="#cacaca" points="736.748 603.962 777.177 671.015 726.738 738.191 688.637 700.143 736.748 603.962" class="svgShape colorcacaca-32 selectable"></polygon><polygon fill="#d1d1d1" points="755.516 766.915 705.535 816.721 679.502 801.114 726.738 738.191 755.516 766.915" class="svgShape colord1d1d1-33 selectable"></polygon><polygon fill="#c8c8c8" points="754.695 567.757 754.776 567.919 736.748 603.962 714.899 567.717 754.695 567.757" class="svgShape colorc8c8c8-34 selectable"></polygon><polygon fill="#9b9a9a" points="754.695 367.443 726.066 396.073 688.032 345.271 754.695 367.443" class="svgShape color9b9a9a-35 selectable"></polygon><polygon fill="#acabab" points="688.058 434.08 754.695 567.757 714.899 567.717 654.545 467.593 688.058 434.08" class="svgShape coloracabab-36 selectable"></polygon><polygon fill="#8f8f8f" points="754.695 367.443 688.032 345.271 602.761 231.357 621.22 233.967 754.695 367.443" class="svgShape color8f8f8f-37 selectable"></polygon><polygon fill="#bebebe" points="714.899 567.717 736.748 603.962 688.637 700.143 635.292 646.879 655.07 567.663 714.899 567.717" class="svgShape colorbebebe-38 selectable"></polygon><polygon fill="#c3c3c3" points="726.738 738.191 679.502 801.114 647.67 782.05 688.637 700.143 726.738 738.191" class="svgShape colorc3c3c3-39 selectable"></polygon><polygon fill="#8a8a8a" points="688.032 345.271 726.066 396.073 688.058 434.08 634.97 327.619 688.032 345.271" class="svgShape color8a8a8a-40 selectable"></polygon><polygon fill="#9b9b9b" points="654.545 467.593 714.899 567.717 655.07 567.663 634.996 487.128 654.545 467.593" class="svgShape color9b9b9b-41 selectable"></polygon><polygon fill="#cdcdcd" points="705.535 816.721 655.608 866.5 635.454 859.786 679.502 801.114 705.535 816.721" class="svgShape colorcdcdcd-42 selectable"></polygon><polygon fill="#b5b5b5" points="688.637 700.143 647.67 782.05 607.537 758.008 635.292 646.879 688.637 700.143" class="svgShape colorb5b5b5-43 selectable"></polygon><polygon fill="#797979" points="634.97 327.619 688.058 434.08 654.545 467.593 625.834 450.372 591.648 313.21 634.97 327.619" class="svgShape color797979-44 selectable"></polygon><polygon fill="#7c7c7c" points="602.761 231.357 688.032 345.271 634.97 327.619 585.782 228.962 602.761 231.357" class="svgShape color7c7c7c-45 selectable"></polygon><polygon fill="#bcbcbc" points="679.502 801.114 635.454 859.786 612.582 852.172 647.67 782.05 679.502 801.114" class="svgShape colorbcbcbc-46 selectable"></polygon><polygon fill="#c8c8c8" points="655.608 866.5 605.573 916.346 594.204 914.732 635.454 859.786 655.608 866.5" class="svgShape colorc8c8c8-47 selectable"></polygon><polygon fill="#8f8f8f" points="634.996 487.128 655.07 567.663 555.861 567.582 555.525 567.246 555.525 566.614 634.996 487.128" class="svgShape color8f8f8f-48 selectable"></polygon><polygon fill="#838383" points="655.07 567.663 635.292 646.879 555.861 567.582 655.07 567.663" class="svgShape color838383-49 selectable"></polygon><polygon fill="#8a8a8a" points="654.545 467.593 634.996 487.128 625.834 450.372 654.545 467.593" class="svgShape color8a8a8a-50 selectable"></polygon><polygon fill="#ababab" points="647.67 782.05 612.582 852.172 586.213 843.386 607.537 758.008 647.67 782.05" class="svgShape colorababab-51 selectable"></polygon><polygon fill="#b5b5b5" points="635.454 859.786 594.204 914.732 582.15 913.01 612.582 852.172 635.454 859.786" class="svgShape colorb5b5b5-52 selectable"></polygon><polygon fill="#6d6d6d" points="635.292 646.879 607.537 758.008 555.525 726.862 555.525 567.582 555.861 567.582 635.292 646.879" class="svgShape color6d6d6d-53 selectable"></polygon><polygon fill="#7c7c7c" points="625.834 450.372 634.996 487.128 555.525 566.614 555.525 408.154 625.834 450.372" class="svgShape color7c7c7c-54 selectable"></polygon><polygon fill="#696969" points="585.782 228.962 634.97 327.619 591.648 313.21 570.109 226.742 585.782 228.962" class="svgShape color696969-55 selectable"></polygon><polygon fill="#686868" points="591.648 313.21 625.834 450.372 555.525 408.154 555.525 301.196 591.648 313.21" class="svgShape color686868-56 selectable"></polygon><polygon fill="#838383" points="555.525 168.259 621.22 233.967 602.761 231.357 555.525 168.259" class="svgShape color838383-57 selectable"></polygon><polygon fill="#a2a2a2" points="612.582 852.172 582.15 913.01 569.288 911.167 586.213 843.386 612.582 852.172" class="svgShape colora2a2a2-58 selectable"></polygon><polygon fill="#585858" points="607.537 758.008 586.213 843.386 555.525 833.175 555.525 726.862 607.537 758.008" class="svgShape color585858-59 selectable"></polygon><polygon fill="#c3c3c3" points="605.573 916.346 555.525 966.233 594.204 914.732 605.573 916.346" class="svgShape colorc3c3c3-60 selectable"></polygon><polygon fill="#6e6e6e" points="555.525 168.259 602.761 231.357 585.782 228.962 555.525 168.259" class="svgShape color6e6e6e-61 selectable"></polygon><polygon fill="#aeaeae" points="594.204 914.732 555.525 966.233 582.15 913.01 594.204 914.732" class="svgShape coloraeaeae-62 selectable"></polygon><polygon fill="#565656" points="570.109 226.742 591.648 313.21 555.525 301.196 555.525 224.684 570.109 226.742" class="svgShape color565656-63 selectable"></polygon><polygon fill="#434343" points="586.213 843.386 569.288 911.167 555.525 909.202 555.525 833.175 586.213 843.386" class="svgShape color434343-64 selectable"></polygon><polygon fill="#585858" points="555.525 168.259 585.782 228.962 570.109 226.742 555.525 168.259" class="svgShape color585858-65 selectable"></polygon><polygon fill="#989898" points="582.15 913.01 555.525 966.233 569.288 911.167 582.15 913.01" class="svgShape color989898-66 selectable"></polygon><polygon fill="#434343" points="555.525 168.259 570.109 226.742 555.525 224.684 555.525 168.259" class="svgShape color434343-67 selectable"></polygon><polygon fill="#2d2d2d" points="569.288 911.167 555.525 966.233 555.525 909.202 569.288 911.167" class="svgShape color2d2d2d-68 selectable"></polygon><polygon fill="#181818" points="555.861 567.582 555.525 567.582 555.525 567.246 555.861 567.582" class="svgShape color181818-69 selectable"></polygon><polygon fill="#434343" points="555.525 909.202 555.525 966.233 540.739 907.104 555.525 909.202" class="svgShape color434343-70 selectable"></polygon><polygon fill="#565656" points="555.525 833.175 555.525 909.202 540.739 907.104 519.213 821.08 555.525 833.175" class="svgShape color565656-71 selectable"></polygon><polygon fill="#686868" points="555.525 726.862 555.525 833.175 519.213 821.08 485.094 684.671 555.525 726.862" class="svgShape color686868-72 selectable"></polygon><polygon fill="#7c7c7c" points="555.525 567.582 555.525 726.862 485.094 684.671 475.568 646.57 554.556 567.582 555.525 567.582" class="svgShape color7c7c7c-73 selectable"></polygon><polygon fill="#181818" points="555.525 567.246 555.525 567.582 554.556 567.582 555.202 566.923 555.525 567.246" class="svgShape color181818-74 selectable"></polygon><polygon fill="#181818" points="555.525 566.614 555.525 567.246 555.202 566.923 555.525 566.614" class="svgShape color181818-75 selectable"></polygon><polygon fill="#6d6d6d" points="555.525 408.154 555.525 566.614 555.202 566.923 475.743 487.599 503.404 376.874 555.525 408.154" class="svgShape color6d6d6d-76 selectable"></polygon><polygon fill="#585858" points="555.525 301.196 555.525 408.154 503.404 376.874 524.863 290.998 555.525 301.196" class="svgShape color585858-77 selectable"></polygon><polygon fill="#434343" points="555.525 224.684 555.525 301.196 524.863 290.998 541.909 222.76 555.525 224.684" class="svgShape color434343-78 selectable"></polygon><polygon fill="#2d2d2d" points="555.525 168.259 555.525 224.684 541.909 222.76 555.525 168.259" class="svgShape color2d2d2d-79 selectable"></polygon><polygon fill="#181818" points="555.525 167.936 555.525 168.259 506.014 217.701 155.891 168.259 555.525 167.936" class="svgShape color181818-80 selectable"></polygon><polygon fill="#989898" points="555.525 168.259 541.909 222.76 529.142 220.957 555.525 168.259" class="svgShape color989898-81 selectable"></polygon><polygon fill="#aeaeae" points="555.525 168.259 529.142 220.957 517.289 219.289 555.525 168.259" class="svgShape coloraeaeae-82 selectable"></polygon><polygon fill="#c3c3c3" points="555.525 168.259 517.289 219.289 506.014 217.701 555.525 168.259" class="svgShape colorc3c3c3-83 selectable"></polygon><polygon fill="#585858" points="540.739 907.104 555.525 966.233 524.742 904.817 540.739 907.104" class="svgShape color585858-84 selectable"></polygon><polygon fill="#6e6e6e" points="524.742 904.817 555.525 966.233 507.656 902.381 524.742 904.817" class="svgShape color6e6e6e-85 selectable"></polygon><polygon fill="#838383" points="507.656 902.381 555.525 966.233 488.874 899.704 507.656 902.381" class="svgShape color838383-86 selectable"></polygon><polygon fill="#181818" points="555.525 966.233 155.891 966.233 255.706 866.419 488.874 899.704 555.525 966.233" class="svgShape color181818-87 selectable"></polygon><polygon fill="#838383" points="555.202 566.923 554.556 567.582 455.778 567.502 475.743 487.599 555.202 566.923" class="svgShape color838383-88 selectable"></polygon><polygon fill="#8f8f8f" points="554.556 567.582 475.568 646.57 455.778 567.502 554.556 567.582" class="svgShape color8f8f8f-89 selectable"></polygon><polygon fill="#a2a2a2" points="541.909 222.76 524.863 290.998 498.467 282.213 529.142 220.957 541.909 222.76" class="svgShape colora2a2a2-90 selectable"></polygon><polygon fill="#696969" points="519.213 821.08 540.739 907.104 524.742 904.817 475.488 806.523 519.213 821.08" class="svgShape color696969-91 selectable"></polygon><polygon fill="#b5b5b5" points="529.142 220.957 498.467 282.213 475.797 274.665 517.289 219.289 529.142 220.957" class="svgShape colorb5b5b5-92 selectable"></polygon><polygon fill="#ababab" points="524.863 290.998 503.404 376.874 463.164 352.711 498.467 282.213 524.863 290.998" class="svgShape colorababab-93 selectable"></polygon><polygon fill="#7c7c7c" points="475.488 806.523 524.742 904.817 507.656 902.381 422.601 788.912 475.488 806.523" class="svgShape color7c7c7c-94 selectable"></polygon><polygon fill="#797979" points="485.094 684.671 519.213 821.08 475.488 806.523 422.116 700.022 455.307 666.831 485.094 684.671" class="svgShape color797979-95 selectable"></polygon><polygon fill="#c8c8c8" points="517.289 219.289 475.797 274.665 455.657 267.978 506.014 217.701 517.289 219.289" class="svgShape colorc8c8c8-96 selectable"></polygon><polygon fill="#8f8f8f" points="422.601 788.912 507.656 902.381 488.874 899.704 355.547 766.578 422.601 788.912" class="svgShape color8f8f8f-97 selectable"></polygon><polygon fill="#303030" points="506.014 217.701 455.657 267.978 155.891 168.259 506.014 217.701" class="svgShape color303030-98 selectable"></polygon><polygon fill="#b5b5b5" points="503.404 376.874 475.743 487.599 422.331 434.268 463.164 352.711 503.404 376.874" class="svgShape colorb5b5b5-99 selectable"></polygon><polygon fill="#bcbcbc" points="498.467 282.213 463.164 352.711 431.547 333.727 475.797 274.665 498.467 282.213" class="svgShape colorbcbcbc-100 selectable"></polygon><polygon fill="#303030" points="488.874 899.704 255.706 866.419 355.547 766.578 488.874 899.704" class="svgShape color303030-101 selectable"></polygon><polygon fill="#8a8a8a" points="475.568 646.57 485.094 684.671 455.307 666.831 475.568 646.57" class="svgShape color8a8a8a-102 selectable"></polygon><polygon fill="#cdcdcd" points="475.797 274.665 431.547 333.727 405.474 318.081 455.657 267.978 475.797 274.665" class="svgShape colorcdcdcd-103 selectable"></polygon><polygon fill="#bebebe" points="475.743 487.599 455.778 567.502 395.626 567.448 373.83 531.149 422.331 434.268 475.743 487.599" class="svgShape colorbebebe-104 selectable"></polygon><polygon fill="#9b9b9b" points="455.778 567.502 475.568 646.57 455.307 666.831 395.626 567.448 455.778 567.502" class="svgShape color9b9b9b-105 selectable"></polygon><polygon fill="#8a8a8a" points="422.116 700.022 475.488 806.523 422.601 788.912 384.311 737.827 422.116 700.022" class="svgShape color8a8a8a-106 selectable"></polygon><polygon fill="#c3c3c3" points="463.164 352.711 422.331 434.268 384.513 396.503 431.547 333.727 463.164 352.711" class="svgShape colorc3c3c3-107 selectable"></polygon><polygon fill="#474747" points="455.657 267.978 405.474 318.081 155.891 168.259 455.657 267.978" class="svgShape color474747-108 selectable"></polygon><polygon fill="#acabab" points="395.626 567.448 455.307 666.831 422.116 700.022 355.668 567.421 395.626 567.448" class="svgShape coloracabab-109 selectable"></polygon><polygon fill="#d1d1d1" points="431.547 333.727 384.513 396.503 355.708 367.752 405.474 318.081 431.547 333.727" class="svgShape colord1d1d1-110 selectable"></polygon><polygon fill="#9b9a9a" points="384.311 737.827 422.601 788.912 355.547 766.578 384.311 737.827" class="svgShape color9b9a9a-111 selectable"></polygon><polygon fill="#cacaca" points="422.331 434.268 373.83 531.149 333.698 464.324 384.513 396.503 422.331 434.268" class="svgShape colorcacaca-112 selectable"></polygon><polygon fill="#b5b5b5" points="355.668 567.421 422.116 700.022 384.311 737.827 315.185 645.615 289.071 567.367 355.668 567.421" class="svgShape colorb5b5b5-113 selectable"></polygon><polygon fill="#5f5f5f" points="405.474 318.081 355.708 367.752 155.891 168.259 405.474 318.081" class="svgShape color5f5f5f-114 selectable"></polygon><polygon fill="#c8c8c8" points="373.83 531.149 395.626 567.448 355.668 567.421 373.83 531.149" class="svgShape colorc8c8c8-115 selectable"></polygon><polygon fill="#d6d6d6" points="384.513 396.503 333.698 464.324 305.687 417.693 355.708 367.752 384.513 396.503" class="svgShape colord6d6d6-116 selectable"></polygon><polygon fill="#bfbebe" points="315.185 645.615 384.311 737.827 355.547 766.578 315.185 645.615" class="svgShape colorbfbebe-117 selectable"></polygon><polygon fill="#d2d1d1" points="333.698 464.324 373.83 531.149 355.668 567.421 289.071 567.367 279.035 537.271 333.698 464.324" class="svgShape colord2d1d1-118 selectable"></polygon><polygon fill="#777777" points="355.708 367.752 305.687 417.693 155.891 168.259 355.708 367.752" class="svgShape color777777-119 selectable"></polygon><polygon fill="#cbcaca" points="315.185 645.615 355.547 766.578 222.434 633.681 212.949 567.3 256.499 567.34 315.185 645.615" class="svgShape colorcbcaca-120 selectable"></polygon><polygon fill="#a7a7a7" points="355.547 766.578 255.706 866.419 222.434 633.681 355.547 766.578" class="svgShape colora7a7a7-121 selectable"></polygon><polygon fill="#dbdbdb" points="305.687 417.693 333.698 464.324 279.035 537.271 255.759 467.539 305.687 417.693" class="svgShape colordbdbdb-122 selectable"></polygon><polygon fill="#c3c3c3" points="289.071 567.367 315.185 645.615 256.499 567.34 289.071 567.367" class="svgShape colorc3c3c3-123 selectable"></polygon><polygon fill="#8f8f8f" points="155.891 168.259 305.687 417.693 255.759 467.539 155.891 168.259" class="svgShape color8f8f8f-124 selectable"></polygon><polygon fill="#d9d9d9" points="279.035 537.271 289.071 567.367 256.499 567.34 279.035 537.271" class="svgShape colord9d9d9-125 selectable"></polygon><polygon fill="#e0e0e0" points="255.759 467.539 279.035 537.271 256.499 567.34 212.949 567.3 205.819 517.413 255.759 467.539" class="svgShape colore0e0e0-126 selectable"></polygon><polygon fill="#a7a7a7" points="155.891 168.259 255.759 467.539 205.819 517.413 155.891 168.259" class="svgShape colora7a7a7-127 selectable"></polygon><polygon fill="#bebebe" points="222.434 633.681 255.706 866.419 155.891 966.233 155.891 567.246 222.434 633.681" class="svgShape colorbebebe-128 selectable"></polygon><polygon fill="#d6d6d6" points="212.949 567.3 222.434 633.681 155.891 567.246 212.949 567.3" class="svgShape colord6d6d6-129 selectable"></polygon><polygon fill="#e4e4e4" points="205.819 517.413 212.949 567.3 155.891 567.246 205.819 517.413" class="svgShape colore4e4e4-130 selectable"></polygon><polygon fill="#bebebe" points="155.891 168.259 205.819 517.413 155.891 567.246 155.891 168.259" class="svgShape colorbebebe-131 selectable"></polygon><path d="M1129.11273 245.43079h-41.30078v-51.45117h151.90234v51.45117h-40.9502v232.05371h-69.65137v-232.05371zM1250.91253 417.28333v-81.90137c0-40.60059 30.45117-64.05078 73.15137-64.05078 43.05078 0 70.35156 20.65039 70.35156 61.60059v47.60059h-81.55176v38.50098c0 13.30078 5.25 17.85059 11.2002 17.85059s12.9502-2.4502 12.9502-15.75v-24.15039h57.40137v23.4502c0 40.9502-28 60.90039-70.35156 60.90039-42.7002 0-73.15137-23.4502-73.15137-64.05078zM1337.01409 352.18275v-20.65039c0-13.65039-7-15.75098-12.9502-15.75098-5.59961 0-11.2002 3.85059-11.2002 17.50098v18.90039h24.15039zM1420.31097 417.28333v-82.25098c0-40.60059 30.45117-63.70117 73.15137-63.70117s72.10156 19.59961 72.10156 60.20117v24.15039h-61.25098v-26.25098c0-13.2998-4.90039-15.75-10.85059-15.75-5.59961 0-10.14941 4.2002-10.14941 17.5v89.95215c0 13.2998 4.5498 17.5 10.14941 17.5 5.9502 0 10.85059-2.4502 10.85059-15.75v-29.75098h61.25098v27.65039c0 40.60059-29.75 60.55078-72.10156 60.55078-42.7002 0-73.15137-23.4502-73.15137-64.05078zM1594.25531 193.97962h62.65137v98.35156c15.40039-15.75 31.50098-21 49.00098-21 24.5 0 39.2002 19.9502 39.2002 49.00098v157.15234h-62.30078v-149.80273c0-8.40039-2.4502-12.59961-10.15039-12.59961-3.84961 0-9.4502 1.75-15.75 5.59961v156.80273h-62.65137V193.97962zM1777.30609 420.08314h58.80176v57.40137h-58.80176v-57.40137zM1099.36175 809.98255l58.80176-7.69922c.34961 38.5 9.09961 47.25 20.2998 47.25 10.85059 0 11.55078-10.5 11.55078-16.7998 0-23.10059-11.55078-37.10059-31.50098-53.90137l-17.85059-15.0498c-22.40039-18.90039-41.30078-41.30078-41.30078-77.35156 0-49.70117 32.20117-76.65137 83.30176-76.65137 65.10156 0 70.00098 54.25098 70.35156 82.60156l-60.20117 5.9502c0-24.50098-.34961-38.50098-12.60059-38.50098-9.4502 0-12.9502 12.9502-12.9502 19.60059 0 22.0498 12.60059 33.60059 30.10059 49.00098l16.4502 14.34961c25.20117 21.70117 44.80078 46.55078 44.80078 86.80176 0 39.55078-29.0498 72.45117-75.95117 72.45117-54.95117 0-81.55078-24.85059-83.30176-92.05176zM1283.80706 852.33412v-157.15332h62.65137v151.90332c0 8.39941 3.14941 12.9502 10.5 12.9502 3.84961 0 8.40039-1.75098 14-4.55078v-160.30273h62.65137v202.30371h-62.65137v-18.2002c-15.0498 14-30.80078 22.0498-47.60059 22.0498-24.85059 0-39.55078-19.9502-39.55078-49zM1468.60296 695.18079h62.30176v15.40039c15.0498-14.35059 31.15039-19.25 47.9502-19.25 16.4502 0 28.70117 8.75 35.00098 23.4502 16.4502-17.85059 34.30078-23.4502 52.15039-23.4502 24.85059 0 39.90137 19.59961 39.90137 49.35059v156.80273h-62.30176v-149.80273c0-8.75-2.7998-12.9502-10.14941-12.9502-3.5 0-9.80078 1.75-15.05078 4.5498v158.20312h-61.60059v-149.80273c0-8.75-3.5-12.9502-10.85059-12.9502-3.5 0-9.4502 1.75-15.0498 4.90039v157.85254h-62.30176v-202.30371zM1739.49847 695.18079h62.30176v15.40039c15.0498-14.35059 31.15039-19.25 47.9502-19.25 16.4502 0 28.70117 8.75 35.00098 23.4502 16.4502-17.85059 34.30078-23.4502 52.15039-23.4502 24.85059 0 39.90137 19.59961 39.90137 49.35059v156.80273h-62.30176v-149.80273c0-8.75-2.7998-12.9502-10.14941-12.9502-3.5 0-9.80078 1.75-15.05078 4.5498v158.20312h-61.60059v-149.80273c0-8.75-3.5-12.9502-10.85059-12.9502-3.5 0-9.4502 1.75-15.0498 4.90039v157.85254h-62.30176v-202.30371zM2006.19378 837.28333v-81.90137c0-40.60059 30.45117-64.05078 73.15137-64.05078 43.05078 0 70.35156 20.65039 70.35156 61.60059v47.60059h-81.55176v38.50098c0 13.30078 5.25 17.85059 11.2002 17.85059s12.9502-2.4502 12.9502-15.75v-24.15039h57.40137v23.4502c0 40.9502-28 60.90039-70.35156 60.90039-42.7002 0-73.15137-23.4502-73.15137-64.05078zM2092.29534 772.18275v-20.65039c0-13.65039-7-15.75098-12.9502-15.75098-5.59961 0-11.2002 3.85059-11.2002 17.50098v18.90039h24.15039zM2180.49163 695.18079h62.65137v35.00098c12.25-22.75098 23.10059-37.45117 43.05078-37.45117 3.84961 0 7 .35059 9.4502 1.05078v61.60059c-5.25-2.4502-10.85059-4.2002-17.85059-4.2002-14 0-25.55078 8.40039-34.65039 19.60059v126.70215h-62.65137v-202.30371zM2319.78656 807.18275v-102.55176c0-59.15039 21.7002-94.85156 87.50098-94.85156s84.70215 34.65039 84.70215 81.90137v25.2002h-68.25098v-30.7998c0-12.25098-.35059-28.35059-16.45117-28.35059-16.09961 0-17.14941 16.09961-17.14941 28.35059v139.30176c0 12.60059 1.39941 28.35059 17.14941 28.35059 16.10059 0 16.45117-16.09961 16.45117-28.35059v-32.2002h68.25098v25.2002c0 47.25098-18.90039 83.65137-84.70215 83.65137s-87.50098-36.05078-87.50098-94.85156zM2516.4848 851.28333c0-50.40039 47.9502-66.50098 84.35156-78.75098v-22.05078c0-6.2998-2.10059-12.59961-9.4502-12.59961-8.05078 0-9.4502 5.9502-10.15039 12.59961l-1.75 16.10059-57.75098-2.4502c2.4502-49.7002 26.60059-72.80078 75.60156-72.80078 41.30078 0 63.00098 26.25 63.00098 60.20117v94.85156c0 27.2998 2.09961 42.35059 3.5 51.10059h-55.65137c-1.75-11.90039-4.2002-28-4.5498-28.35059-4.90039 17.15039-17.5 32.2002-38.15039 32.2002-32.90039 0-49.00098-26.59961-49.00098-50.05078zM2600.83636 852.68372v-54.95117c-17.50098 10.15039-28.70117 22.75098-28.70117 42.35059 0 12.9502 5.60059 20.65039 15.05078 20.65039 5.9502 0 9.7998-2.7998 13.65039-8.0498zM2693.93402 695.18079h62.30176v15.40039c15.0498-14.35059 31.15039-19.25 47.9502-19.25 16.4502 0 28.70117 8.75 35.00098 23.4502 16.4502-17.85059 34.30078-23.4502 52.15039-23.4502 24.85059 0 39.90137 19.59961 39.90137 49.35059v156.80273h-62.30176v-149.80273c0-8.75-2.7998-12.9502-10.14941-12.9502-3.5 0-9.80078 1.75-15.05078 4.5498v158.20312h-61.60059v-149.80273c0-8.75-3.5-12.9502-10.85059-12.9502-3.5 0-9.4502 1.75-15.0498 4.90039v157.85254h-62.30176v-202.30371zM2964.82952 695.18079h62.65137v14.35059c15.40039-12.9502 32.2002-18.2002 45.50098-18.2002 27.30078.34961 42.35059 19.59961 42.35059 54.9502v98.35254c0 36.0498-16.7998 56.7002-42.35059 56.7002-14.7002 0-30.80078-7-45.50098-19.25v81.90137h-62.65137v-268.80469zM3052.68109 848.48353v-107.80176c0-7.7002-4.5498-13.65039-11.90039-13.65039-4.5498 0-9.09961 2.4502-13.2998 5.9502v125.30176c4.2002 2.4502 8.40039 3.85059 11.90039 3.85059 8.0498 0 13.2998-5.9502 13.2998-13.65039z" fill="#ffffff" class="svgShape color000000-132 selectable"></path></svg></g></svg>
+</file>
+
+<file path="public/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/components/common/Logo.tsx">
+import { useState, useEffect } from 'react';
+
+interface LogoProps {
+  size?: 'large' | 'header';
+  showYear?: boolean;
+}
+
+const Logo = ({ size = 'large' }: LogoProps) => {
+  const [typedText, setTypedText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    if (size === 'header') {
+      // Header version shows immediately
+      setTypedText('Tech.SummerCamp 2025');
+      setShowCursor(false);
+      return;
+    }
+
+    const lines = [
+      'const hackathon = {',
+      '  name: "Tech.SummerCamp",',
+      '  year: 2025,',
+      '  status: "loading...",',
+      '  participants: 80,',
+      '  prize: "¥400,000"',
+      '};',
+      '',
+      '> Status: Ready for deployment'
+    ];
+
+    let lineIndex = 0;
+    let charIndex = 0;
+    let currentText = '';
+    
+    const typeWriter = () => {
+      if (lineIndex < lines.length) {
+        if (charIndex < lines[lineIndex].length) {
+          currentText += lines[lineIndex][charIndex];
+          setTypedText(currentText);
+          charIndex++;
+          setTimeout(typeWriter, 50 + Math.random() * 50); // Variable speed for realism
+        } else {
+          currentText += '\n';
+          setTypedText(currentText);
+          lineIndex++;
+          charIndex = 0;
+          setTimeout(typeWriter, 200); // Pause between lines
+        }
+      } else {
+        // Typing complete, hide cursor after a delay
+        setTimeout(() => setShowCursor(false), 1000);
+      }
+    };
+
+    const timer = setTimeout(typeWriter, 500); // Initial delay
+    return () => clearTimeout(timer);
+  }, [size]);
+
+  if (size === 'header') {
+    return (
+      <div className="font-mono text-center relative flex justify-start items-center">
+        <img 
+          src="/tsc-horizontal.svg" 
+          alt="Tech Summer Camp" 
+          className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-200 brightness-100 hover:brightness-[1.2] hover:scale-105"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className={`font-mono text-center relative ${size === 'large' ? 'text-[clamp(1.2rem,2.5vw,1.5rem)]' : ''}`}>
+      <div className="bg-gray-900 border border-gray-700 rounded-lg w-full max-w-[700px] mx-auto shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+        <div className="bg-white/10 px-4 py-3 flex items-center justify-between border-b border-white/20 rounded-t-[7px]">
+          <div className="flex gap-2">
+            <span className="w-3 h-3 rounded-full block bg-[#ff5f57]"></span>
+            <span className="w-3 h-3 rounded-full block bg-[#ffbd2e]"></span>
+            <span className="w-3 h-3 rounded-full block bg-[#28ca42]"></span>
+          </div>
+          <div className="text-sm text-white/80">tech-summer-camp.js</div>
+        </div>
+        <div className="p-8 md:p-4 h-[350px] md:h-auto md:min-h-[200px] max-[480px]:p-3 max-[480px]:min-h-[180px] overflow-hidden">
+          <div className="mb-4 text-sm">
+            <span className="text-[#00FF41] mr-2">$</span>
+            <span className="text-white/90">node tech-summer-camp.js</span>
+          </div>
+          <pre className="font-mono text-white leading-[1.6] m-0 whitespace-pre text-[clamp(0.9rem,2vw,1.1rem)] md:text-[0.8rem] md:leading-[1.4] max-[480px]:text-[0.7rem] max-[480px]:leading-[1.3] overflow-hidden">
+            {typedText}
+            {showCursor && <span className="bg-[#00FF41] text-[#00FF41] animate-blink">|</span>}
+          </pre>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Logo;
+</file>
+
+<file path="src/components/common/NewsCard.tsx">
+import { Link } from 'react-router-dom';
+
+interface NewsCardProps {
+  date: string;
+  tag: string;
+  title: string;
+  excerpt: string;
+  link?: string;
+  tagType?: 'announcement' | 'website' | 'update' | 'important' | 'default';
+}
+
+const NewsCard = ({ date, tag, title, excerpt, link, tagType = 'default' }: NewsCardProps) => {
+  const getTagClasses = () => {
+    const baseClasses = "font-mono text-[0.7rem] text-black px-2 py-1 rounded-sm font-bold tracking-wider uppercase";
+    
+    switch(tagType) {
+      case 'announcement':
+        return `${baseClasses} bg-terminal-green`;
+      case 'website':
+        return `${baseClasses} bg-white`;
+      case 'update':
+        return `${baseClasses} bg-white/80`;
+      case 'important':
+        return `${baseClasses} bg-terminal-green animate-pulse`;
+      default:
+        return `${baseClasses} bg-terminal-green`;
+    }
+  };
+
+  return (
+    <article className="relative overflow-hidden bg-white/[0.02] border border-white/10 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group">
+      <div className="absolute top-0 left-0 w-full h-[3px] bg-terminal-green scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
+      <div className="flex justify-between items-center mb-4 md:flex-col md:items-start md:gap-2">
+        <time className="font-mono text-[0.85rem] md:text-[0.8rem] text-terminal-green">{date}</time>
+        <span className={getTagClasses()}>
+          {tag}
+        </span>
+      </div>
+      <h3 className="text-[1.2rem] md:text-base max-[480px]:text-base font-semibold mb-4 leading-[1.4] md:leading-[1.3]">
+        {link ? (
+          <Link to={link} className="text-white no-underline transition-colors duration-300 hover:text-terminal-green">{title}</Link>
+        ) : (
+          title
+        )}
+      </h3>
+      <p className="text-[0.95rem] md:text-[0.85rem] max-[480px]:text-[0.85rem] leading-[1.6] md:leading-[1.5] text-white/80 m-0">{excerpt}</p>
+    </article>
+  );
+};
+
+export default NewsCard;
+</file>
+
+<file path="src/components/common/SectionTitle.tsx">
+import { ReactNode } from 'react';
+
+interface SectionTitleProps {
+  children: ReactNode;
+  glitch?: boolean;
+}
+
+const SectionTitle = ({ children, glitch = true }: SectionTitleProps) => {
+  return (
+    <h2 className="text-center mb-16 md:mb-8 text-[clamp(2rem,4vw,3rem)] md:text-[clamp(1.6rem,5vw,2.2rem)] max-[480px]:text-[clamp(1.6rem,6.5vw,2.2rem)] text-terminal-green font-mono shadow-[0_0_15px_rgba(0,255,65,0.3)] md:px-4 max-[480px]:px-2">
+      {glitch ? (
+        <span className="relative inline-block hover:before:content-[attr(data-text)] hover:after:content-[attr(data-text)] hover:before:absolute hover:after:absolute hover:before:top-0 hover:after:top-0 hover:before:left-0 hover:after:left-0 hover:before:w-full hover:after:w-full hover:before:h-full hover:after:h-full hover:before:animate-[section-glitch-1_0.3s_infinite] hover:after:animate-[section-glitch-2_0.3s_infinite] hover:before:text-white hover:after:text-terminal-green hover:before:z-[-1] hover:after:z-[-2]" data-text={children}>
+          {children}
+        </span>
+      ) : (
+        children
+      )}
+    </h2>
+  );
+};
+
+export default SectionTitle;
+</file>
+
+<file path="src/components/home/GridItem.tsx">
+interface GridItemProps {
+  title: string;
+  description: string;
+  type?: 'target' | 'detail';
+}
+
+const GridItem = ({ title, description, type = 'target' }: GridItemProps) => {
+  const targetStyles = "p-6 border border-gray-300 bg-white/[0.02] transition-all duration-300 hover:border-terminal-green hover:translate-x-2.5";
+  const detailStyles = "text-center py-8 px-4 border border-white/20 relative overflow-hidden transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:bg-terminal-green before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100";
+  
+  const targetTitleStyles = "font-mono text-[1.1rem] mb-2 text-terminal-green";
+  const targetTextStyles = "text-[0.95rem] mb-0 opacity-90";
+  
+  const detailTitleStyles = "font-mono text-[0.9rem] uppercase tracking-[0.1em] mb-4 text-terminal-green";
+  const detailTextStyles = "text-[1.2rem] font-bold mb-0";
+  
+  const isTarget = type === 'target';
+  
+  return (
+    <div className={`
+      ${isTarget ? targetStyles : detailStyles}
+      md:text-left md:mx-0 md:p-6
+      max-md:text-center max-md:mx-2 max-md:p-[0.8rem] max-md:hover:translate-y-[-2px] max-md:hover:translate-x-0
+      max-sm:p-4
+    `}>
+      <h3 className={`
+        ${isTarget ? targetTitleStyles : detailTitleStyles}
+        ${isTarget ? 'max-md:text-[0.9rem] max-md:mb-[0.4rem] max-sm:text-base' : 'max-md:text-[0.75rem] max-sm:text-[0.8rem]'}
+      `}>
+        {title}
+      </h3>
+      <p className={`
+        ${isTarget ? targetTextStyles : detailTextStyles}
+        ${isTarget ? 'max-md:text-[0.8rem] max-md:leading-[1.3] max-sm:text-[0.9rem]' : 'max-md:text-[0.9rem] max-sm:text-base'}
+      `}>
+        {description}
+      </p>
+    </div>
+  );
+};
+
+export default GridItem;
+</file>
+
+<file path="src/components/home/PrizeItem.tsx">
+interface PrizeItemProps {
+  rank: string;
+  amount: number;
+  iconSrc: string;
+  type?: 'first' | 'second';
+}
+
+const PrizeItem = ({ rank, amount, iconSrc, type = 'first' }: PrizeItemProps) => {
+  const baseStyles = "text-center py-12 px-16 border-2 relative overflow-hidden transition-all duration-300 hover:scale-105";
+  const firstStyles = "border-[#FFD700] hover:border-[#FFA500] hover:shadow-[0_10px_30px_rgba(255,215,0,0.3)]";
+  const secondStyles = "border-[#C0C0C0] hover:border-[#A8A8A8] hover:shadow-[0_10px_30px_rgba(192,192,192,0.3)]";
+  const defaultHover = "hover:border-terminal-green";
+  
+  const typeStyles = type === 'first' ? firstStyles : type === 'second' ? secondStyles : defaultHover;
+  
+  return (
+    <div className={`
+      ${baseStyles} ${typeStyles} border-white
+      max-md:p-6 max-md:max-w-[280px] max-md:w-full
+      max-sm:p-6 max-sm:max-w-[250px]
+    `}>
+      <img 
+        src={iconSrc} 
+        alt={`${rank} Place`} 
+        className="w-8 h-8 mb-4 opacity-80" 
+      />
+      <h3 className="font-mono text-[1.5rem] mb-4 tracking-[0.1em] max-md:text-[1.2rem]">
+        {rank} PLACE
+      </h3>
+      <p className="text-[3rem] font-bold text-terminal-green mb-0 max-md:text-[2.8rem] max-sm:text-[2.5rem]">
+        ¥{amount.toLocaleString()}
+      </p>
+    </div>
+  );
+};
+
+export default PrizeItem;
+</file>
+
+<file path="src/components/home/WinnerItem.tsx">
+interface WinnerItemProps {
+  year: string;
+  award: string;
+  title: string;
+  description: string;
+}
+
+const WinnerItem = ({ year, award, title, description }: WinnerItemProps) => {
+  return (
+    <div className="p-8 bg-gray-900 border-l-4 border-terminal-green max-md:p-[1.2rem] max-md:text-center max-sm:p-4">
+      <h3 className="font-mono text-base uppercase tracking-[0.1em] mb-2 text-terminal-green max-md:text-[0.9rem]">
+        {year}年度 {award}
+      </h3>
+      <h4 className="text-[1.5rem] mb-4 max-md:text-[1.1rem] max-md:mb-3 max-sm:text-[1.2rem]">
+        「{title}」
+      </h4>
+      <p className="text-base leading-[1.6] mb-0 opacity-90 max-md:text-[0.85rem] max-md:leading-[1.5] max-sm:text-[0.9rem]">
+        {description}
+      </p>
+    </div>
+  );
+};
+
+export default WinnerItem;
+</file>
+
+<file path="src/components/layout/Layout.tsx">
+import { Outlet, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Navigation from './Navigation';
+import Footer from './Footer';
+import Logo from '../common/Logo';
+
+interface LayoutProps {
+  year: string;
+}
+
+const Layout = ({ year }: LayoutProps) => {
+  const [showNoise, setShowNoise] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowNoise(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className="min-h-screen flex flex-col relative">
+      {showNoise && (
+        <div className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-[0.02] z-[1] bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(255,255,255,0.03)_2px,rgba(255,255,255,0.03)_4px)] animate-[noise_0.2s_steps(2)_infinite]" />
+      )}
+      
+      <header className="fixed top-0 left-0 right-0 bg-black/[0.98] backdrop-blur-[10px] z-[9999] py-2 md:py-3 lg:py-4 h-auto overflow-hidden">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8">
+          <div className="flex justify-between items-center overflow-hidden h-12 md:h-14 lg:h-16">
+            <Link 
+              to={`/${year}`} 
+              className="flex items-center transition-opacity duration-200 relative z-0 flex-shrink-0 overflow-hidden h-full hover:opacity-80"
+            >
+              <Logo size="header" showYear={false} />
+            </Link>
+            
+            <Navigation year={year} />
+          </div>
+        </div>
+      </header>
+
+      <main className="flex-1 mt-20 md:mt-[5rem] lg:mt-24 relative">
+        <Outlet />
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
+</file>
+
+<file path="src/components/layout/Navigation.tsx">
+import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+
+interface NavigationProps {
+  year: string;
+}
+
+interface NavItem {
+  path: string;
+  label: string;
+}
+
+const Navigation = ({ year }: NavigationProps) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navItems: NavItem[] = year === '2025' 
+    ? [
+        { path: '', label: 'HOME' },
+        { path: 'schedule', label: 'SCHEDULE' },
+        { path: 'news', label: 'NEWS' },
+        { path: 'faq', label: 'FAQ' },
+      ]
+    : [
+        { path: '', label: 'RESULTS' },
+        { path: 'gallery', label: 'GALLERY' },
+      ];
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  // メニューが開いているときはスクロールを無効化
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
+  return (
+    <>
+      {/* モバイルメニューのオーバーレイ */}
+      <div 
+        className={`fixed inset-0 bg-black transition-opacity duration-300 md:hidden ${
+          isMobileMenuOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={closeMobileMenu}
+      />
+
+      <nav className="font-mono relative">
+        {/* ハンバーガーメニューボタン */}
+        <button 
+          className="flex md:hidden flex-col justify-center items-center w-10 h-10 gap-1.5 relative z-50"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle navigation menu"
+        >
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''
+          }`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            isMobileMenuOpen ? 'opacity-0' : ''
+          }`} />
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+            isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''
+          }`} />
+        </button>
+
+        {/* デスクトップメニュー */}
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8">
+          {navItems.map((item) => (
+            <li key={item.path}>
+              <NavLink 
+                to={`/${year}/${item.path}`}
+                className={({ isActive }) => 
+                  `relative text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors duration-200
+                   ${isActive ? 'text-white' : 'text-white/60 hover:text-white'}
+                   after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                   after:w-full after:h-[1px] after:bg-white after:origin-left
+                   after:scale-x-0 after:transition-transform after:duration-300
+                   ${isActive ? 'after:scale-x-100' : 'hover:after:scale-x-100'}`
+                }
+                end={item.path === ''}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+
+        {/* モバイルメニュー */}
+        <div
+          className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-neutral-900 pt-20 px-6 shadow-lg transition-transform duration-300 md:hidden z-40
+            ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          role="dialog"
+          aria-modal="true"
+        >
+          <ul className="flex flex-col gap-6">
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <NavLink
+                  to={`/${year}/${item.path}`}
+                  className={({ isActive }) =>
+                    `block text-base font-medium tracking-wider uppercase transition-colors duration-200
+                     ${
+                       isActive
+                         ? 'text-white'
+                         : 'text-white/70 hover:text-white'
+                     }`
+                  }
+                  end={item.path === ''}
+                  onClick={closeMobileMenu} // リンクタップでメニューを閉じる
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Navigation;
+</file>
+
+<file path="src/components/index.js">
+// Layout components
+export { default as Layout } from './layout/Layout';
+export { default as Navigation } from './layout/Navigation';
+export { default as Footer } from './layout/Footer';
+
+// Common components
+export { default as Logo } from './common/Logo';
+export { default as NewsCard } from './common/NewsCard';
+export { default as SectionTitle } from './common/SectionTitle';
+
+// Home page components
+export { default as GridItem } from './home/GridItem';
+export { default as PrizeItem } from './home/PrizeItem';
+export { default as WinnerItem } from './home/WinnerItem';
+</file>
+
+<file path="src/data/siteContent.js">
+// サイトのコンテンツを一元管理するファイル
+// 非エンジニアでも編集しやすいように設計
+
+export const siteContent = {
+  // ========== 基本情報 ==========
+  eventInfo: {
+    name: "Tech.SummerCamp",
+    year: 2025,
+    tagline: "学生エンジニアが得られる体験の最高峰",
+    dates: "2025年9月20日(土) - 23日(火・祝)",
+    location: "大阪市内会場 + オンライン（ハイブリッド）",
+    participants: "60-80名",
+    prize: {
+      first: "¥300,000",
+      second: "¥100,000",
+      total: "¥400,000"
+    }
+  },
+
+  // ========== スポンサー情報 ==========
+  sponsors: {
+    platinum: [
+      // { name: "企業名", logo: "/images/sponsors/company1.png", url: "https://example.com" }
+    ],
+    gold: [
+      // 追加例
+    ],
+    silver: [
+      // 追加例
+    ]
+  },
+
+  // ========== ニュース記事 ==========
+  news: [
+    {
+      id: 'news-001',
+      date: '2025.01.15',
+      category: 'ANNOUNCEMENT',
+      title: 'Tech.SummerCamp 2025 開催決定',
+      content: '2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。',
+      important: true
+    },
+    {
+      id: 'news-002',
+      date: '2025.01.15',
+      category: 'WEBSITE',
+      title: '公式サイトオープン',
+      content: 'Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。'
+    },
+    // 新しいニュースはここに追加
+  ],
+
+  // ========== FAQ ==========
+  faq: {
+    participation: [
+      {
+        question: "参加条件は？",
+        answer: "エンジニア歴2年以上、ハッカソン経験者、インターン経験者など、中・上級者の学生が対象です。"
+      },
+      {
+        question: "選考はありますか？",
+        answer: "はい、応募多数の場合は選考を行います。技術力とチーム貢献度を重視します。"
+      }
+    ],
+    event: [
+      {
+        question: "オンライン参加は可能？",
+        answer: "はい、ハイブリッド開催のため、オンライン参加も可能です。"
+      },
+      {
+        question: "食事は提供されますか？",
+        answer: "会場参加者には食事を提供します。オンライン参加者は各自でご用意ください。"
+      }
+    ],
+    technical: [
+      {
+        question: "使用言語・技術の制限は？",
+        answer: "特に制限はありません。チームで自由に技術選定してください。"
+      }
+    ]
+  },
+
+  // ========== メタ情報（SEO用） ==========
+  meta: {
+    title: "Tech.SummerCamp 2025 - 学生エンジニアが得られる体験の最高峰",
+    description: "全国から選ばれた中・上級者の学生エンジニアが集まる、日本最高峰の学生ハッカソン。48時間の開発で技術力の限界に挑戦。最優秀賞30万円。",
+    keywords: "学生ハッカソン,Tech.SummerCamp,学生エンジニア,プログラミングコンテスト,大阪",
+    ogImage: "/images/og-image.png"
+  },
+
+  // ========== お問い合わせ ==========
+  contact: {
+    email: "info@tech-summercamp.jp",
+    twitter: "@TechSummerCamp",
+    // フォームのURLなど
+  }
+};
+
+// カテゴリー定義
+export const categories = {
+  ANNOUNCEMENT: '開催情報',
+  ENTRY: 'エントリー',
+  WEBSITE: 'サイト更新',
+  SPONSOR: 'スポンサー',
+  EVENT: 'イベント',
+  RESULT: '結果発表'
+};
+
+// ========== 更新方法 ==========
+// 1. このファイルを開く
+// 2. 該当する箇所を編集（例：newsに新しい記事を追加）
+// 3. 保存すると自動的にサイトに反映される
+// 
+// 注意：
+// - 日付は 'YYYY.MM.DD' 形式で記入
+// - IDは重複しないように注意
+// - importantをtrueにすると重要なお知らせとして表示
+</file>
+
+<file path="src/pages/2024/Gallery.tsx">
+import { Link } from 'react-router-dom';
+
+interface GalleryImage {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+}
+
+const Gallery = () => {
+  const galleryImages: GalleryImage[] = [
+    {
+      id: 1,
+      title: 'オープニングセレモニー',
+      description: '48時間の開発がスタート',
+      category: 'event'
+    },
+    {
+      id: 2,
+      title: '開発風景',
+      description: '集中して開発に取り組む参加者たち',
+      category: 'development'
+    },
+    {
+      id: 3,
+      title: 'チームミーティング',
+      description: '戦略を練るチームメンバー',
+      category: 'team'
+    },
+    {
+      id: 4,
+      title: '深夜の開発',
+      description: '夜を徹して開発を続ける',
+      category: 'development'
+    },
+    {
+      id: 5,
+      title: '最終発表会',
+      description: '48時間の成果を発表',
+      category: 'presentation'
+    },
+    {
+      id: 6,
+      title: '表彰式',
+      description: '優秀な作品が表彰される',
+      category: 'award'
+    }
+  ];
+
+  const highlights: string[] = [
+    '48時間連続開発',
+    '11チームが参加',
+    '革新的なアイデア',
+    '技術の可能性',
+    '仲間との絆',
+    '忘れられない体験'
+  ];
+
+  return (
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+            <span className="glitch" data-text="GALLERY 2024">GALLERY 2024</span>
+          </h1>
+          
+          <div className="max-w-2xl mx-auto mb-16 text-center text-lg terminal-box">
+            <p className="text-green-400 mb-2">{'> '} Tech.SummerCamp 2024 Memories</p>
+            <p className="text-green-400">{'> '} 48時間の軌跡</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            {galleryImages.map((image) => (
+              <div key={image.id} className="bg-gray-900 border border-gray-700 overflow-hidden transition-all duration-300 hover:border-green-400 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,65,0.2)]">
+                <div className="aspect-video bg-gradient-to-br from-gray-900 to-black flex items-center justify-center relative overflow-hidden before:absolute before:inset-0 before:bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(255,255,255,0.05)_10px,rgba(255,255,255,0.05)_20px)]">
+                  <div className="text-center z-10 relative">
+                    <div className="text-5xl mb-4 opacity-30">📸</div>
+                    <div className="font-mono text-lg text-green-400 opacity-50">IMAGE</div>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg mb-2">{image.title}</h3>
+                  <p className="text-sm leading-relaxed mb-4 opacity-90">{image.description}</p>
+                  <span className="font-mono text-xs text-green-400 uppercase px-2 py-1 border border-green-400 bg-green-400/10">[{image.category}]</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mb-20">
+            <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// HIGHLIGHTS</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {highlights.map((highlight, index) => (
+                <div key={index} className="flex items-center gap-4 p-6 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:translate-x-2">
+                  <span className="font-mono text-3xl font-bold text-green-400 opacity-30">{String(index + 1).padStart(2, '0')}</span>
+                  <span className="text-lg font-medium">{highlight}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-20">
+            <div className="text-center p-8 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:scale-105">
+              <div className="font-mono text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">2,500+</div>
+              <div className="text-base opacity-90">写真撮影</div>
+            </div>
+            <div className="text-center p-8 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:scale-105">
+              <div className="font-mono text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">48</div>
+              <div className="text-base opacity-90">開発時間</div>
+            </div>
+            <div className="text-center p-8 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:scale-105">
+              <div className="font-mono text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">11</div>
+              <div className="text-base opacity-90">チーム</div>
+            </div>
+            <div className="text-center p-8 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:scale-105">
+              <div className="font-mono text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">∞</div>
+              <div className="text-base opacity-90">思い出</div>
+            </div>
+          </div>
+          
+          <div className="mb-20">
+            <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// TESTIMONIALS</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-8 bg-gray-900 border-l-4 border-l-green-400 relative">
+                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">"</span>
+                <blockquote className="text-base leading-relaxed mb-4 pl-8 italic opacity-90">
+                  「48時間という短い時間でここまでのものが作れるとは思いませんでした。
+                  全国から集まった仲間と一緒に開発できて、本当に貴重な経験でした。」
+                </blockquote>
+                <cite className="font-mono text-sm text-green-400 not-italic">- 参加者 A</cite>
+              </div>
+              
+              <div className="p-8 bg-gray-900 border-l-4 border-l-green-400 relative">
+                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">"</span>
+                <blockquote className="text-base leading-relaxed mb-4 pl-8 italic opacity-90">
+                  「技術的なレベルの高さに驚きました。他のチームの作品を見て、
+                  もっと頑張らなければと強く感じました。来年も絶対参加したいです。」
+                </blockquote>
+                <cite className="font-mono text-sm text-green-400 not-italic">- 参加者 B</cite>
+              </div>
+              
+              <div className="p-8 bg-gray-900 border-l-4 border-l-green-400 relative">
+                <span className="absolute top-4 left-4 text-5xl text-green-400 opacity-30 font-serif">"</span>
+                <blockquote className="text-base leading-relaxed mb-4 pl-8 italic opacity-90">
+                  「チームメンバーとの協力の大切さを学びました。
+                  一人では絶対に作れなかったものを、みんなで作り上げることができました。」
+                </blockquote>
+                <cite className="font-mono text-sm text-green-400 not-italic">- 参加者 C</cite>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center flex justify-center gap-12 flex-wrap">
+            <Link to="/2024/results" className="font-mono text-lg px-8 py-4 border border-gray-600 transition-all duration-300 inline-block hover:border-green-400 hover:bg-green-400/10 hover:-translate-y-0.5">
+              {'> '} View Results
+            </Link>
+            <Link to="/2025" className="font-mono text-lg px-8 py-4 bg-green-400 text-black border border-green-400 transition-all duration-300 inline-block hover:bg-white hover:text-black">
+              {'> '} Join 2025
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Gallery;
+</file>
+
+<file path="src/pages/2024/Results.tsx">
+import { Link } from 'react-router-dom';
+
+interface Winner {
+  rank: number;
+  title: string;
+  team: string;
+  description: string;
+  tech: string[];
+  prize: string;
+}
+
+interface Project {
+  team: string;
+  title: string;
+  description: string;
+  tech: string[];
+}
+
+interface Stat {
+  label: string;
+  value: string;
+}
+
+const Results = () => {
+  const winners: Winner[] = [
+    {
+      rank: 1,
+      title: 'ALL IN',
+      team: 'Team Alpha',
+      description: '全てのチャットアプリの通知を統合するサービス。Slack、Discord、Teams等の通知を一元管理し、AIが重要度を判定して最適なタイミングで通知。',
+      tech: ['React', 'Node.js', 'AI/ML', 'WebSocket'],
+      prize: '¥300,000'
+    },
+    {
+      rank: 2,
+      title: 'CallJourney',
+      team: 'Team Beta',
+      description: '飲食店の電話予約を完全自動化するサービス。音声認識と自然言語処理により、人間と遜色ない自然な会話で予約対応を実現。',
+      tech: ['Python', 'Speech API', 'NLP', 'FastAPI'],
+      prize: '¥100,000'
+    }
+  ];
+
+  const allProjects: Project[] = [
+    {
+      team: 'Team Gamma',
+      title: 'EcoTracker',
+      description: 'IoTセンサーとAIを活用した家庭用省エネシステム',
+      tech: ['IoT', 'Python', 'TensorFlow', 'React']
+    },
+    {
+      team: 'Team Delta',
+      title: 'StudyBuddy',
+      description: 'AR技術を使った革新的な学習支援アプリケーション',
+      tech: ['Unity', 'AR Foundation', 'C#', 'Firebase']
+    },
+    {
+      team: 'Team Epsilon',
+      title: 'HealthSync',
+      description: 'ウェアラブルデバイス連携による健康管理プラットフォーム',
+      tech: ['Flutter', 'Dart', 'GraphQL', 'PostgreSQL']
+    }
+  ];
+
+  const stats: Stat[] = [
+    { label: '参加者数', value: '48名' },
+    { label: 'チーム数', value: '11チーム' },
+    { label: '開発時間', value: '48時間' },
+    { label: '提出作品', value: '11作品' }
+  ];
+
+  return (
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+            <span className="glitch" data-text="RESULTS 2024">RESULTS 2024</span>
+          </h1>
+          
+          <div className="max-w-2xl mx-auto mb-16 text-center text-lg terminal-box">
+            <p className="text-green-400 mb-2">{'> '} Tech.SummerCamp 2024 Results</p>
+            <p className="text-green-400">{'> '} 2024年9月21日-24日開催</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-20">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center p-8 border border-gray-600 bg-white/2 transition-all duration-300 hover:border-green-400 hover:-translate-y-1 hover:bg-green-400/5">
+                <div className="font-mono text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2">{stat.value}</div>
+                <div className="text-base opacity-90">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mb-20">
+            <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// WINNERS</h2>
+            
+            {winners.map((winner, index) => (
+              <div key={index} className="mb-12 p-12 bg-gray-900 border-2 border-gray-700 relative overflow-hidden transition-all duration-300 hover:border-green-400 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,255,65,0.2)] before:absolute before:top-0 before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-green-400 before:to-white before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
+                  <div className="font-mono text-lg font-bold text-green-400">
+                    {winner.rank === 1 ? '🥇' : '🥈'} 
+                    {winner.rank === 1 ? 'WINNER' : '2ND PLACE'}
+                  </div>
+                  <div className="font-mono text-2xl font-bold text-white">{winner.prize}</div>
+                </div>
+                
+                <h3 className="text-3xl md:text-4xl mb-2">「{winner.title}」</h3>
+                <div className="font-mono text-green-400 mb-8 text-lg">by {winner.team}</div>
+                
+                <p className="text-lg leading-relaxed mb-8 opacity-90">{winner.description}</p>
+                
+                <div className="flex items-center gap-4 flex-wrap">
+                  <span className="font-mono text-green-400 text-sm">Tech Stack:</span>
+                  <div className="flex gap-2 flex-wrap">
+                    {winner.tech.map((tech, techIndex) => (
+                      <span key={techIndex} className="font-mono text-xs px-3 py-1 bg-white/10 border border-gray-600 rounded transition-all duration-200 hover:border-green-400 hover:bg-green-400/10">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mb-20">
+            <h2 className="font-mono text-3xl mb-12 text-green-400 text-center">// ALL PROJECTS</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {allProjects.map((project, index) => (
+                <div key={index} className="p-8 bg-gray-900 border border-gray-700 transition-all duration-300 hover:border-green-400 hover:-translate-y-1">
+                  <h3 className="text-xl mb-2">{project.title}</h3>
+                  <div className="font-mono text-green-400 text-sm mb-4">{project.team}</div>
+                  <p className="text-sm leading-relaxed mb-6 opacity-90">{project.description}</p>
+                  <div className="flex gap-2 flex-wrap">
+                    {project.tech.map((tech, techIndex) => (
+                      <span key={techIndex} className="font-mono text-xs px-2 py-1 bg-white/10 border border-gray-600 rounded transition-all duration-200 hover:border-green-400 hover:bg-green-400/10">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="text-center flex justify-center gap-12 flex-wrap">
+            <Link to="/2024/gallery" className="font-mono text-lg px-8 py-4 border border-gray-600 transition-all duration-300 inline-block hover:border-green-400 hover:bg-green-400/10 hover:-translate-y-0.5">
+              {'> '} View Gallery
+            </Link>
+            <Link to="/2025" className="font-mono text-lg px-8 py-4 bg-green-400 text-black border border-green-400 transition-all duration-300 inline-block hover:bg-white hover:text-black">
+              {'> '} Tech.SummerCamp 2025
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Results;
+</file>
+
+<file path="src/pages/2025/FAQ.tsx">
+import { useState } from 'react';
+
+interface FAQItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+const FAQ = () => {
+  const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
+
+  const toggleItem = (id: number) => {
+    setOpenItems(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
+
+  const faqData: FAQItem[] = [
+    {
+      id: 1,
+      question: 'エントリーに必要な条件は何ですか？',
+      answer: '大学生・大学院生・高専生・専門学校生で、かつ以下のいずれかを満たす方が対象です：エンジニア歴2年以上、ハッカソン参加・受賞経験、インターン経験、プロダクトリリース経験、技術カンファレンス登壇経験、またはチームを技術面で牽引できる自信がある方。'
+    },
+    {
+      id: 2,
+      question: 'オンライン参加は可能ですか？',
+      answer: '原則オフライン参加のみです。'
+    },
+    {
+      id: 3,
+      question: '参加費用はかかりますか？',
+      answer: '参加費は無料です。ただし、会場までの交通費・宿泊費は自己負担となります。'
+    },
+    {
+      id: 4,
+      question: 'チーム編成はどのように行われますか？',
+      answer: '個人で申し込みされた方は運営でチーム編成をランダムで行います。また、チームで申し込まれた方は最大10名まで参加できます。'
+    },
+    {
+      id: 5,
+      question: '開発環境の制約はありますか？',
+      answer: '特定の技術スタックの制約はありません。Web、モバイル、AI、IoT、ゲームなど、あらゆる分野での開発が可能です。'
+    },
+    {
+      id: 6,
+      question: '審査基準はどのようなものですか？',
+      answer: '技術的な完成度、アイデアの独創性、実用性、プレゼンテーション力などを総合的に評価します。完全に動作する必要はありませんが、コンセプトが明確で技術的な工夫が見られる作品が評価されます。'
+    },
+    {
+      id: 7,
+      question: '宿泊場所は提供されますか？',
+      answer: '宿泊施設の提供はありません。'
+    },
+    {
+      id: 8,
+      question: '作品の知的財産権はどうなりますか？',
+      answer: '作品の知的財産権は制作者（チーム）に帰属します。ただし、Tech.SummerCampの広報目的での使用については同意していただきます。'
+    }
+  ];
+
+  return (
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+            <span className="glitch" data-text="FAQ">FAQ</span>
+          </h1>
+          
+          <div className="max-w-3xl mx-auto mb-16 text-center">
+            <p className="text-lg leading-relaxed text-white/80">
+              Tech.SummerCamp 2025に関するよくある質問をまとめました。
+              気になることがあればお気軽にご確認ください。
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto mb-16 grid gap-6">
+            {faqData.map(item => (
+              <div key={item.id} className="border border-white/10 rounded-lg bg-white/2 overflow-hidden transition-all duration-300 hover:border-green-400 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,255,65,0.15)] relative before:absolute before:top-0 before:left-0 before:w-full before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <button 
+                  className={`w-full flex items-center gap-4 p-8 bg-transparent border-0 text-white font-sans text-lg text-left cursor-pointer transition-all duration-200 font-medium ${openItems[item.id] ? 'bg-green-400/5' : 'hover:bg-green-400/5'}`}
+                  onClick={() => toggleItem(item.id)}
+                >
+                  <span className="font-mono text-green-400 font-bold min-w-[45px] text-base bg-green-400/10 px-2 py-1 rounded border border-green-400/30">Q{item.id}.</span>
+                  <span className="flex-1 leading-relaxed">{item.question}</span>
+                  <span className={`font-mono text-xl text-green-400 font-bold min-w-[35px] text-center transition-all duration-200 bg-green-400/10 rounded-full w-9 h-9 flex items-center justify-center border border-green-400/30 ${openItems[item.id] ? 'rotate-180 bg-green-400 text-black' : ''}`}>
+                    {openItems[item.id] ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${openItems[item.id] ? 'max-h-[500px]' : 'max-h-0'}`}>
+                  <div className="px-8 pb-8 flex gap-4 items-start bg-green-400/2 border-t border-green-400/10">
+                    <span className="font-mono text-green-400 font-bold min-w-[45px] pt-1 text-base bg-green-400/10 px-2 py-1 rounded border border-green-400/30 mt-2">A.</span>
+                    <p className="text-base leading-relaxed text-white/90 m-0 pt-2">{item.answer}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default FAQ;
+</file>
+
+<file path="src/pages/2025/Home.tsx">
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../../components/common/Logo';
+import NewsCard from '../../components/common/NewsCard';
+import SectionTitle from '../../components/common/SectionTitle';
+import GridItem from '../../components/home/GridItem';
+import PrizeItem from '../../components/home/PrizeItem';
+import WinnerItem from '../../components/home/WinnerItem';
+
+const Home = () => {
+  const [typedText, setTypedText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+  const fullText = '学生エンジニアが得られる体験の最高峰';
+  
+
+  useEffect(() => {
+    let currentIndex = 0;
+    
+    const typeWriter = () => {
+      if (currentIndex < fullText.length) {
+        setTypedText(fullText.slice(0, currentIndex + 1));
+        currentIndex++;
+        setTimeout(typeWriter, 120 + Math.random() * 80); // Variable speed for realism
+      } else {
+        // Typing complete, hide cursor after a delay
+        setTimeout(() => setShowCursor(false), 2000);
+      }
+    };
+
+    const timer = setTimeout(typeWriter, 1000); // Initial delay
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className="w-full overflow-x-hidden">
+      <section className="min-h-[75vh] md:min-h-[80vh] flex items-center relative overflow-hidden py-6 md:py-8 w-full max-w-[100vw]">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border">
+          <div className="relative z-[2]">
+            <div className="flex justify-center items-center mb-8 md:mb-12 lg:mb-16 mt-4 md:mt-8 text-center py-4 md:py-6 lg:py-8">
+              <img src="/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
+            </div>
+            <div className="mb-6 md:mb-8 lg:mb-12 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
+              <h1 className="text-[clamp(0.9rem,4.5vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[800] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
+                <span className="inline max-w-full box-border text-center">
+                  {typedText || '\u00A0'}
+                </span>
+                <span className="text-terminal-green font-normal animate-blink ml-[2px] inline align-baseline" style={{ visibility: showCursor ? 'visible' : 'hidden' }}>|</span>
+              </h1>
+            </div>
+            
+            
+            <div className="max-w-[1000px] mx-auto mb-12">
+              <section className="mb-16 text-center py-12 max-w-[800px] mx-auto">
+                <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-semibold tracking-[0.08em] text-center text-white">
+                  Tech.SummerCampは、全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
+                  日本最高峰の学生ハッカソンです。
+                </p>
+                <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-medium tracking-[0.08em] text-center text-white/90">
+                  48時間という限られた時間の中で、技術力の限界に挑戦し、<br />
+                  イノベーティブなプロダクトを生み出す。<br />
+                  それがTech.SummerCampです。
+                </p>
+                <div className="flex gap-8 flex-wrap justify-center mb-4 md:mb-8 lg:mb-12 mt-8 md:mt-12">
+                  <Link to="/2025/entry" className="relative inline-flex items-center justify-center py-6 px-12 md:py-6 md:px-12 lg:py-8 lg:px-20 text-xl md:text-xl lg:text-[2rem] font-[900] font-mono uppercase tracking-[0.2em] bg-transparent text-white border-[3px] border-white overflow-hidden transition-all duration-300 cursor-pointer min-w-[280px] md:min-w-[280px] lg:min-w-[400px] no-underline shadow-none hover:-translate-y-[5px] hover:shadow-[0_10px_30px_rgba(255,255,255,0.2)] hover:text-black hover:border-white active:-translate-y-[2px] active:scale-[1.02] before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-white before:transition-[left] before:duration-[400ms] before:z-[-1] hover:before:left-0">
+                    <span className="absolute -top-[2px] -left-[2px] -right-[2px] -bottom-[2px] bg-transparent z-[-1] opacity-0"></span>
+                    <span className="flex items-center gap-4 z-[1]">
+                      <span className="text-xl md:text-xl lg:text-[2rem] drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]">ENTRY NOW</span>
+                      <span className="text-2xl md:text-2xl lg:text-[2.5rem] animate-[arrow-move_1.5s_ease-in-out_infinite]">→</span>
+                    </span>
+                  </Link>
+                </div>
+              </section>
+              
+              <section className="mb-16">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// TARGET</h2>
+                <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 md:gap-6 lg:gap-8">
+                  <GridItem
+                    title="エンジニア歴2年以上"
+                    description="実務レベルの開発経験を持つ学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="ハッカソン経験者"
+                    description="複数回参加または受賞経験がある学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="インターン経験者"
+                    description="企業での実務経験を持つ学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="プロダクトリリース経験"
+                    description="実際にユーザーが使うサービスを作った学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="技術カンファレンス登壇"
+                    description="勉強会やカンファレンスで発表経験がある学生"
+                    type="target"
+                  />
+                  <GridItem
+                    title="チームリーダー経験"
+                    description="技術力でチームを牽引できる学生"
+                    type="target"
+                  />
+                </div>
+              </section>
+              
+              <section className="mb-16">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// EVENT DETAILS</h2>
+                <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-3 md:gap-6 lg:gap-8">
+                  <GridItem
+                    title="開催日程"
+                    description="2025年9月20日(土) - 23日(火・祝)"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="開催形式"
+                    description="大阪会場"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="参加人数"
+                    description="60-80名"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="チーム編成"
+                    description="最大10名 / チーム"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="コードフリーズ"
+                    description="9月22日(月) 18:00"
+                    type="detail"
+                  />
+                  <GridItem
+                    title="賞金総額"
+                    description="40万円"
+                    type="detail"
+                  />
+                </div>
+              </section>
+              
+              <section className="mb-16">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// PRIZES</h2>
+                <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12 justify-center items-center md:items-start flex-wrap px-2 md:px-0">
+                  <PrizeItem
+                    rank="1st"
+                    amount={300000}
+                    iconSrc="/kin.svg"
+                    type="first"
+                  />
+                  <PrizeItem
+                    rank="2nd"
+                    amount={100000}
+                    iconSrc="/gin.svg"
+                    type="second"
+                  />
+                </div>
+              </section>
+              
+              <section className="mb-16">
+                <h2 className="font-mono text-xl md:text-2xl lg:text-[2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center">// PAST WINNERS</h2>
+                <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 px-2 md:px-0">
+                  <WinnerItem
+                    year="2024"
+                    award="最優秀賞"
+                    title="ALL IN"
+                    description="全てのチャットアプリの通知を統合するサービス。Slack、Discord、Teams等の通知を一元管理し、AIが重要度を判定して最適なタイミングで通知。"
+                  />
+                  <WinnerItem
+                    year="2024"
+                    award="優秀賞"
+                    title="CallJourney"
+                    description="飲食店の電話予約を完全自動化するサービス。音声認識と自然言語処理により、人間と遜色ない自然な会話で予約対応を実現。"
+                  />
+                </div>
+              </section>
+            </div>
+            
+            <div className="my-4 md:my-8 lg:my-12 flex justify-center px-2 md:px-4">
+              <Logo size="large" />
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      <section className="bg-[#1a1a1a] pb-0">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border py-10 md:py-12 lg:py-16">
+          <SectionTitle>// LATEST NEWS</SectionTitle>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-4 md:gap-6 lg:gap-8 mb-6 md:mb-8 lg:mb-12 px-2 md:px-0">
+            <NewsCard
+              date="2025.01.15"
+              tag="ANNOUNCEMENT"
+              title="Tech.SummerCamp 2025 開催決定"
+              excerpt="2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。"
+              tagType="announcement"
+            />
+            
+            <NewsCard
+              date="2025.01.15"
+              tag="WEBSITE"
+              title="公式サイトオープン"
+              excerpt="Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。"
+              tagType="website"
+            />
+          </div>
+          
+          <div className="text-center">
+            <Link to="/2025/news" className="inline-flex items-center gap-[0.3rem] py-3 px-6 font-mono text-[0.85rem] font-semibold tracking-[0.05em] text-white border-2 border-white no-underline transition-all duration-300 bg-transparent relative overflow-hidden hover:bg-white hover:border-white hover:text-black hover:-translate-y-[2px]">
+              VIEW ALL NEWS
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
+</file>
+
+<file path="src/pages/2025/News.tsx">
+import NewsCard from '../../components/common/NewsCard';
+
+interface NewsItem {
+  id: number;
+  date: string;
+  title: string;
+  content: string;
+  category: 'announcement' | 'website' | 'update' | 'important' | 'default';
+}
+
+const News = () => {
+  const newsItems: NewsItem[] = [
+    {
+      id: 1,
+      date: '2025.01.15',
+      title: 'Tech.SummerCamp 2025 開催決定',
+      content: 'Tech.SummerCamp 2025の開催が正式に決定しました。今年も全国から選ばれた学生エンジニアが集まります。',
+      category: 'announcement'
+    },
+    {
+      id: 2,
+      date: '2025.01.15',
+      title: '公式サイトオープン',
+      content: 'Tech.SummerCamp 2025の公式サイトがオープンしました。今後、イベントに関する最新情報はこちらでお知らせします。',
+      category: 'website'
+    }
+  ];
+
+
+  return (
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+            <span className="glitch" data-text="NEWS">NEWS</span>
+          </h1>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+            {newsItems.map(item => (
+              <NewsCard
+                key={item.id}
+                date={item.date}
+                tag={item.category.toUpperCase()}
+                title={item.title}
+                excerpt={item.content}
+                tagType={item.category}
+              />
+            ))}
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default News;
+</file>
+
+<file path="src/pages/2025/Schedule.tsx">
+const Schedule = () => {
+
+  return (
+    <div className="pt-8">
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl md:text-6xl font-mono font-bold text-center mb-12 md:mb-16">
+            <span className="glitch" data-text="SCHEDULE">SCHEDULE</span>
+          </h1>
+          
+          
+          <div className="relative max-w-5xl mx-auto mb-16 before:absolute before:left-10 before:top-0 before:bottom-0 before:w-0.5 before:bg-gradient-to-b before:from-green-400 before:to-gray-600 before:rounded-full">
+            
+            <div className="relative mb-16 pl-24">
+              <div className="absolute left-5 top-5 w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 border-2 border-black rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,255,65,0.3)] transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(0,255,65,0.5)]">
+                <span className="font-mono text-lg font-bold text-black">1</span>
+              </div>
+              <div className="bg-gradient-to-br from-white/5 to-white/2 border border-white/10 border-l-4 border-l-green-400 rounded-lg p-8 transition-all duration-300 hover:border-green-400 hover:translate-x-2 hover:shadow-[0_10px_30px_rgba(0,255,65,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <div className="flex items-center gap-4 mb-8 flex-wrap">
+                  <h3 className="font-mono text-2xl font-bold text-white">9月20日（土）</h3>
+                  <span className="font-mono text-base text-green-400 opacity-80">開発Day1 - 対面</span>
+                  <span className="px-3 py-1 rounded-full font-mono text-xs font-semibold uppercase tracking-wider bg-green-400/20 text-green-400 border border-green-400">開発開始</span>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-green-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">10:00</span>
+                    <span className="text-base text-white flex-1">受付開始</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-blue-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">10:30</span>
+                    <span className="text-base text-white flex-1">オープニング</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-green-400 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">11:00〜21:00</span>
+                    <span className="text-base text-white flex-1">開発作業</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-amber-700 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">21:00</span>
+                    <span className="text-base text-white flex-1">会場クローズ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative mb-16 pl-24">
+              <div className="absolute left-5 top-5 w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 border-2 border-black rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,255,65,0.3)] transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(0,255,65,0.5)]">
+                <span className="font-mono text-lg font-bold text-black">2</span>
+              </div>
+              <div className="bg-gradient-to-br from-white/5 to-white/2 border border-white/10 border-l-4 border-l-green-400 rounded-lg p-8 transition-all duration-300 hover:border-green-400 hover:translate-x-2 hover:shadow-[0_10px_30px_rgba(0,255,65,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <div className="flex items-center gap-4 mb-8 flex-wrap">
+                  <h3 className="font-mono text-2xl font-bold text-white">9月21日（日）</h3>
+                  <span className="font-mono text-base text-green-400 opacity-80">開発Day2 - 対面</span>
+                  <span className="px-3 py-1 rounded-full font-mono text-xs font-semibold uppercase tracking-wider bg-green-400/20 text-green-400 border border-green-400">開発継続</span>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-green-400 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">09:00〜21:00</span>
+                    <span className="text-base text-white flex-1">開発作業</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-orange-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">終日</span>
+                    <span className="text-base text-white flex-1">メンター相談可能</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-amber-700 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">21:00</span>
+                    <span className="text-base text-white flex-1">会場クローズ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative mb-16 pl-24">
+              <div className="absolute left-5 top-5 w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 border-2 border-black rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,255,65,0.3)] transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(0,255,65,0.5)]">
+                <span className="font-mono text-lg font-bold text-black">3</span>
+              </div>
+              <div className="bg-gradient-to-br from-white/5 to-white/2 border border-white/10 border-l-4 border-l-green-400 rounded-lg p-8 transition-all duration-300 hover:border-green-400 hover:translate-x-2 hover:shadow-[0_10px_30px_rgba(0,255,65,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <div className="flex items-center gap-4 mb-8 flex-wrap">
+                  <h3 className="font-mono text-2xl font-bold text-white">9月22日（月）</h3>
+                  <span className="font-mono text-base text-green-400 opacity-80">開発Day3 - オンライン</span>
+                  <span className="px-3 py-1 rounded-full font-mono text-xs font-semibold uppercase tracking-wider bg-orange-500/20 text-orange-500 border border-orange-500">最終調整</span>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-green-400 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">09:00〜18:00</span>
+                    <span className="text-base text-white flex-1">最終調整（リモート）</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-red-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">18:00</span>
+                    <span className="text-base text-red-500 font-semibold flex-1">🚫 コードフリーズ</span>
+                  </div>
+                  <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-purple-600 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                    <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">18:00〜</span>
+                    <span className="text-base text-white flex-1">審査開始</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative mb-16 pl-24">
+              <div className="absolute left-5 top-5 w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 border-2 border-black rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,255,65,0.3)] transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(0,255,65,0.5)]">
+                <span className="font-mono text-lg font-bold text-black">4</span>
+              </div>
+              <div className="bg-gradient-to-br from-white/5 to-white/2 border border-white/10 border-l-4 border-l-green-400 rounded-lg p-8 transition-all duration-300 hover:border-green-400 hover:translate-x-2 hover:shadow-[0_10px_30px_rgba(0,255,65,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
+                <div className="flex items-center gap-4 mb-8 flex-wrap">
+                  <h3 className="font-mono text-2xl font-bold text-white">9月23日（火・祝）</h3>
+                  <span className="font-mono text-base text-green-400 opacity-80">最終発表会 - 対面</span>
+                  <span className="px-3 py-1 rounded-full font-mono text-xs font-semibold uppercase tracking-wider bg-white/20 text-white border border-white">発表</span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="bg-white/2 rounded-lg p-6 border border-white/10">
+                    <h4 className="font-mono text-lg text-green-400 mb-6 text-center pb-2 border-b border-green-400/30">午前</h4>
+                    <div className="flex flex-col gap-4">
+                      <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-green-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                        <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">10:45</span>
+                        <span className="text-base text-white flex-1">開場・受付</span>
+                      </div>
+                      <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-gray-600 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                        <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">11:30〜13:00</span>
+                        <span className="text-base text-white flex-1">昼食・準備時間</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white/2 rounded-lg p-6 border border-white/10">
+                    <h4 className="font-mono text-lg text-green-400 mb-6 text-center pb-2 border-b border-green-400/30">午後</h4>
+                    <div className="flex flex-col gap-4">
+                      <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-blue-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                        <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">13:15〜14:30</span>
+                        <span className="text-base text-white flex-1">開会式・スポンサーLT</span>
+                      </div>
+                      <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-pink-600 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                        <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">14:30〜15:50</span>
+                        <span className="text-base text-white flex-1">成果発表</span>
+                      </div>
+                      <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-yellow-500 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                        <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">15:50〜17:30</span>
+                        <span className="text-base text-white flex-1">表彰式・懇親会</span>
+                      </div>
+                      <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-amber-700 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
+                        <span className="font-mono text-sm font-semibold text-green-400 min-w-[120px]">18:00</span>
+                        <span className="text-base text-white flex-1">完全終了</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Schedule;
+</file>
+
+<file path="src/App.tsx">
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home2025 from './pages/2025/Home';
+import Schedule from './pages/2025/Schedule';
+import News from './pages/2025/News';
+import FAQ from './pages/2025/FAQ';
+import Results2024 from './pages/2024/Results';
+import Gallery2024 from './pages/2024/Gallery';
+import './styles/tailwind.css';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/2025" replace />} />
+        
+        <Route path="/2025" element={<Layout year="2025" />}>
+          <Route index element={<Home2025 />} />
+          <Route path="about" element={<Navigate to="/2025" replace />} />
+          <Route path="schedule" element={<Schedule />} />
+          <Route path="news" element={<News />} />
+          <Route path="faq" element={<FAQ />} />
+        </Route>
+        
+        <Route path="/2024" element={<Layout year="2024" />}>
+          <Route index element={<Results2024 />} />
+          <Route path="results" element={<Results2024 />} />
+          <Route path="gallery" element={<Gallery2024 />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
+
+export default App
+</file>
+
+<file path="src/main.tsx">
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
+
+const rootElement = document.getElementById('root')!
+createRoot(rootElement).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+</file>
+
+<file path="CLAUDE.md">
+# Tech.SummerCamp 2025 サイト制作情報
+
+## プロジェクト概要
+Tech.SummerCamp（中・上級者向け学生ハッカソン）の参加者向けWebサイトを制作する。
+
+## イベント情報
+### Tech.SummerCamp 2025
+- **コンセプト**: 「学生エンジニアが得られる体験の最高峰」
+- **日程**: 2025年9月20日(土)〜23日(火・祝)
+- **場所**: 大阪市内会場 + オンライン（ハイブリッド開催）
+- **参加者**: 全国の中・上級者学生エンジニア 60〜80名
+- **賞金**: 最優秀賞30万円、優秀賞10万円
+
+### 参加条件（学生かつ以下のいずれか）
+- エンジニア歴2年以上
+- ハッカソン参加経験が複数回
+- ハッカソン受賞経験が1回以上
+- インターン内定/参加経験あり
+- プロダクトのリリース経験あり
+- 勉強会・カンファレンス登壇経験あり
+- 技術力でチームを牽引できる自信がある
+
+### スケジュール
+- チームビルディング（日程調整中・オンライン）
+- キックオフ（9月上旬・オンライン）
+- 企画・事前学習期間
+- 開発期間（9/20-22・24時間×2日）
+- 最終発表会・懇親会（9/23）
+
+## サイト構成
+```
+Tech.SummerCamp/
+├── トップ（最新年度へリダイレクト）
+├── 2025/
+│   ├── トップページ
+│   ├── About（概要）
+│   ├── Schedule（スケジュール）
+│   ├── Entry（エントリー）
+│   ├── News/（更新情報）
+│   └── FAQ
+└── 2024/（アーカイブ）
+    ├── Results（結果・作品）
+    └── Gallery（写真）
+```
+
+## デザイン方針
+### コンセプト：「Digital Frontier - 新たな技術の地平線」
+モノクロームで表現する次世代エンジニアの世界
+
+### カラー
+- **メイン**: 黒(#000000)と白(#FFFFFF)のみ
+- **アクセント**: Terminal Green(#00FF41)を最小限使用
+
+### 特徴的な要素
+1. **ターミナル風デザイン**
+   - コマンドライン風装飾
+   - タイプライター効果
+   - カーソル点滅
+
+2. **グリッチエフェクト**
+   - ホバー時の文字歪み
+   - ノイズ効果
+
+3. **タイポグラフィ**
+   - 見出し: モノスペースフォント（JetBrains Mono）
+   - 本文: Noto Sans JP
+
+4. **レイアウト**
+   - 大胆な余白使い
+   - 非対称配置
+   - ASCIIアート装飾
+
+## 実装方針
+- React + Viteで構築
+- レスポンシブ対応
+- アニメーション多用（パフォーマンス注意）
+- アクセシビリティ確保
+
+## News投稿予定
+- 1月: サイトオープン・開催決定
+- 2-3月: エントリー開始
+- 7-8月: 参加者向け情報
+- 9月: 直前情報・リアルタイム更新
+- 9/23: 結果発表
+
+## 前回実績（2024）
+- 参加: 48名（11チーム）
+- 優勝作品:「ALL IN」全チャットアプリ通知統合
+- 準優勝:「CallJourney」飲食店電話予約自動化
+
+## 開発コマンド
+```bash
+# 開発サーバー起動
+npm run dev
+
+# ビルド
+npm run build
+
+# プレビュー
+npm run preview
+
+# リント
+npm run lint
+```
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs['recommended-latest'],
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: { jsx: true },
+        sourceType: 'module',
+      },
+    },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+    },
+  },
+])
+</file>
+
+<file path="MAINTENANCE_GUIDE.md">
+# Tech.SummerCamp メンテナンスガイド
+
+## 🎯 このガイドの目的
+
+非エンジニア・初心者でも簡単にサイトを更新・管理できるようにするためのガイドです。
+
+## 📝 よくある更新作業
+
+### 1. ニュース記事の追加（最も頻繁）
+
+1. `src/pages/2025/News.jsx` を開く
+2. 以下の形式で新しい記事を追加：
+
+```javascript
+{
+  id: '新しいID',
+  date: '2025.03.15',
+  category: 'ANNOUNCEMENT',
+  title: '記事タイトル',
+  content: '記事内容...'
+}
+```
+
+### 2. スポンサー情報の更新
+
+**現在の構造では、スポンサーページは未実装です。**
+追加する場合は、News.jsxと同様の構造で作成することを推奨します。
+
+### 3. スケジュールの変更
+
+`src/pages/2025/Schedule.jsx` を編集
+- 日付、時間、イベント内容を直接書き換え
+
+### 4. FAQの追加・修正
+
+`src/pages/2025/FAQ.jsx` を編集
+- 質問と回答のペアを追加・修正
+
+## 🚀 簡単な更新手順
+
+### 準備（初回のみ）
+1. Visual Studio Code をインストール
+2. Node.js をインストール
+3. プロジェクトをダウンロード
+
+### 日常の更新作業
+1. VSCodeでプロジェクトを開く
+2. ターミナルで `npm run dev` を実行
+3. ブラウザで確認しながら編集
+4. 保存すると自動的に反映
+
+### 本番への反映
+1. `npm run build` を実行
+2. `dist` フォルダの中身をサーバーにアップロード
+
+## 🔧 トラブルシューティング
+
+### よくあるエラーと対処法
+
+**「npm: command not found」**
+→ Node.jsがインストールされていません
+
+**「Cannot find module」**
+→ `npm install` を実行してください
+
+**画面が真っ白になった**
+→ ブラウザの開発者ツール（F12）でエラーを確認
+
+## 📊 Google Analytics の設置
+
+`index.html` の `<head>` タグ内に以下を追加：
+
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'YOUR_GA_ID');
+</script>
+```
+
+## 🔐 セキュリティ対策
+
+### 基本的な対策
+- 定期的に `npm audit` を実行
+- 依存関係を最新に保つ: `npm update`
+- 環境変数に機密情報を保存（.env ファイル）
+
+### Cloudflare の推奨設定
+- WAF（Web Application Firewall）を有効化
+- DDoS保護を有効化
+- SSL/TLS暗号化を「Full」に設定
+
+## 🎨 デザイン変更の基本
+
+### 色の変更
+`src/styles/global.css` で以下を編集：
+```css
+--color-terminal-green: #00FF41;  /* この値を変更 */
+```
+
+### フォントの変更
+同じく `global.css` で：
+```css
+--font-mono: 'JetBrains Mono', monospace;  /* この値を変更 */
+```
+
+## 📱 レスポンシブ対応の確認
+
+開発時は以下の画面サイズで確認：
+- **PC**: 1920x1080
+- **タブレット**: 768x1024
+- **スマホ**: 375x667
+
+Chrome開発者ツールで簡単に確認できます。
+
+## 🔄 引き継ぎチェックリスト
+
+### 新しい担当者に渡すもの
+- [ ] GitHubアカウントの権限
+- [ ] サーバーのアクセス情報
+- [ ] ドメイン管理画面のアクセス
+- [ ] Google Analyticsのアクセス
+- [ ] このドキュメント
+
+### 教えること（30分程度）
+- [ ] VSCodeの基本操作
+- [ ] `npm run dev` でプレビュー
+- [ ] ファイルの編集方法
+- [ ] `npm run build` でビルド
+- [ ] アップロード方法
+
+## 💡 WordPress からの移行で失われる機能と対策
+
+### 1. ビジュアルエディタ → コード編集
+**対策**: 
+- シンプルなMarkdownエディタの導入を検討
+- Netlify CMSやContentfulなどのヘッドレスCMS導入
+
+### 2. プラグインによる機能拡張 → 手動実装
+**対策**:
+- 必要最小限の機能に絞る
+- 外部サービス（フォーム→Google Forms、解析→GA）を活用
+
+### 3. 自動バックアップ → 手動管理
+**対策**:
+- GitHubで自動的にバージョン管理
+- Netlifyなどで自動デプロイ設定
+
+## 🚀 推奨する追加ツール
+
+### 1. **Netlify CMS**（無料）
+- GitHubと連携
+- ブラウザから記事編集可能
+- 非エンジニアでも使いやすい
+
+### 2. **Vercel**（無料枠あり）
+- 自動デプロイ
+- プレビュー環境
+- 高速なCDN
+
+### 3. **Cloudflare Pages**（無料）
+- セキュリティ機能込み
+- 高速配信
+- 簡単なデプロイ
+
+## 📞 困ったときは
+
+1. エラーメッセージをそのままGoogle検索
+2. ChatGPTに質問（コードとエラーを貼り付け）
+3. 前任者に連絡
+
+---
+
+**最後に**: このサイトは「シンプルさ」を重視して作られています。
+複雑な機能を追加するより、確実に動作する最小限の機能を維持することが大切です。
+</file>
+
+<file path="OPERATION_PROPOSAL.md">
+# Tech.SummerCamp サイト運用改善提案
+
+## 🎯 課題と解決策
+
+### 1. コンテンツ更新の属人化問題
+
+#### 現在の課題
+- React/JSXの知識が必要
+- コード編集に抵抗感がある
+- ミスった時の影響が怖い
+
+#### 解決策
+
+**A. Netlify CMS の導入（推奨）**
+```yaml
+# 設定例
+collections:
+  - name: "news"
+    label: "ニュース"
+    folder: "content/news"
+    create: true
+    fields:
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "日付", name: "date", widget: "datetime"}
+      - {label: "本文", name: "body", widget: "markdown"}
+```
+
+**メリット**:
+- ブラウザから更新可能
+- Markdownで記述
+- プレビュー機能
+- 承認フロー設定可能
+
+**B. コンテンツのJSON/YAML化**
+```javascript
+// src/data/news.json
+{
+  "news": [
+    {
+      "id": "2025-03-01",
+      "title": "エントリー開始！",
+      "content": "お待たせしました！"
+    }
+  ]
+}
+```
+
+### 2. スポンサー管理の簡素化
+
+#### スポンサー管理システムの実装
+```javascript
+// src/components/SponsorSection.jsx
+const sponsors = await fetch('/data/sponsors.json');
+// 自動的にロゴ表示、リンク設定
+```
+
+**運用フロー**:
+1. スポンサー確定
+2. ロゴ画像を指定フォルダに配置
+3. JSONファイルに1行追加
+4. 自動的にサイトに反映
+
+### 3. 世代交代・引き継ぎ問題
+
+#### ドキュメント駆動開発
+```
+docs/
+├── 01_初めての更新.md      # 30分で読める
+├── 02_よくある作業.md      # コピペで使える
+├── 03_トラブル対応.md      # エラー時の対処
+└── 04_年度更新手順.md      # 年1回の作業
+```
+
+#### 動画マニュアルの作成
+- ニュース更新（5分）
+- スポンサー追加（3分）
+- 緊急時の対応（10分）
+
+### 4. セキュリティ・SEO対策
+
+#### A. 静的サイトの利点を活かす
+- **セキュリティ**: サーバーサイドの脆弱性なし
+- **高速**: CDN配信で爆速
+- **安定**: DBダウンの心配なし
+
+#### B. SEO最適化
+```javascript
+// src/components/SEO.jsx
+export const SEO = ({ title, description }) => (
+  <Helmet>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    {/* 構造化データ */}
+    <script type="application/ld+json">
+      {JSON.stringify(eventSchema)}
+    </script>
+  </Helmet>
+);
+```
+
+#### C. アナリティクス統合
+```javascript
+// 簡単なイベントトラッキング
+const trackEvent = (action, category) => {
+  gtag('event', action, { event_category: category });
+};
+```
+
+## 🚀 段階的移行プラン
+
+### Phase 1: 最小限の運用（現在）
+- 直接コード編集
+- エンジニアが更新
+- 手動デプロイ
+
+### Phase 2: 半自動化（3ヶ月後）
+- Netlify CMS導入
+- 自動デプロイ設定
+- 非エンジニアも更新可能
+
+### Phase 3: 完全自動化（6ヶ月後）
+- フォーム連携
+- スポンサー自動更新
+- A/Bテスト実装
+
+## 💰 コスト比較
+
+### WordPress運用
+- サーバー: 月額3,000円
+- 保守: 月額10,000円
+- プラグイン: 年額20,000円
+- **年間コスト: 約20万円**
+
+### 静的サイト運用
+- Netlify: 無料
+- ドメイン: 年額3,000円
+- CDN: 無料（Cloudflare）
+- **年間コスト: 3,000円**
+
+## 🔧 具体的なツール設定
+
+### 1. Netlify設定
+```toml
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+### 2. GitHub Actions（自動テスト）
+```yaml
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run lint
+      - run: npm run build
+```
+
+### 3. 監視設定
+- Uptime監視: UptimeRobot（無料）
+- エラー監視: Sentry（無料枠）
+- パフォーマンス: Lighthouse CI
+
+## 📋 運用チェックリスト
+
+### 日常運用（週1回）
+- [ ] ニュース更新
+- [ ] お問い合わせ確認
+- [ ] アクセス解析チェック
+
+### イベント前（月1回）
+- [ ] スポンサー情報更新
+- [ ] スケジュール確認
+- [ ] FAQ追加
+
+### 年次作業
+- [ ] 年度フォルダ作成
+- [ ] アーカイブ移動
+- [ ] デザインリニューアル検討
+
+## 🎓 教育プログラム
+
+### 新メンバー向け（2時間）
+1. **環境構築**（30分）
+   - VSCode, Node.js インストール
+   - プロジェクトクローン
+
+2. **基本操作**（30分）
+   - ファイル編集
+   - プレビュー確認
+
+3. **実践**（60分）
+   - ニュース追加
+   - スポンサー更新
+   - デプロイ
+
+### スキルアップ（任意）
+- Git/GitHub基礎
+- React基礎
+- CSS基礎
+
+## 🌟 成功のポイント
+
+1. **シンプルに保つ**
+   - 機能を増やしすぎない
+   - 本当に必要なものだけ
+
+2. **ドキュメント重視**
+   - 作業は全て文書化
+   - スクリーンショット多用
+
+3. **段階的な移行**
+   - 一度に全て変えない
+   - 小さく始めて改善
+
+4. **コミュニティ活用**
+   - 他大学と情報共有
+   - ベストプラクティス共有
+
+---
+
+**結論**: WordPressから静的サイトへの移行は、初期の学習コストはかかりますが、長期的には運用コスト削減、セキュリティ向上、パフォーマンス改善が期待できます。段階的な移行と適切なツール選定により、非エンジニアでも運用可能な体制を構築できます。
+</file>
+
+<file path="tailwind.config.js">
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'terminal-green': '#00FF41',
+        'gray-900': '#1a1a1a',
+        'gray-300': '#e0e0e0',
+      },
+      fontFamily: {
+        'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
+        'sans': ['Noto Sans JP', 'sans-serif'],
+      },
+      animation: {
+        'typewriter': 'typewriter 2s steps(40) 1s forwards',
+        'blink': 'blink 1s step-end infinite',
+        'glitch': 'glitch 0.3s ease-in-out',
+        'fadeIn': 'fadeIn 0.8s ease-out forwards',
+        'slideUp': 'slideUp 0.6s ease-out forwards',
+        'noise': 'noise 3s steps(10) infinite',
+        'section-glitch-1': 'section-glitch-1 2s ease-in-out infinite',
+        'section-glitch-2': 'section-glitch-2 2s ease-in-out infinite',
+      },
+      keyframes: {
+        typewriter: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 50%': { opacity: '1' },
+          '51%, 100%': { opacity: '0' },
+        },
+        glitch: {
+          '0%, 100%': { transform: 'translate(0)' },
+          '20%': { transform: 'translate(-2px, 2px)' },
+          '40%': { transform: 'translate(-2px, -2px)' },
+          '60%': { transform: 'translate(2px, 2px)' },
+          '80%': { transform: 'translate(2px, -2px)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'arrow-move': {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(10px)' },
+        },
+        noise: {
+          '0%, 100%': { backgroundPosition: '0 0' },
+          '10%': { backgroundPosition: '-5% -10%' },
+          '20%': { backgroundPosition: '-15% 5%' },
+          '30%': { backgroundPosition: '7% -25%' },
+          '40%': { backgroundPosition: '20% 25%' },
+          '50%': { backgroundPosition: '-25% 10%' },
+          '60%': { backgroundPosition: '15% 5%' },
+          '70%': { backgroundPosition: '0% 15%' },
+          '80%': { backgroundPosition: '25% 35%' },
+          '90%': { backgroundPosition: '-10% 10%' },
+        },
+        'section-glitch-1': {
+          '0%, 100%': { clipPath: 'inset(40% 0 61% 0)' },
+          '20%': { clipPath: 'inset(92% 0 1% 0)' },
+          '40%': { clipPath: 'inset(43% 0 1% 0)' },
+          '60%': { clipPath: 'inset(25% 0 58% 0)' },
+          '80%': { clipPath: 'inset(54% 0 7% 0)' },
+        },
+        'section-glitch-2': {
+          '0%, 100%': { clipPath: 'inset(25% 0 58% 0)' },
+          '20%': { clipPath: 'inset(54% 0 7% 0)' },
+          '40%': { clipPath: 'inset(40% 0 61% 0)' },
+          '60%': { clipPath: 'inset(92% 0 1% 0)' },
+          '80%': { clipPath: 'inset(43% 0 1% 0)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+</file>
+
+<file path="tsconfig.node.json">
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "include": ["vite.config.ts"]
+}
+</file>
+
+<file path="vite.config.ts">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  server: {
+    port: 5174,
+  },
+})
+</file>
+
+<file path=".claude/settings.local.json">
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run dev:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}
+</file>
+
+<file path="src/components/layout/Footer.tsx">
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 border-t border-gray-300 pt-8 pb-4 md:pb-2 mt-8 md:mt-8">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 mb-8 md:mb-12">
+          <div className="footer-section">
+            <div className="flex items-center h-0 overflow-visible">
+              <Link to="/2025">
+                <img 
+                  src="/tsc-horizontal.svg" 
+                  alt="Tech Summer Camp - 学生エンジニアが得られる体験の最高峰" 
+                  className="h-40 w-auto brightness-[0.8] transition-all duration-200 translate-y-10 cursor-pointer hover:brightness-100"
+                />
+              </Link>
+            </div>
+          </div>
+          
+          <div className="footer-section">
+            <h4 className="font-mono text-base mb-4 text-terminal-green">Related Links</h4>
+            <ul className="list-none">
+              <li className="mb-2">
+                <a 
+                  href="https://x.com/tech_summercamp" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm opacity-80 transition-all duration-200 underline hover:opacity-100 hover:pl-2.5"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li className="mb-2">
+                <a 
+                  href="mailto:tech-summercamp@nxtend.or.jp"
+                  className="text-sm opacity-80 transition-all duration-200 underline hover:opacity-100 hover:pl-2.5"
+                >
+                  Email
+                </a>
+              </li>
+              <li className="mb-2">
+                <span className="text-sm opacity-80 text-white cursor-pointer underline transition-all duration-200 hover:opacity-100 hover:pl-2.5">
+                  プライバシーポリシー
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+</file>
+
+<file path="src/styles/tailwind.css">
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans JP';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  }
+
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 300ms;
+  }
+
+  a:hover {
+    color: #00FF41;
+  }
+}
+
+@layer utilities {
+  .terminal-border {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .terminal-text {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    color: #00FF41;
+  }
+  
+  .glitch-effect {
+    text-shadow: 
+      2px 2px 0 rgba(0, 255, 65, 0.7),
+      -2px -2px 0 rgba(255, 255, 255, 0.7);
+  }
+  
+  .glitch-effect:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+}
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="README.md">
+# Tech.SummerCamp 2025 Official Website
+
+Tech.SummerCamp（中・上級者向け学生ハッカソン）の公式Webサイトです。
+
+## 🚀 概要
+
+**Tech.SummerCamp**は、全国から選ばれた中・上級者の学生エンジニアが集まる、日本最高峰の学生ハッカソンです。48時間という限られた時間の中で、技術力の限界に挑戦し、イノベーティブなプロダクトを生み出します。
+
+### イベント情報
+- **日程**: 2025年9月20日(土)〜23日(火・祝)
+- **場所**: 大阪市内会場 + オンライン（ハイブリッド開催）
+- **参加者**: 全国の中・上級者学生エンジニア 60〜80名
+- **賞金**: 最優秀賞30万円、優秀賞10万円
+
+## 🛠️ 技術スタック
+
+- **フロントエンド**: React 19 + Vite
+- **ルーティング**: React Router DOM
+- **スタイリング**: CSS Modules + Custom CSS Variables
+- **デザイン**: ターミナル風デザイン（モノクローム + ターミナルグリーン）
+
+## 📋 セットアップ
+
+### 前提条件
+- Node.js 18.0.0 以上
+- npm または yarn
+
+### インストール
+
+1. **リポジトリをクローン**
+   ```bash
+   git clone <repository-url>
+   cd my-react-app
+   ```
+
+2. **依存関係をインストール**
+   ```bash
+   npm install
+   ```
+
+3. **開発サーバーを起動**
+   ```bash
+   npm run dev
+   ```
+
+4. **ブラウザでアクセス**
+   ```
+   http://localhost:5173
+   ```
+
+## 🎯 利用可能なコマンド
+
+### 開発
+```bash
+npm run dev          # 開発サーバー起動（ホットリロード有効）
+```
+
+### ビルド
+```bash
+npm run build        # 本番用ビルド
+npm run preview      # ビルド結果をプレビュー
+```
+
+### 品質管理
+```bash
+npm run lint         # ESLintでコード品質チェック
+```
+
+## 📁 プロジェクト構造
+
+```
+src/
+├── components/           # 再利用可能なコンポーネント
+│   ├── Layout.jsx       # 基本レイアウト
+│   ├── Navigation.jsx   # ナビゲーション
+│   ├── Logo.jsx         # ロゴ（タイプライター効果）
+│   └── Footer.jsx       # フッター
+├── pages/               # ページコンポーネント
+│   ├── 2025/           # 2025年度ページ
+│   │   ├── Home.jsx    # トップページ
+│   │   ├── Schedule.jsx # スケジュール
+│   │   ├── FAQ.jsx     # よくある質問
+│   │   └── News.jsx    # ニュース
+│   └── 2024/           # 2024年度アーカイブ
+├── styles/
+│   └── global.css      # グローバルスタイル
+└── main.jsx            # エントリーポイント
+```
+
+## 🎨 デザインシステム
+
+### カラーパレット
+- **メイン**: 黒(#000000)と白(#FFFFFF)
+- **アクセント**: Terminal Green(#00FF41)
+
+### 特徴的な要素
+- **ターミナル風デザイン**: コマンドライン風装飾
+- **タイプライター効果**: メインタイトルとロゴ
+- **グリッチエフェクト**: ホバー時の視覚効果
+- **モノスペースフォント**: JetBrains Mono
+
+## 📱 レスポンシブ対応
+
+- **デスクトップ**: 1200px以上
+- **タブレット**: 768px〜1199px
+- **モバイル**: 767px以下
+
+## 🔧 開発ガイドライン
+
+### コードスタイル
+- ESLintの設定に従う
+- コンポーネントはPascalCase
+- CSSクラスはkebab-case
+- CSS Variablesを活用
+
+### コミットメッセージ
+```
+feat: 新機能追加
+fix: バグ修正
+update: 既存機能の更新
+style: スタイル調整
+docs: ドキュメント更新
+```
+
+## 🚀 デプロイ
+
+### ビルド
+```bash
+npm run build
+```
+
+### 出力
+ビルド結果は`dist/`フォルダに生成されます。
+
+## 📞 サポート
+
+### 開発に関する質問
+- 技術的な問題や質問がある場合は、開発チームにお問い合わせください
+
+### プロジェクト関連
+- Tech.SummerCamp に関する詳細は、CLAUDE.md を参照してください
+
+## 📄 ライセンス
+
+このプロジェクトはプライベートプロジェクトです。
+
+---
+
+**Tech.SummerCamp 2025 - 学生エンジニアが得られる体験の最高峰**
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vercel
+
+# Local Netlify folder
+.netlify
+</file>
+
+<file path="package.json">
+{
+  "name": "my-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "prop-types": "^15.8.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@types/node": "^24.0.10",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "typescript": "^5.8.3",
+    "vite": "^5.0.0"
+  }
+}
+</file>
+
+</files>
