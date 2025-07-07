@@ -1,36 +1,10 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Layout from './components/layout/Layout';
-import Home2025 from './pages/2025/Home';
-import Schedule from './pages/2025/Schedule';
-import News from './pages/2025/News';
-import NewsDetail from './pages/2025/NewsDetail';
-import FAQ from './pages/2025/FAQ';
-import Results2024 from './pages/2024/Results';
-import Gallery2024 from './pages/2024/Gallery';
-import './styles/tailwind.css';
+
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Navigate to="/2025" replace />} />
-        
-        <Route path="/2025" element={<Layout year="2025" />}>
-          <Route index element={<Home2025 />} />
-          <Route path="about" element={<Navigate to="/2025" replace />} />
-          <Route path="schedule" element={<Schedule />} />
-          <Route path="news" element={<News />} />
-          <Route path="news/:slug" element={<NewsDetail />} />
-          <Route path="faq" element={<FAQ />} />
-        </Route>
-        
-        <Route path="/2024" element={<Layout year="2024" />}>
-          <Route index element={<Results2024 />} />
-          <Route path="results" element={<Results2024 />} />
-          <Route path="gallery" element={<Gallery2024 />} />
-        </Route>
-      </Routes>
-    </Router>
+    <div>
+      <h1>Hello World</h1>
+    </div>
   );
 }
 
