@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/generate-news.js && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-news": "node scripts/generate-news.js"
   },
   "dependencies": {
     "@markdoc/markdoc": "^0.5.2",
@@ -30,6 +31,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
+    "marked": "^16.0.0",
     "typescript": "^5.8.3",
     "vite": "^5.0.0"
   }
