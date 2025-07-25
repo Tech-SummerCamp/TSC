@@ -113,7 +113,7 @@ const Navigation = ({ year }: NavigationProps) => {
         className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-black pt-20 px-6 transition-transform duration-300 md:hidden z-[10000]
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-6 bg-black">
           {navItems.map((item) => (
             <li key={item.path}>
               <NavLink
@@ -122,7 +122,7 @@ const Navigation = ({ year }: NavigationProps) => {
                 onClick={close}
                 className={({ isActive }) =>
                   `block text-base font-medium tracking-wider uppercase transition-colors duration-200
-                   ${isActive ? 'text-white' : 'text-white/90 hover:text-white'}`
+                   ${isActive ? 'text-white' : 'text-white hover:text-green-400'}`
                 }
               >
                 {item.label}
