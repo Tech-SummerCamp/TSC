@@ -47,7 +47,7 @@ const NewsCard = ({ date, tag, title, excerpt, link, href, tagType = 'default' }
   if (link || href) {
     return (
       <Link to={link || href || '#'} className="block">
-        <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group cursor-pointer h-[240px] md:h-[200px] flex flex-col">
+        <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group cursor-pointer min-h-[180px] md:min-h-[200px] flex flex-col">
           {cardContent}
         </article>
       </Link>
@@ -55,7 +55,7 @@ const NewsCard = ({ date, tag, title, excerpt, link, href, tagType = 'default' }
   }
 
   return (
-    <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group h-[240px] md:h-[200px] flex flex-col">
+    <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group min-h-[180px] md:min-h-[200px] flex flex-col">
       {cardContent}
     </article>
   );
