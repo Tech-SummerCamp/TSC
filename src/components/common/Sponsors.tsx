@@ -98,7 +98,7 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
             協賛企業募集中
           </p>
           <a 
-            href="mailto:sponsor@techsummercamp.jp" 
+            href="mailto:tech-summercamp@nxtend.or.jp"
             className="relative inline-flex items-center justify-center py-4 px-8 text-base font-bold font-mono uppercase tracking-[0.15em] bg-transparent text-white border-2 border-white overflow-hidden transition-all duration-300 cursor-pointer no-underline shadow-none hover:-translate-y-[3px] hover:shadow-[0_10px_30px_rgba(255,255,255,0.2)] hover:text-black hover:border-white active:-translate-y-[1px] active:scale-[1.02] before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-white before:transition-[left] before:duration-[400ms] before:z-[-1] hover:before:left-0"
           >
             <span className="flex items-center gap-3 z-[1]">

@@ -25,7 +25,7 @@ export const newsArticles: NewsArticle[] = [
     "date": "2025-07-15T00:00:00.000Z",
     "author": "TSC運営チーム",
     "category": "announcement",
-    "content": "<h1>Tech.SummerCamp 2025 サイトオープン</h1>\n<p>Tech.SummerCamp 2025の公式サイトをオープンしました！</p>\n<p>今年も「学生エンジニアが得られる体験の最高峰」をコンセプトに、全国の中・上級者学生エンジニアが集まる4日間のハッカソンを開催します。</p>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日程</strong>: 2025年9月20日(土)〜23日(火・祝)</li>\n<li><strong>場所</strong>: 大阪市内会場 + オンライン（ハイブリッド開催）</li>\n<li><strong>参加者</strong>: 全国の中・上級者学生エンジニア 60〜80名</li>\n<li><strong>賞金</strong>: 最優秀賞30万円、優秀賞10万円</li>\n</ul>\n<h2>今後のスケジュール</h2>\n<p>詳細は順次公開していきますので、お楽しみに！</p>\n<p><img src=\"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80\" alt=\"Tech.SummerCamp 2025\"></p>\n",
+    "content": "<h1>Tech.SummerCamp 2025 サイトオープン</h1>\n<p>Tech.SummerCamp 2025の公式サイトをオープンしました！</p>\n<p>今年も「学生エンジニアが得られる体験の最高峰」をコンセプトに、全国の中・上級者学生エンジニアが集まる4日間のハッカソンを開催します。</p>\n<h2>開催概要</h2>\n<ul>\n<li><strong>日程</strong>: 2025年9月20日(土)〜23日(火・祝)</li>\n<li><strong>場所</strong>: 大阪会場</li>\n<li><strong>参加者</strong>: 全国の中・上級者学生エンジニア 60〜80名</li>\n<li><strong>賞金</strong>: 最優秀賞30万円、優秀賞10万円</li>\n</ul>\n<h2>今後のスケジュール</h2>\n<p>詳細は順次公開していきますので、お楽しみに！</p>\n",
     "excerpt": "Tech.SummerCamp 2025の公式サイトをオープンしました！..."
   }
 ];

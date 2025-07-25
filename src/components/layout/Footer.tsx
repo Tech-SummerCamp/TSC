@@ -39,9 +39,13 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <span className="text-sm opacity-80 text-white cursor-pointer underline transition-all duration-200 hover:opacity-100 hover:pl-2.5">
+                <a 
+                  href="https://www.nxtend.or.jp/privacy-policy/"
+                  target="_blank" 
+                  className="text-sm opacity-80 transition-all duration-200 underline hover:opacity-100 hover:pl-2.5"
+                >
                   プライバシーポリシー
-                </span>
+                </a>
               </li>
             </ul>
           </div>
