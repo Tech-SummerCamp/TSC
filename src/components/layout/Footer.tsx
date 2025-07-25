@@ -27,7 +27,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm opacity-80 transition-all duration-200 underline hover:opacity-100 hover:pl-2.5"
                 >
-                  Twitter
+                  X
                 </a>
               </li>
               <li className="mb-2">
