@@ -23,6 +23,7 @@ const generateNewsPlugin = () => {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/TSC/',
   plugins: [react(), tailwindcss(), generateNewsPlugin()],
   server: {
     port: 5174,
