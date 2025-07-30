@@ -5,11 +5,13 @@ import NewsCard from '../../components/common/NewsCard';
 import GridItem from '../../components/home/GridItem';
 import PrizeItem from '../../components/home/PrizeItem';
 import WinnerItem from '../../components/home/WinnerItem';
+import { useNews } from '../../hooks/useNews';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const fullText = '学生エンジニアが得られる体験の最高峰';
+  const { articles } = useNews();
   
 
   useEffect(() => {
@@ -51,11 +53,12 @@ const Home = () => {
             <div className="max-w-[1000px] mx-auto mb-12">
               <section className="mb-24 md:mb-32 text-center max-w-[800px] mx-auto">
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-semibold tracking-[0.08em] text-center text-white">
-                  Tech.SummerCampは、全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
+                  Tech.SummerCampは、<br />
+                  全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
                   日本最高峰の学生ハッカソンです。
                 </p>
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-medium tracking-[0.08em] text-center text-white/90">
-                  48時間という限られた時間の中で、技術力の限界に挑戦し、<br />
+                  55時間という限られた時間の中で、技術力の限界に挑戦し、<br />
                   イノベーティブなプロダクトを生み出す。<br />
                   それがTech.SummerCampです。
                 </p>
@@ -208,18 +211,18 @@ const Home = () => {
       
       <Sponsors 
         sponsors={[
-          { name: "Sample Platinum 1", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+1" },
-          { name: "Sample Platinum 2", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+2" },
-          { name: "Sample Gold 1", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+1" },
-          { name: "Sample Gold 2", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+2" },
-          { name: "Sample Gold 3", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+3" },
-          { name: "Sample Silver 1", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+1" },
-          { name: "Sample Silver 2", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+2" },
-          { name: "Sample Silver 3", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+3" },
-          { name: "Sample Silver 4", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+4" },
-          { name: "Sample Bronze 1", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+1" },
-          { name: "Sample Bronze 2", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+2" },
-          { name: "Sample Bronze 3", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+3" }
+          { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+1" },
+          { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+2" },
+          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+1" },
+          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+2" },
+          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+3" },
+          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+1" },
+          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+2" },
+          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+3" },
+          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+4" },
+          { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+1" },
+          { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+2" },
+          { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+3" }
         ]}
       />
       
@@ -234,23 +237,21 @@ const Home = () => {
           </h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-4 md:gap-6 lg:gap-8 mb-6 md:mb-8 lg:mb-12 px-2 md:px-0">
-            <NewsCard
-              date="2025.01.15"
-              tag="ANNOUNCEMENT"
-              title="Tech.SummerCamp 2025 開催決定"
-              excerpt="2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。"
-              tagType="announcement"
-              href="/2025/news/2025-01-01-site-open"
-            />
-            
-            <NewsCard
-              date="2025.01.15"
-              tag="WEBSITE"
-              title="公式サイトオープン"
-              excerpt="Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。"
-              tagType="website"
-              href="/2025/news/2025-01-01-site-open"
-            />
+            {articles.slice(0, 2).map(article => (
+              <NewsCard
+                key={article.slug}
+                date={new Date(article.date).toLocaleDateString('ja-JP', {
+                  year: 'numeric',
+                  month: '2-digit',
+                  day: '2-digit'
+                }).replace(/\//g, '.')}
+                tag={article.category.toUpperCase()}
+                title={article.title}
+                excerpt={article.excerpt || ''}
+                tagType={article.category as any}
+                href={`/2025/news/${article.slug}`}
+              />
+            ))}
           </div>
           
           <div className="text-center">

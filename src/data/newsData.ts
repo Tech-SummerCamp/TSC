@@ -11,7 +11,7 @@ export interface NewsArticle {
 // Auto-generated from markdown files
 export const newsArticles: NewsArticle[] = [
   {
-    "slug": "2025-02-01-entry-start",
+    "slug": "2025-entry-start",
     "title": "エントリー受付開始！",
     "date": "2025-07-16T00:00:00.000Z",
     "author": "TSC運営チーム",
@@ -20,7 +20,7 @@ export const newsArticles: NewsArticle[] = [
     "excerpt": "お待たせしました！Tech.SummerCamp 2025のエントリー受付を開始しました。..."
   },
   {
-    "slug": "2025-01-01-site-open",
+    "slug": "2025-site-open",
     "title": "Tech.SummerCamp 2025 サイトオープン",
     "date": "2025-07-15T00:00:00.000Z",
     "author": "TSC運営チーム",
