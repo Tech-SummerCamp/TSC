@@ -16,6 +16,25 @@ marked.setOptions({
   gfm: true,
 });
 
+// Custom renderer to make links open in new tab
+const renderer = {
+  link(token) {
+    const href = token.href;
+    const title = token.title;
+    const text = token.text;
+    
+    let html = '<a href="' + href + '"';
+    if (title) {
+      html += ' title="' + title + '"';
+    }
+    html += ' target="_blank" rel="noopener noreferrer">';
+    html += text + '</a>';
+    return html;
+  }
+};
+
+marked.use({ renderer });
+
 function generateNewsData() {
   const files = fs.readdirSync(newsDirectory);
   
