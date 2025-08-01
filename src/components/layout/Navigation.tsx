@@ -9,31 +9,23 @@ import { NavLink } from 'react-router-dom';
  *
  * Tailwind CSS で完結。外部 CSS / JS 依存なし。
  */
-interface NavigationProps {
-  year: string;
-}
 
 interface NavItem {
   path: string;
   label: string;
 }
 
-const Navigation = ({ year }: NavigationProps) => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // 年度ごとにナビ項目を切り替え
   const navItems: NavItem[] =
-    year === '2025'
-      ? [
-          { path: '', label: 'HOME' },
-          { path: 'schedule', label: 'SCHEDULE' },
-          { path: 'news', label: 'NEWS' },
-          { path: 'faq', label: 'FAQ' },
-        ]
-      : [
-          { path: '', label: 'RESULTS' },
-          { path: 'gallery', label: 'GALLERY' },
-        ];
+      [
+        { path: '', label: 'HOME' },
+        { path: 'schedule', label: 'SCHEDULE' },
+        { path: 'news', label: 'NEWS' },
+        { path: 'faq', label: 'FAQ' },
+      ];
 
   // Body スクロールロック
   useEffect(() => {
@@ -82,7 +74,7 @@ const Navigation = ({ year }: NavigationProps) => {
         {navItems.map((item) => (
           <li key={item.path}>
             <NavLink
-              to={`/${year}/${item.path}`}
+              to={`/TSC/${item.path}`}
               end={item.path === ''}
               className={({ isActive }) =>
                 `relative text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors duration-200
@@ -117,7 +109,7 @@ const Navigation = ({ year }: NavigationProps) => {
           {navItems.map((item) => (
             <li key={item.path}>
               <NavLink
-                to={`/${year}/${item.path}`}
+                to={`/TSC/${item.path}`}
                 end={item.path === ''}
                 onClick={close}
                 className={({ isActive }) =>

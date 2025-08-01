@@ -4,11 +4,8 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import Logo from '../common/Logo';
 
-interface LayoutProps {
-  year: string;
-}
 
-const Layout = ({ year }: LayoutProps) => {
+const Layout = () => {
   const [showNoise, setShowNoise] = useState(true);
 
   useEffect(() => {
@@ -25,12 +22,12 @@ const Layout = ({ year }: LayoutProps) => {
       <header className="fixed top-0 inset-x-0 h-20 bg-neutral-900/90 backdrop-blur-md z-[9999] shadow-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between h-full px-4 md:px-6">
           {/* ロゴ */}
-          <Link to={`/${year}`} className="flex items-center gap-2 group">
+          <Link to="/TSC" className="flex items-center gap-2 group">
             <Logo size="header" showYear={false} />
           </Link>
 
           {/* ナビゲーション */}
-          <Navigation year={year} />
+          <Navigation />
         </div>
       </header>
 

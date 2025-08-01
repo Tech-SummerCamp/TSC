@@ -90,7 +90,7 @@ const Logo = ({ size = 'large', sponsors = [] }: LogoProps) => {
     return (
       <div className="font-mono text-center relative flex justify-start items-center">
         <img 
-          src="/tsc-horizontal.svg" 
+          src="/TSC/tsc-horizontal.svg" 
           alt="Tech Summer Camp" 
           className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-200 brightness-100 hover:brightness-[1.2] hover:scale-105"
         />

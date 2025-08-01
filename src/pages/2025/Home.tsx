@@ -38,7 +38,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border">
           <div className="relative z-[2]">
             <div className="flex justify-center items-center text-center">
-              <img src="/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
+              <img src="/TSC/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
             </div>
             <div className="mb-6 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
               <h1 className="text-[clamp(0.9rem,4.5vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[800] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
@@ -249,13 +249,13 @@ const Home = () => {
                 title={article.title}
                 excerpt={article.excerpt || ''}
                 tagType={article.category as any}
-                href={`/2025/news/${article.slug}`}
+                href={`/TSC/news/${article.slug}`}
               />
             ))}
           </div>
           
           <div className="text-center">
-            <Link to="/2025/news" className="inline-flex items-center gap-[0.3rem] py-3 px-6 font-mono text-[0.85rem] font-semibold tracking-[0.05em] text-white border-2 border-white no-underline transition-all duration-300 bg-transparent relative overflow-hidden hover:bg-white hover:border-white hover:text-black hover:-translate-y-[2px]">
+            <Link to="/TSC/news" className="inline-flex items-center gap-[0.3rem] py-3 px-6 font-mono text-[0.85rem] font-semibold tracking-[0.05em] text-white border-2 border-white no-underline transition-all duration-300 bg-transparent relative overflow-hidden hover:bg-white hover:border-white hover:text-black hover:-translate-y-[2px]">
               VIEW ALL NEWS
             </Link>
           </div>

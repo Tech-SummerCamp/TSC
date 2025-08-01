@@ -29,7 +29,7 @@ const NewsDetail = () => {
               <h1 className="text-4xl font-mono font-bold mb-4">404</h1>
               <p className="text-gray-400 mb-8">記事が見つかりませんでした</p>
               <Link 
-                to="/2025/news" 
+                to="/TSC/news" 
                 className="inline-block bg-white text-black px-6 py-3 font-mono hover:bg-[#00FF41] hover:text-black transition-colors"
               >
                 ニュース一覧に戻る
@@ -50,12 +50,12 @@ const NewsDetail = () => {
             <nav className="mb-8">
             <ol className="flex items-center space-x-2 text-sm font-mono text-gray-400">
               <li>
-                <Link to="/2025" className="hover:text-white transition-colors">
+                <Link to="/TSC" className="hover:text-white transition-colors">
                   HOME
                 </Link>
               </li>
               <li className="before:content-['/'] before:mx-2">
-                <Link to="/2025/news" className="hover:text-white transition-colors">
+                <Link to="/TSC/news" className="hover:text-white transition-colors">
                   NEWS
                 </Link>
               </li>
@@ -96,7 +96,7 @@ const NewsDetail = () => {
             {/* 記事フッター */}
             <footer className="mt-16 pt-8 border-t border-gray-800">
             <Link 
-              to="/2025/news" 
+              to="/TSC/news" 
               className="inline-flex items-center gap-2 text-gray-400 hover:text-white font-mono transition-colors group"
             >
               <span className="group-hover:-translate-x-1 transition-transform">←</span>
