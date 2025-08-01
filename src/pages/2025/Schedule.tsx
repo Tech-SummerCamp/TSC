@@ -32,7 +32,7 @@ const Schedule = () => {
                   </div>
                   <div className="flex items-center gap-6 p-4 bg-white/3 rounded-md border-l-2 border-l-gray-600 transition-all duration-300 hover:bg-white/5 hover:translate-x-1">
                     <span className="font-mono text-sm font-semibold text-green-400 min-w-[80px] md:min-w-[120px]">備考</span>
-                    <span className="text-base text-gray-400 flex-1">※チーム代表者のみ参加必須</span>
+                    <span className="text-base text-gray-400 flex-1">※原則参加必須</span>
                   </div>
                 </div>
               </div>
