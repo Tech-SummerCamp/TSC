@@ -66,11 +66,11 @@ const Home = () => {
               <section className="mb-24 md:mb-32 text-center max-w-[800px] mx-auto">
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-semibold tracking-[0.08em] text-center text-white">
                   Tech.SummerCampは<br />
-                  全国から選ばれた中・上級者の学生エンジニアが集まる<br />
+                  全国から選ばれた中・上級者の<br className="md:hidden" />学生エンジニアが集まる<br />
                   日本最高峰の学生ハッカソンです
                 </p>
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-medium tracking-[0.08em] text-center text-white/90">
-                  55時間という限られた時間の中で技術力の限界に挑戦し<br />
+                  55時間という限られた時間の中で<br className="md:hidden" />技術力の限界に挑戦し<br />
                   イノベーティブなプロダクトを生み出す<br />
                   それがTech.SummerCampです
                 </p>
