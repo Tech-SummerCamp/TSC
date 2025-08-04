@@ -6,6 +6,9 @@ import GridItem from '../../components/home/GridItem';
 import PrizeItem from '../../components/home/PrizeItem';
 import WinnerItem from '../../components/home/WinnerItem';
 import { useNews } from '../../hooks/useNews';
+import KinSVG from "/kin.svg";
+import GinSVG from "/gin.svg";
+    
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
@@ -169,13 +172,13 @@ const Home = () => {
                   <PrizeItem
                     rank="1st"
                     amount={300000}
-                    iconSrc="/kin.svg"
+                    iconSrc={KinSVG}
                     type="first"
                   />
                   <PrizeItem
                     rank="2nd"
                     amount={100000}
-                    iconSrc="/gin.svg"
+                    iconSrc={GinSVG}
                     type="second"
                   />
                 </div>
