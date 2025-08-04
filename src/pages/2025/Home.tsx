@@ -53,7 +53,7 @@ const Home = () => {
               <img src={TechSummerCampLogo} alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
             </div>
             <div className="mb-6 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
-              <h1 className="text-[clamp(0.9rem,4.5vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[800] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
+              <h1 className="text-[clamp(1.4rem,6vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[900] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
                 <span className="inline max-w-full box-border text-center">
                   {typedText || '\u00A0'}
                 </span>
