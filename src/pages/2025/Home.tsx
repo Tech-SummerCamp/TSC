@@ -8,6 +8,15 @@ import WinnerItem from '../../components/home/WinnerItem';
 import { useNews } from '../../hooks/useNews';
 import KinSVG from "/kin.svg";
 import GinSVG from "/gin.svg";
+import AllIn1 from "/past-winners/all-in/all-in-1.jpeg";
+import AllIn2 from "/past-winners/all-in/all-in-2.jpeg";
+import AllIn3 from "/past-winners/all-in/all-in-3.jpeg";
+import AllIn4 from "/past-winners/all-in/all-in-4.jpeg";
+import CallJourney1 from "/past-winners/call-journey/call-journey-1.jpeg";
+import CallJourney2 from "/past-winners/call-journey/call-journey-2.jpeg";
+import CallJourney3 from "/past-winners/call-journey/call-journey-3.jpeg";
+import CallJourney4 from "/past-winners/call-journey/call-journey-4.jpeg";
+import TechSummerCampLogo from "/TSC/techsummercamp_logo.png";
     
 
 const Home = () => {
@@ -41,7 +50,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border">
           <div className="relative z-[2]">
             <div className="flex justify-center items-center text-center">
-              <img src="/TSC/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
+              <img src={TechSummerCampLogo} alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
             </div>
             <div className="mb-6 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
               <h1 className="text-[clamp(0.9rem,4.5vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[800] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
@@ -198,12 +207,24 @@ const Home = () => {
                     award="最優秀賞"
                     title="ALL IN"
                     description="全てのチャットアプリの通知を統合するサービス。Slack、Discord、Teams等の通知を一元管理し、AIが重要度を判定して最適なタイミングで通知。"
+                    images={[
+                      AllIn1,
+                      AllIn2,
+                      AllIn3,
+                      AllIn4
+                    ]}
                   />
                   <WinnerItem
                     year="2024"
                     award="優秀賞"
                     title="CallJourney"
                     description="飲食店の電話予約を完全自動化するサービス。音声認識と自然言語処理により、人間と遜色ない自然な会話で予約対応を実現。"
+                    images={[
+                      CallJourney1,
+                      CallJourney2,
+                      CallJourney3,
+                      CallJourney4
+                    ]}
                   />
                 </div>
               </section>

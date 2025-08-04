@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import TSCHorizontalSVG from "/TSC/tsc-horizontal.svg";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <div className="flex items-center md:h-0 md:overflow-visible">
               <Link to="/TSC">
                 <img 
-                  src="/TSC/tsc-horizontal.svg" 
+                  src={TSCHorizontalSVG} 
                   alt="Tech Summer Camp - 学生エンジニアが得られる体験の最高峰" 
                   className="h-32 md:h-40 w-auto brightness-[0.8] transition-all duration-200 md:translate-y-10 cursor-pointer hover:brightness-100"
                 />
