@@ -131,12 +131,12 @@ const Home = () => {
                   />
                   <GridItem
                     title="開催形式"
-                    description="大阪会場"
+                    description="オフライン"
                     type="detail"
                   />
                   <GridItem
                     title="参加人数"
-                    description="60-80名"
+                    description="80名"
                     type="detail"
                   />
                   <GridItem
