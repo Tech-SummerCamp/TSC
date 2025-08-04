@@ -56,14 +56,14 @@ const Home = () => {
             <div className="max-w-[1000px] mx-auto mb-12">
               <section className="mb-24 md:mb-32 text-center max-w-[800px] mx-auto">
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-semibold tracking-[0.08em] text-center text-white">
-                  Tech.SummerCampは、<br />
-                  全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
-                  日本最高峰の学生ハッカソンです。
+                  Tech.SummerCampは<br />
+                  全国から選ばれた中・上級者の学生エンジニアが集まる<br />
+                  日本最高峰の学生ハッカソンです
                 </p>
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-medium tracking-[0.08em] text-center text-white/90">
-                  55時間という限られた時間の中で、技術力の限界に挑戦し、<br />
-                  イノベーティブなプロダクトを生み出す。<br />
-                  それがTech.SummerCampです。
+                  55時間という限られた時間の中で技術力の限界に挑戦し<br />
+                  イノベーティブなプロダクトを生み出す<br />
+                  それがTech.SummerCampです
                 </p>
                 <div className="flex gap-8 flex-wrap justify-center mb-4 md:mb-8 lg:mb-12 mt-8 md:mt-12">
                   <Link to="https://nxtend.connpass.com/event/356366/" target="_blank" className="relative inline-flex items-center justify-center py-6 px-12 md:py-6 md:px-12 lg:py-8 lg:px-20 text-xl md:text-xl lg:text-[2rem] font-[900] font-mono uppercase tracking-[0.2em] bg-transparent text-white border-[3px] border-white overflow-hidden transition-all duration-300 cursor-pointer min-w-[280px] md:min-w-[280px] lg:min-w-[400px] no-underline shadow-none hover:-translate-y-[5px] hover:shadow-[0_10px_30px_rgba(255,255,255,0.2)] hover:text-black hover:border-white active:-translate-y-[2px] active:scale-[1.02] before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-white before:transition-[left] before:duration-[400ms] before:z-[-1] hover:before:left-0">
