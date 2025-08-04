@@ -102,10 +102,10 @@ const Navigation = () => {
       <aside
         role="dialog"
         aria-modal="true"
-        className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-black pt-20 px-6 transition-transform duration-300 md:hidden z-[10000]
+        className={`fixed top-0 right-0 h-screen w-4/5 max-w-xs bg-black pt-20 px-8 pb-8 transition-transform duration-300 md:hidden z-[10000]
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <ul className="flex flex-col gap-6 bg-black">
+        <ul className="flex flex-col gap-6 bg-black pb-4 pl-4">
           {navItems.map((item) => (
             <li key={item.path}>
               <NavLink
