@@ -87,8 +87,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-10 px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>TARGET</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -129,8 +129,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-10 px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>EVENT DETAILS</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -171,8 +171,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-10 px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>PRIZES</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -195,8 +195,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-10 px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>PAST WINNERS</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -253,8 +253,8 @@ const Home = () => {
       <section className="bg-[#1a1a1a] pb-0">
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border py-10 md:py-12 lg:py-16">
           <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-            <span className="relative z-10 px-8 bg-[#1a1a1a] inline-block">
-              <span className="opacity-60 mr-2">//</span>
+            <span className="relative z-10 px-8 bg-[#1a1a1a] flex justify-center items-center">
+              <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
               <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>LATEST NEWS</span>
             </span>
             <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
