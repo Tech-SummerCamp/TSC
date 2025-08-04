@@ -16,7 +16,7 @@ import CallJourney1 from "/past-winners/call-journey/call-journey-1.jpeg";
 import CallJourney2 from "/past-winners/call-journey/call-journey-2.jpeg";
 import CallJourney3 from "/past-winners/call-journey/call-journey-3.jpeg";
 import CallJourney4 from "/past-winners/call-journey/call-journey-4.jpeg";
-import TechSummerCampLogo from "/TSC/techsummercamp_logo.png";
+import TechSummerCampLogo from "/techsummercamp_logo.png";
     
 
 const Home = () => {

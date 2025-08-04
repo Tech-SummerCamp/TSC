@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import TSCHorizontalSVG from "/TSC/tsc-horizontal.svg";
+import TSCHorizontalSVG from "/tsc-horizontal.svg";
 
 interface SponsorInfo {
   name: string;

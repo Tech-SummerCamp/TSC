@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import TSCHorizontalSVG from "/TSC/tsc-horizontal.svg";
+import TSCHorizontalSVG from "/tsc-horizontal.svg";
 
 const Footer = () => {
   return (
