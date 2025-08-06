@@ -44,7 +44,7 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
     <section className="w-full pb-16 md:pb-20 lg:pb-24">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-12 md:mb-16 text-terminal-green text-center relative inline-block w-full">
-          <span className="relative z-10 px-8 bg-black flex justify-center items-center">
+          <span className="relative z-[1] px-8 bg-black flex justify-center items-center">
             <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
             <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>SPONSORS</span>
           </span>
