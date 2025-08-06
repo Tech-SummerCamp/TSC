@@ -6,6 +6,18 @@ import GridItem from '../../components/home/GridItem';
 import PrizeItem from '../../components/home/PrizeItem';
 import WinnerItem from '../../components/home/WinnerItem';
 import { useNews } from '../../hooks/useNews';
+import KinSVG from "/kin.svg";
+import GinSVG from "/gin.svg";
+import AllIn1 from "/past-winners/all-in/all-in-1.jpeg";
+import AllIn2 from "/past-winners/all-in/all-in-2.jpeg";
+import AllIn3 from "/past-winners/all-in/all-in-3.jpeg";
+import AllIn4 from "/past-winners/all-in/all-in-4.jpeg";
+import CallJourney1 from "/past-winners/call-journey/call-journey-1.jpeg";
+import CallJourney2 from "/past-winners/call-journey/call-journey-2.jpeg";
+import CallJourney3 from "/past-winners/call-journey/call-journey-3.jpeg";
+import CallJourney4 from "/past-winners/call-journey/call-journey-4.jpeg";
+import TechSummerCampLogo from "/techsummercamp_logo.png";
+    
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
@@ -38,10 +50,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border">
           <div className="relative z-[2]">
             <div className="flex justify-center items-center text-center">
-              <img src="/TSC/techsummercamp_logo.png" alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
+              <img src={TechSummerCampLogo} alt="Tech.SummerCamp Logo" className="max-w-[320px] md:max-w-[400px] lg:max-w-[600px] h-auto block" />
             </div>
             <div className="mb-6 text-center w-full overflow-visible flex justify-center px-2 md:px-4">
-              <h1 className="text-[clamp(0.9rem,4.5vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[800] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
+              <h1 className="text-[clamp(1.4rem,6vw,3.8rem)] md:text-[clamp(1.1rem,4.5vw,1.8rem)] lg:text-[clamp(1.2rem,5vw,3.8rem)] font-[900] text-white font-mono tracking-[0.02em] relative whitespace-normal text-center min-h-0 md:min-h-[2.8em] inline-block w-full">
                 <span className="inline max-w-full box-border text-center">
                   {typedText || '\u00A0'}
                 </span>
@@ -53,14 +65,14 @@ const Home = () => {
             <div className="max-w-[1000px] mx-auto mb-12">
               <section className="mb-24 md:mb-32 text-center max-w-[800px] mx-auto">
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-semibold tracking-[0.08em] text-center text-white">
-                  Tech.SummerCampは、<br />
-                  全国から選ばれた中・上級者の学生エンジニアが集まる、<br />
-                  日本最高峰の学生ハッカソンです。
+                  Tech.SummerCampは<br />
+                  全国から選ばれた中・上級者の<br className="md:hidden" />学生エンジニアが集まる<br />
+                  日本最高峰の学生ハッカソンです
                 </p>
                 <p className="text-base md:text-lg lg:text-[1.4rem] leading-[1.8] md:leading-[2] lg:leading-[2.2] mb-6 md:mb-8 font-medium tracking-[0.08em] text-center text-white/90">
-                  55時間という限られた時間の中で、技術力の限界に挑戦し、<br />
-                  イノベーティブなプロダクトを生み出す。<br />
-                  それがTech.SummerCampです。
+                  55時間という限られた時間の中で<br className="md:hidden" />技術力の限界に挑戦し<br />
+                  イノベーティブなプロダクトを生み出す<br />
+                  それがTech.SummerCampです
                 </p>
                 <div className="flex gap-8 flex-wrap justify-center mb-4 md:mb-8 lg:mb-12 mt-8 md:mt-12">
                   <Link to="https://nxtend.connpass.com/event/356366/" target="_blank" className="relative inline-flex items-center justify-center py-6 px-12 md:py-6 md:px-12 lg:py-8 lg:px-20 text-xl md:text-xl lg:text-[2rem] font-[900] font-mono uppercase tracking-[0.2em] bg-transparent text-white border-[3px] border-white overflow-hidden transition-all duration-300 cursor-pointer min-w-[280px] md:min-w-[280px] lg:min-w-[400px] no-underline shadow-none hover:-translate-y-[5px] hover:shadow-[0_10px_30px_rgba(255,255,255,0.2)] hover:text-black hover:border-white active:-translate-y-[2px] active:scale-[1.02] before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-white before:transition-[left] before:duration-[400ms] before:z-[-1] hover:before:left-0">
@@ -75,8 +87,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-[1] px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>TARGET</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -117,8 +129,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-[1] px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>EVENT DETAILS</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -131,12 +143,12 @@ const Home = () => {
                   />
                   <GridItem
                     title="開催形式"
-                    description="大阪会場"
+                    description="オフライン"
                     type="detail"
                   />
                   <GridItem
                     title="参加人数"
-                    description="60-80名"
+                    description="80名"
                     type="detail"
                   />
                   <GridItem
@@ -159,8 +171,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-[1] px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>PRIZES</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -169,13 +181,13 @@ const Home = () => {
                   <PrizeItem
                     rank="1st"
                     amount={300000}
-                    iconSrc="/kin.svg"
+                    iconSrc={KinSVG}
                     type="first"
                   />
                   <PrizeItem
                     rank="2nd"
                     amount={100000}
-                    iconSrc="/gin.svg"
+                    iconSrc={GinSVG}
                     type="second"
                   />
                 </div>
@@ -183,8 +195,8 @@ const Home = () => {
               
               <section className="mb-20 md:mb-24">
                 <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-                  <span className="relative z-10 px-8 bg-black inline-block">
-                    <span className="opacity-60 mr-2">//</span>
+                  <span className="relative z-[1] px-8 bg-black flex justify-center items-center">
+                    <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
                     <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>PAST WINNERS</span>
                   </span>
                   <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>
@@ -195,12 +207,24 @@ const Home = () => {
                     award="最優秀賞"
                     title="ALL IN"
                     description="全てのチャットアプリの通知を統合するサービス。Slack、Discord、Teams等の通知を一元管理し、AIが重要度を判定して最適なタイミングで通知。"
+                    images={[
+                      AllIn1,
+                      AllIn2,
+                      AllIn3,
+                      AllIn4
+                    ]}
                   />
                   <WinnerItem
                     year="2024"
                     award="優秀賞"
                     title="CallJourney"
                     description="飲食店の電話予約を完全自動化するサービス。音声認識と自然言語処理により、人間と遜色ない自然な会話で予約対応を実現。"
+                    images={[
+                      CallJourney1,
+                      CallJourney2,
+                      CallJourney3,
+                      CallJourney4
+                    ]}
                   />
                 </div>
               </section>
@@ -229,8 +253,8 @@ const Home = () => {
       <section className="bg-[#1a1a1a] pb-0">
         <div className="max-w-7xl mx-auto px-4 md:px-8 w-full box-border py-10 md:py-12 lg:py-16">
           <h2 className="font-mono text-xl md:text-2xl lg:text-[2.2rem] mb-4 md:mb-6 lg:mb-8 text-terminal-green text-center relative inline-block w-full">
-            <span className="relative z-10 px-8 bg-[#1a1a1a] inline-block">
-              <span className="opacity-60 mr-2">//</span>
+            <span className="relative z-[1] px-8 bg-[#1a1a1a] flex justify-center items-center">
+              <span className="w-1 h-4 md:w-1.5 md:h-6 lg:w-1.5 lg:h-8 bg-gray-400 mr-2 md:mr-3 lg:mr-4 inline-block"></span>
               <span className="font-bold tracking-[0.2em] drop-shadow-[0_0_20px_rgba(0,255,65,0.5)] text-shadow-[0_0_30px_rgba(0,255,65,0.8)]" style={{ textShadow: '0 0 30px rgba(0,255,65,0.8)' }}>LATEST NEWS</span>
             </span>
             <span className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-terminal-green/30 to-transparent -translate-y-1/2"></span>

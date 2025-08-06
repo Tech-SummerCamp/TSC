@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import TSCHorizontalSVG from "/tsc-horizontal.svg";
 
 interface SponsorInfo {
   name: string;
@@ -90,7 +91,7 @@ const Logo = ({ size = 'large', sponsors = [] }: LogoProps) => {
     return (
       <div className="font-mono text-center relative flex justify-start items-center">
         <img 
-          src="/TSC/tsc-horizontal.svg" 
+          src={TSCHorizontalSVG} 
           alt="Tech Summer Camp" 
           className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-200 brightness-100 hover:brightness-[1.2] hover:scale-105"
         />

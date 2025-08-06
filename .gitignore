@@ -26,3 +26,8 @@ dist
 
 # Local Netlify folder
 .netlify
+
+# Lock files (only keep package-lock.json)
+bun.lock
+yarn.lock
+pnpm-lock.yaml
