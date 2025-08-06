@@ -79,13 +79,7 @@ const WinnerItem = ({ year, award, title, description, images }: WinnerItemProps
           className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={handleModalClose}
         >
-          <div className="relative max-w-[90vw] max-h-[90vh] bg-gray-900 rounded-lg border border-terminal-green/30 shadow-2xl">
-            <button
-              onClick={handleModalClose}
-              className="absolute -top-4 -right-4 w-8 h-8 bg-terminal-green text-black rounded-full flex items-center justify-center font-bold text-lg hover:bg-terminal-green/80 transition-colors z-10"
-            >
-              ×
-            </button>
+          <div className="relative max-w-[90vw] max-h-[90vh] bg-gray-900 rounded-lg border border-terminal-green/30 shadow-2xl mt-10">
             <div className="p-4">
               <img
                 src={selectedImage}
