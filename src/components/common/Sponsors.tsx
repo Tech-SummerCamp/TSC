@@ -68,7 +68,7 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
                       className="relative block w-full"
                     >
                       <div className={`${config.size} border-2 border-white/20 rounded-lg p-4 md:p-6 flex flex-col items-center justify-center bg-white/5 gap-4`}>
-                        {sponsor.logo ? (
+                        {sponsor.logo && !sponsor.name.toLowerCase().includes('coming soon') ? (
                           <>
                             <img 
                               src={sponsor.logo} 
