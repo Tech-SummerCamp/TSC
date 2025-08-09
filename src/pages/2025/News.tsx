@@ -32,7 +32,7 @@ const News = () => {
               <span className="glitch" data-text="NEWS">NEWS</span>
             </h1>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 auto-rows-fr">
               {articles.map(article => (
                 <NewsCard
                   key={article.slug}
@@ -45,7 +45,7 @@ const News = () => {
                   title={article.title}
                   excerpt={article.excerpt || ''}
                   tagType={article.category as any}
-                  href={`/2025/news/${article.slug}`}
+                  href={`/news/${article.slug}`}
                 />
               ))}
             </div>

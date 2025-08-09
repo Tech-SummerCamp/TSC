@@ -30,26 +30,6 @@ export const siteContent = {
     ]
   },
 
-  // ========== ニュース記事 ==========
-  news: [
-    {
-      id: 'news-001',
-      date: '2025.01.15',
-      category: 'ANNOUNCEMENT',
-      title: 'Tech.SummerCamp 2025 開催決定',
-      content: '2025年度のTech.SummerCampの開催が正式に決定しました。今年も最高峰の学生エンジニア体験をお届けします。',
-      important: true
-    },
-    {
-      id: 'news-002',
-      date: '2025.01.15',
-      category: 'WEBSITE',
-      title: '公式サイトオープン',
-      content: 'Tech.SummerCamp 2025の公式サイトがオープンしました。最新情報をチェックして、エントリーに備えましょう。'
-    },
-    // 新しいニュースはここに追加
-  ],
-
   // ========== FAQ ==========
   faq: {
     participation: [

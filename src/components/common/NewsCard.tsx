@@ -40,14 +40,14 @@ const NewsCard = ({ date, tag, title, excerpt, link, href, tagType = 'default' }
       <h3 className="text-[1.2rem] md:text-base max-[480px]:text-base font-semibold mb-4 leading-[1.4] md:leading-[1.3] text-white line-clamp-2">
         {title}
       </h3>
-      <p className="text-[0.95rem] md:text-[0.85rem] max-[480px]:text-[0.85rem] leading-[1.6] md:leading-[1.5] text-white/80 m-0 line-clamp-3">{excerpt}</p>
+      <p className="text-[0.95rem] md:text-[0.85rem] max-[480px]:text-[0.85rem] leading-[1.6] md:leading-[1.5] text-white/80 m-0 line-clamp-3 flex-grow">{excerpt}</p>
     </>
   );
 
   if (link || href) {
     return (
       <Link to={link || href || '#'} className="block">
-        <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group cursor-pointer h-[240px] md:h-[200px] flex flex-col">
+        <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group cursor-pointer h-full flex flex-col">
           {cardContent}
         </article>
       </Link>
@@ -55,7 +55,7 @@ const NewsCard = ({ date, tag, title, excerpt, link, href, tagType = 'default' }
   }
 
   return (
-    <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group h-[240px] md:h-[200px] flex flex-col">
+    <article className="relative overflow-hidden bg-white/[0.02] border border-white/40 p-8 md:p-5 max-[480px]:p-4 transition-all duration-300 hover:border-terminal-green hover:-translate-y-1 hover:bg-terminal-green/5 group h-full flex flex-col">
       {cardContent}
     </article>
   );

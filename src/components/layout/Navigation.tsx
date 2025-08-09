@@ -9,31 +9,23 @@ import { NavLink } from 'react-router-dom';
  *
  * Tailwind CSS で完結。外部 CSS / JS 依存なし。
  */
-interface NavigationProps {
-  year: string;
-}
 
 interface NavItem {
   path: string;
   label: string;
 }
 
-const Navigation = ({ year }: NavigationProps) => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // 年度ごとにナビ項目を切り替え
   const navItems: NavItem[] =
-    year === '2025'
-      ? [
-          { path: '', label: 'HOME' },
-          { path: 'schedule', label: 'SCHEDULE' },
-          { path: 'news', label: 'NEWS' },
-          { path: 'faq', label: 'FAQ' },
-        ]
-      : [
-          { path: '', label: 'RESULTS' },
-          { path: 'gallery', label: 'GALLERY' },
-        ];
+      [
+        { path: '', label: 'HOME' },
+        { path: 'schedule', label: 'SCHEDULE' },
+        { path: 'news', label: 'NEWS' },
+        { path: 'faq', label: 'FAQ' },
+      ];
 
   // Body スクロールロック
   useEffect(() => {
@@ -82,7 +74,7 @@ const Navigation = ({ year }: NavigationProps) => {
         {navItems.map((item) => (
           <li key={item.path}>
             <NavLink
-              to={`/${year}/${item.path}`}
+              to={`/${item.path}`}
               end={item.path === ''}
               className={({ isActive }) =>
                 `relative text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors duration-200
@@ -110,19 +102,19 @@ const Navigation = ({ year }: NavigationProps) => {
       <aside
         role="dialog"
         aria-modal="true"
-        className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-black pt-20 px-6 transition-transform duration-300 md:hidden z-[10000]
+        className={`fixed top-0 right-0 h-screen w-4/5 max-w-xs bg-black pt-20 px-8 pb-8 transition-transform duration-300 md:hidden z-[10000]
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-6 bg-black pb-4 pl-4">
           {navItems.map((item) => (
             <li key={item.path}>
               <NavLink
-                to={`/${year}/${item.path}`}
+                to={`/${item.path}`}
                 end={item.path === ''}
                 onClick={close}
                 className={({ isActive }) =>
                   `block text-base font-medium tracking-wider uppercase transition-colors duration-200
-                   ${isActive ? 'text-white' : 'text-white/90 hover:text-white'}`
+                   ${isActive ? 'text-white' : 'text-white hover:text-green-400'}`
                 }
               >
                 {item.label}

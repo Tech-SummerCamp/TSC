@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import TSCHorizontalSVG from "/tsc-horizontal.svg";
 
 const Footer = () => {
   return (
@@ -7,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] mb-8 md:mb-12">
           <div className="footer-section md:mb-0">
             <div className="flex items-center md:h-0 md:overflow-visible">
-              <Link to="/2025">
+              <Link to="/">
                 <img 
-                  src="/tsc-horizontal.svg" 
+                  src={TSCHorizontalSVG} 
                   alt="Tech Summer Camp - 学生エンジニアが得られる体験の最高峰" 
                   className="h-32 md:h-40 w-auto brightness-[0.8] transition-all duration-200 md:translate-y-10 cursor-pointer hover:brightness-100"
                 />
@@ -27,7 +28,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm opacity-80 transition-all duration-200 underline hover:opacity-100 hover:pl-2.5"
                 >
-                  Twitter
+                  X
                 </a>
               </li>
               <li className="mb-2">
@@ -39,9 +40,13 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <span className="text-sm opacity-80 text-white cursor-pointer underline transition-all duration-200 hover:opacity-100 hover:pl-2.5">
+                <a 
+                  href="https://www.nxtend.or.jp/privacy-policy/"
+                  target="_blank" 
+                  className="text-sm opacity-80 transition-all duration-200 underline hover:opacity-100 hover:pl-2.5"
+                >
                   プライバシーポリシー
-                </span>
+                </a>
               </li>
             </ul>
           </div>
