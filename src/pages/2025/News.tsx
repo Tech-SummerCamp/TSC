@@ -45,7 +45,7 @@ const News = () => {
                   title={article.title}
                   excerpt={article.excerpt || ''}
                   tagType={article.category as any}
-                  href={`/TSC/news/${article.slug}`}
+                  href={`/news/${article.slug}`}
                 />
               ))}
             </div>

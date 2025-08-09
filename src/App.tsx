@@ -11,9 +11,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/TSC" element={<Layout/>}>
+        <Route path="/" element={<Layout/>}>
           <Route index element={<Home2025 />} />
-          <Route path="about" element={<Navigate to="/TSC" replace />} />
+          <Route path="about" element={<Navigate to="/" replace />} />
           <Route path="schedule" element={<Schedule />} />
           <Route path="news" element={<News />} />
           <Route path="news/:slug" element={<NewsDetail />} />

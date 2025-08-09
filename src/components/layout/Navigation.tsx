@@ -74,7 +74,7 @@ const Navigation = () => {
         {navItems.map((item) => (
           <li key={item.path}>
             <NavLink
-              to={`/TSC/${item.path}`}
+              to={`/${item.path}`}
               end={item.path === ''}
               className={({ isActive }) =>
                 `relative text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors duration-200
@@ -109,7 +109,7 @@ const Navigation = () => {
           {navItems.map((item) => (
             <li key={item.path}>
               <NavLink
-                to={`/TSC/${item.path}`}
+                to={`/${item.path}`}
                 end={item.path === ''}
                 onClick={close}
                 className={({ isActive }) =>

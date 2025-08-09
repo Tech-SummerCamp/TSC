@@ -273,13 +273,13 @@ const Home = () => {
                 title={article.title}
                 excerpt={article.excerpt || ''}
                 tagType={article.category as any}
-                href={`/TSC/news/${article.slug}`}
+                href={`/news/${article.slug}`}
               />
             ))}
           </div>
           
           <div className="text-center">
-            <Link to="/TSC/news" className="inline-flex items-center gap-[0.3rem] py-3 px-6 font-mono text-[0.85rem] font-semibold tracking-[0.05em] text-white border-2 border-white no-underline transition-all duration-300 bg-transparent relative overflow-hidden hover:bg-white hover:border-white hover:text-black hover:-translate-y-[2px]">
+            <Link to="/news" className="inline-flex items-center gap-[0.3rem] py-3 px-6 font-mono text-[0.85rem] font-semibold tracking-[0.05em] text-white border-2 border-white no-underline transition-all duration-300 bg-transparent relative overflow-hidden hover:bg-white hover:border-white hover:text-black hover:-translate-y-[2px]">
               VIEW ALL NEWS
             </Link>
           </div>

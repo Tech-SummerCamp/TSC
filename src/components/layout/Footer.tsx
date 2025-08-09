@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] mb-8 md:mb-12">
           <div className="footer-section md:mb-0">
             <div className="flex items-center md:h-0 md:overflow-visible">
-              <Link to="/TSC">
+              <Link to="/">
                 <img 
                   src={TSCHorizontalSVG} 
                   alt="Tech Summer Camp - 学生エンジニアが得られる体験の最高峰" 
