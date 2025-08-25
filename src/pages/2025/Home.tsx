@@ -237,7 +237,7 @@ const Home = () => {
         sponsors={[
           { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+1" },
           { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+2" },
-          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+1" },
+          { name: "株式会社Finatext", tier: "gold", logo: "/public/sponsors/FinatextHD_logo.png",url: "https://finatext.com/"},
           { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+2" },
           { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+3" },
           { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+1" },
