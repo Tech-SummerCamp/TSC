@@ -25,7 +25,7 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
     },
     gold: {
       label: 'GOLD SPONSORS',
-      size: 'h-20 md:h-24 lg:h-28',
+      size: '',
       gridCols: 'grid-cols-2 md:grid-cols-3'
     },
     silver: {
