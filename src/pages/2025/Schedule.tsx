@@ -45,7 +45,7 @@ const Schedule = () => {
               <div className="bg-gradient-to-br from-white/5 to-white/2 border border-white/10 border-l-4 border-l-green-400 rounded-lg p-4 md:p-8 transition-all duration-300 hover:border-green-400 hover:translate-x-2 hover:shadow-[0_10px_30px_rgba(0,255,65,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
                 <div className="flex items-center gap-4 mb-8 flex-wrap">
                   <h3 className="font-mono text-lg sm:text-xl md:text-2xl font-bold text-white">9月20日（土）</h3>
-                  <span className="font-mono text-sm sm:text-base text-green-400 opacity-80">開発Day1 - 対面</span>
+                  <span className="font-mono text-sm sm:text-base text-green-400 opacity-80">開発Day1 - オンライン</span>
                   <span className="px-3 py-1 rounded-full font-mono text-xs font-semibold uppercase tracking-wider bg-green-400/20 text-green-400 border border-green-400">開発開始</span>
                 </div>
                 <div className="flex flex-col gap-4">
@@ -76,7 +76,7 @@ const Schedule = () => {
               <div className="bg-gradient-to-br from-white/5 to-white/2 border border-white/10 border-l-4 border-l-green-400 rounded-lg p-4 md:p-8 transition-all duration-300 hover:border-green-400 hover:translate-x-2 hover:shadow-[0_10px_30px_rgba(0,255,65,0.1)] relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-green-400 before:to-transparent before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300">
                 <div className="flex items-center gap-4 mb-8 flex-wrap">
                   <h3 className="font-mono text-lg sm:text-xl md:text-2xl font-bold text-white">9月21日（日）</h3>
-                  <span className="font-mono text-sm sm:text-base text-green-400 opacity-80">開発Day2 - 対面</span>
+                  <span className="font-mono text-sm sm:text-base text-green-400 opacity-80">開発Day2 - オンライン</span>
                   <span className="px-3 py-1 rounded-full font-mono text-xs font-semibold uppercase tracking-wider bg-green-400/20 text-green-400 border border-green-400">開発継続</span>
                 </div>
                 <div className="flex flex-col gap-4">
