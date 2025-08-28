@@ -25,7 +25,7 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
     },
     gold: {
       label: 'GOLD SPONSORS',
-      size: 'h-20 md:h-24 lg:h-28',
+      size: '',
       gridCols: 'grid-cols-2 md:grid-cols-3'
     },
     silver: {
@@ -76,12 +76,14 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
                               className="max-w-full max-h-[60%] object-contain filter brightness-0 invert opacity-80"
                             />
                             <span className="font-mono text-white/80 text-xs md:text-sm font-bold tracking-wider">
-                              {sponsor.name}
+                                <a href={sponsor?.url}>
+                                    {sponsor.name}
+                                </a>
                             </span>
                           </>
                         ) : (
-                          <span className="font-mono text-white/80 text-sm md:text-base lg:text-lg font-bold tracking-wider">
-                            {sponsor.name}
+                          <span className="font-mono text-white/80 text-sm md:text-base lg:text-lg font-bold tracking-wider" >
+                                {sponsor.name}
                           </span>
                         )}
                       </div>
