@@ -20,23 +20,27 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
   const tierConfig = {
     platinum: {
       label: 'PLATINUM SPONSORS',
-      size: 'h-24 md:h-28 lg:h-32',
+      imgSize: 'h-24 md:h-28 lg:h-32',
+      boxSize: 'w-96',
       gridCols: 'grid-cols-1 md:grid-cols-2'
     },
     gold: {
       label: 'GOLD SPONSORS',
-      size: '',
+      imgSize: 'h-60',
+        boxSize: 'w-80',
       gridCols: 'grid-cols-2 md:grid-cols-3'
     },
     silver: {
       label: 'SILVER SPONSORS',
-      size: 'h-16 md:h-20 lg:h-24',
-      gridCols: 'grid-cols-2 md:grid-cols-4'
+      imgSize: 'h-16 md:h-20 lg:h-24',
+        boxSize: 'w-40 md:w-60',
+        gridCols: 'grid-cols-2 md:grid-cols-4'
     },
     bronze: {
       label: 'BRONZE SPONSORS',
-      size: 'h-14 md:h-16 lg:h-20',
-      gridCols: 'grid-cols-3 md:grid-cols-5'
+      imgSize: 'h-14 md:h-16 lg:h-20',
+        boxSize: 'w-40',
+        gridCols: 'grid-cols-3 md:grid-cols-5'
     }
   };
 
@@ -61,30 +65,30 @@ const Sponsors = ({ sponsors }: SponsorsProps) => {
                 <h3 className="font-mono text-lg md:text-xl mb-6 md:mb-8 text-white/80 tracking-[0.2em]">
                   {config.label}
                 </h3>
-                <div className={`grid ${config.gridCols} gap-6 md:gap-8 items-center justify-items-center max-w-6xl mx-auto`}>
+                <div className={`flex flex-wrap gap-6 md:gap-8 items-center justify-center max-w-6xl mx-auto`}>
                   {tierSponsors.map((sponsor, index) => (
                     <div
                       key={index}
-                      className="relative block w-full"
+                      className={`${config.boxSize} relative block `}
                     >
-                      <div className={`${config.size} border-2 border-white/20 rounded-lg p-4 md:p-6 flex flex-col items-center justify-center bg-white/5 gap-4`}>
+                      <div className={`border-2 border-white/20 rounded-lg p-4 md:p-6 flex flex-col items-center bg-white relative`}>
                         {sponsor.logo && !sponsor.name.toLowerCase().includes('coming soon') ? (
                           <>
-                            <img 
-                              src={sponsor.logo} 
-                              alt={sponsor.name} 
-                              className="max-w-full max-h-[60%] object-contain filter brightness-0 invert opacity-80"
-                            />
-                            <span className="font-mono text-white/80 text-xs md:text-sm font-bold tracking-wider">
-                                <a href={sponsor?.url}>
-                                    {sponsor.name}
-                                </a>
-                            </span>
+                              <img
+                                src={sponsor.logo} 
+                                alt={sponsor.name} 
+                                className={`${config.imgSize} max-w-full max-h-full object-contain filter brightness-100 opacity-80`}
+                              />
+                            <a className="font-mono text-black text-xs md:text-sm font-bold tracking-wider text-center mt-2" href={sponsor?.url}>
+                              {sponsor.name}
+                            </a>
                           </>
                         ) : (
-                          <span className="font-mono text-white/80 text-sm md:text-base lg:text-lg font-bold tracking-wider" >
-                                {sponsor.name}
-                          </span>
+                          <div className="flex-1 flex items-center justify-center">
+                            <span className="font-mono text-black text-sm md:text-base lg:text-lg font-bold tracking-wider" >
+                              {sponsor.name}
+                            </span>
+                          </div>
                         )}
                       </div>
                     </div>
