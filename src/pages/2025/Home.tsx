@@ -235,18 +235,18 @@ const Home = () => {
       
       <Sponsors 
         sponsors={[
-          { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+1" },
-          { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+2" },
-          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+1" },
-          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+2" },
-          { name: "Coming Soon.....", tier: "gold", logo: "https://placehold.co/250x125/ffffff/000000/png?text=GOLD+3" },
-          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+1" },
-          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+2" },
-          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+3" },
-          { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+4" },
-          { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+1" },
-          { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+2" },
-          { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+3" }
+          // { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+1" },
+          // { name: "Coming Soon.....", tier: "platinum", logo: "https://placehold.co/300x150/ffffff/000000/png?text=PLATINUM+2" },
+          { name: "株式会社Finatext", tier: "gold", logo: "/public/sponsors/FinatextHD_logo.png",url: "https://finatext.com/"},
+          { name: "株式会社プレイド", tier: "gold", logo: "/public/sponsors/PLAID_logo.png", url: "https://plaid.co.jp/" },
+          { name: "株式会社MIXI", tier: "gold", logo: "/public/sponsors/MIXI_Logo.png",url: "https://mixi.co.jp/" },
+          { name: "サイボウズ株式会社", tier: "gold", logo: "/public/sponsors/cybozu_logo.png" ,url: "https://cybozu.co.jp/"},
+          { name: "株式会社モバイルファクトリー", tier: "silver", logo: "public/sponsors/MobileFactory_LOGO.png", url: "https://www.mobilefactory.jp/" },
+          // { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+3" },
+          // { name: "Coming Soon.....", tier: "silver", logo: "https://placehold.co/200x100/ffffff/000000/png?text=SILVER+4" },
+          // { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+1" },
+          // { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+2" },
+          // { name: "Coming Soon.....", tier: "bronze", logo: "https://placehold.co/150x75/ffffff/000000/png?text=BRONZE+3" }
         ]}
       />
       
